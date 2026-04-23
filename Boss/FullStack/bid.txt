@@ -1,0 +1,107 @@
+Hello.  
+Nice to meet you.
+My name is Jennie Yong.
+I am looking for a job now.
+I have more than  7 years of experience in web development.
+Thanks for giving me a chance to apply on this job.
+As a senior software developer, I am very interested in this job.
+
+My deep experiences includes : 
+-Client Side
+✅HTML, CSS, JavaScript, Jquery, Bootstrap
+✅React.JS, Vue.JS, Angular.Js, TypeScript, Next.js/Nuxt.js, React Native/Flutter, Svelte.JS
+-Design
+✅Material UI/Antd Design/React Bootstrap/Tailwind/Sass
+✅UI/UX design, Figma, Adobe XD
+-Server Side
+✅Node.JS/Express.JS, Ruby on Rails, Django/Flask, ASP.NET, Laravel, Spring, Golang
+✅Mongo DB/My SQL/Google Firebase/Postgre SQL/MS SQL Server/SQLite
+-Tools
+✅Github/GitLab/Bitbucket, Trello, Azure DevOps, AWS Service, GCP
+✅AWS, GraphQL, Apollo, Jest, Nginx, Cloud Services, Web Hosting
+
+-Projects
+https://solsapp.com/
+https://www.letsusedata.com/
+https://becausemarket.com/
+https://brandscopic.com/
+https://worldsportaction.com/
+ 
+ I have rich experience with React.js, Vue.js and Angular.js for frontend especially using Redux (Thunk or Saga) or VueX with Hooks + Typescript for 6+ years.
+I have developed backend with Node.JS, Express.JS, Django, RoR and ASP.NET core.
+I am very familiar with AWS, GraphQL, PostgreSQL, MongoDB, Firebase, Unit test tools and DevOps tools including Github, Trello, Azure, GCP, etc.
+I have developed plenty of Backend APIs and integrate several Restful services and 3rd party APIs into backend.
+And also developed engines using Python or Javascript myself to improve the backend speed and security and integrated into backend.
+ 
+User experience & clean frontend design and Clean architecture based Project development are my major skills.
+These are my latest projects based on the above tech-skills.
+ 
+Web: https://solsapp.com/
+Tech-stack: React, Redux, TypeScript, Firebase, MongoDB, NFT, Express.JS
+What I do:
+        • Frontend Project High Quality Structure.
+        • React Auth Routing using @okta/okta-react library.
+        • Auth Form using Firebase Google auth, Recaptcha Auth, Phone Auth, Email and Password Auth.
+        • Email Verification flow using Firebase authentication template.
+        • Product creating flow using IPFS.
+        • NFT minting flow using web3.js.
+        • Transaction data management using Firebase Real-time database.
+        • Some security functions developed in Firebase Functions using Express.JS.
+        • [Editing photo] UI of Setting Page using only CSS3 and Canvas(Not Plugin).
+        • Stripe Payment flow using stripe 3th party API.
+        • Multi-Digital asset display UI using canvas, pdf-viewer and so on.
+        • Restricted or Public link sending logic in product page using Twilio, Email JS libraries.
+        • Graph UI of dashboard page using React-Apex chart library.
+        • Parsing CSV files, converting CSV to JSON flow using json2csv and react-csv library in Customers page.
+        • RSA encryption and decryption part about products uploaded in IPFS using crypto library.
+        • NFT Smart Contract with ERC1155 using solidity, truffle, ganache, Kovan test network and main network.
+        • Mobile responsive.
+        • Front-end project hosting using Godaddy.
+        • Developed test case with Jest and Enzyme.
+ 
+Web: https://www.iedutainments.com/
+Tech-stack: Flutter, MySQL, React, Mobile
+What I do:
+        • Converted existing Titanium project to Flutter.
+        • Developed a more friendly UI and made react frontend with the same options.
+        • Implemented translation verbs system about 22 countries' languages using local storage.
+        • Created unit testing and tested with team members.
+ 
+Web: https://www.letsusedata.com/
+Tech-stack:  Angular.js + ASP.NET core + SQL Server
+What I do:
+        • Understand the business goal of this project.
+        • Developed frontend with Angular.
+        • Developed backend using ASP.NET core and use Entity framework for database control.
+        • Use MySQL server for database and wrote code for database design
+        • Developed many compilers using C# like C# compiler, Excel compiler, Java Compiler and so on.
+        • Use Azure DevOps for source control.
+        • Use Entity framework core for database control.
+ 
+Web: https://brandscopic.com/
+Tech-stack: Ruby on Rails + Laravel + MySQL + Vue.js
+What I do:
+        • Moved from using Rails controllers to build more scalable/isolated RESTful APIs using Grape and Sidekiq.
+        • While this allowed the application to be more scalable, spent time on reliability by adding many
+        • integration/unit tests for the new API.
+        • Developed and maintained the front-end functionality of websites.
+        • Participated in discussions with clients to clarify what they wanted.
+        • Designed prototypes for websites.
+        • Wrote cross-browser compliant XHTML, CSS, JavaScript, and CoffeeScript.
+        • Managed simultaneously several databases and reporting tools.
+        • Provided guidance to other team members on web development issues.
+        • Developed websites that have a consistent feel and look throughout all web properties.
+        • Provided technical support to end-users.
+        • Identified and corrected software deficiencies.
+ 
+I have a Bachelor degree in computer science.
+ 
+Working with a startup company which has creative ideas as a remote worker and contributes to achieve success with all my effort has been my happiness until now.
+I think communication and co-operative work with perfect team spirit is key for project success.
+I can work in your time zone as a full time and I am just ready to start work now.
+ 
+I hope you consider my profile website and past experiences carefully and give me a chance to take part in your great idea implementation.
+ 
+Could you contact me via chat and discuss in detail about this job?
+ 
+Regards.

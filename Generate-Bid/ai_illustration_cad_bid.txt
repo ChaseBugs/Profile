@@ -1,0 +1,74 @@
+Hello
+
+Thank you very much for introducing me to this valuable project.
+
+[Self-introduction]
+I am a freelance AI engineer working on the development of image generation AI and multimodal AI. I also have experience accompanying projects as a technical advisor and development partner.
+
+[Mandatory skills]
+・Python machine learning model development: Over 5 years of work experience
+  - Experience developing models using PyTorch and TensorFlow
+  - Experience with end-to-end machine learning projects
+・Stable Diffusion: In-depth knowledge and work experience
+  - Experience fine-tuning Stable Diffusion
+  - Experience customizing image generation models using LoRA
+  - Experience controlling composition and positional relationships using ControlNet
+・Annotation design and management: Work experience
+  - Experience designing image annotations and proposing efficient implementation methods
+  - Experience selecting and building annotation tools
+
+[Preferred skills]
+・Multimodal AI development: Work experience
+  - Experience developing models that combine images, text, and numerical data
+  - Experience designing and implementing multimodal models
+・CAD data and 3D data: Experience handling
+  - Experience analyzing CAD data and extracting features
+・Technical advisory experience: Work experience
+  - Experience leading projects and providing technical advice
+
+[Project 1]
+We can support the development of illustration generation AI for safety education.
+- Controlling composition and positional relationships using ControlNet, etc.: Implementation experience
+- Designing learning data to generate high-quality illustrations: Experience in annotation design for 200-500 pages
+- Automatic generation of illustrations from Excel documents: Experience in implementing image generation from text
+- Reproducing the touch of people and construction machinery, improving the accuracy of shapes: Experience combining LoRA and ControlNet
+
+[Support for Project 2]
+We can handle research and development of floor plan evaluation and automatic generation models for architectural CAD.
+- Multimodal AI model design: Experience in model design that combines images and metadata
+- Annotation strategy planning: Experience in planning strategies for creating efficient correct answer data
+- Technical roadmap formulation: Experience in formulating roadmaps from research and development to practical application
+- Setting composite evaluation criteria: Experience in evaluation design that takes into account sunlight, area, room connection information, and daily activity lines
+
+[Examples of work experience]
+- Stable Diffusion + LoRA + ControlNet: Implementation of high-quality image generation through composition control
+- Image annotation: Annotation design and management for large datasets (over 500 images)
+- Multimodal model: Development of evaluation models that combine images and structured data
+- Technical advisor: Experience leading projects in collaboration with in-house engineers
+
+[Fits the desired profile]
+- Team communication: Able to communicate smoothly with in-house engineers and work alongside them as part of a team
+- Understanding business issues: Able to understand the challenges of the manufacturing industry and proactively propose and implement optimal technical approaches
+- Tenacity: Able to tenaciously tackle unresolved issues while enjoying trial and error
+
+[Desired hourly wage]
+Desired hourly rate: ¥8,000-¥10,000 (excluding tax)
+- Negotiable depending on project content and working hours.
+
+[Questions Regarding This Project]
+1. For Project 1, would it be possible for me to review the existing prototype code and generated results?
+2. For Project 2, could you please tell me the CAD system technology stack (CAD software used, data format, etc.)?
+3. Could you please tell me the estimated working hours and duration?
+4. Could you please tell me the frequency and method of communication with in-house engineers (Slack, regular meetings, etc.)?
+
+[Strengths]
+- Deep knowledge and practical experience of Stable Diffusion, LoRA, and ControlNet
+- Experience developing multimodal AI and able to handle complex issues
+- Experience in annotation design and able to propose efficient data creation methods
+- Experience leading projects as a technical advisor and able to provide support alongside clients
+- Ability to understand business challenges and propose technical approaches
+
+I am honored to support our manufacturing clients in utilizing AI and participate as a technical advisor and development partner in both the image generation and CAD automatic evaluation projects.
+
+Thank you for your consideration.
+

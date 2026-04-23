@@ -1,0 +1,26 @@
+Hello.
+My name is Jennie Yong.
+I have 9 years of experience in programming, 7 years of professional experience as a Full stack developer and approximately 2 years of Blockchain and other software development such as Mobile app and Desktop app.
+And having worked for several kinds of companies, as a distributed team member or leader, it turned out that being the Full stack would be my most favorite development pattern and naturally I have a strong ability in the advanced algorithms, data structures and mathematics.
+In the frontend side,  I have rich experience with React, Angular and Vue for frontend especially using Redux (Thunk or Saga) or VueX with Hooks + Typescript for 5+ years.
+In the backend side, I have rich experience with Node.js, ASP.NET, Django, Ruby on Rails, Laravel for backend development for 6+ years.
+I used MySQL, MS SQL Server, MongoDB and Oracle for database system.
+I am very familiar with AWS, GraphQL, PostgreSQL, MongoDB, Firebase, Unit test tools and DevOps tools including Github, Trello, Azure, GCP, etc.
+I got my first Full stack developer job at a sports management platform called World Sport Action which is a 100% remote international company, originally founded in Sydney, Australia and I had the opportunity to learn more about the frontend development such as React, Redux, TypeScript, Node.js and MongoDB.
+In this company, My position is frontend developer and I launched project successfully. 
+But, since there were not too many projects at that agency, after 1 year later, I decided to look for another job. 
+I already had a rich experience in frontend and MERN stack.
+I soon started to work at a Brandscopic company, in this company I worked as a full stack developer, I learned Ruby on Rails, Laravel for backend and used CoffeeScript and Jquery for frontend. It is a eCommerce platform and I learned about eCommere industry such as flowchart of eCommerce development, how to attract customers and so on.
+I gained experience in many things like teamwork, time management, and quick decision making. 
+And then I started to work at a Because market company, based on previous experiences, in this company I launched an eCommerce platform and I learned more about React.JS and became a senior frontend developer. 
+I launched the project successfully and found a new opportunity to challenge myself.
+Next company is letsusedata.com, in this company I challenge myself with new skills such as Asp.net core and Angular.
+Based on previous experiences, I learned Angular and developed a backend using ASP.NET core and I proved my ability to the team members.
+It is a Learning Material Site, in this company, I launched Java, C#, JavaScript compilers.  
+And then I launched a mobile app with Flutter and React Native.
+It is a English Learning Material app. I chosen this app because previous project, I already have a rich experiences in LMS. 
+In August 2020, I started working in Solstice company.
+At that time, I believed the blockchain industry had great potential so I learned blockchain and started working in this company.
+Now I have completed the platform already and found a new opportunity to challenge myself.
+I already launched one sports platform, two eCommerce platforms, one Learning Material site, Blockchain Dapp and One Hybrid mobile app.
+And I am looking for a company where I can contribute more and grow. I am ready to take the next step of my career.

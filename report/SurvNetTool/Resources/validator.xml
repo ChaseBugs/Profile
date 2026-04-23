@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Transport xmlns="http://www3.rki.de/ns/SurvNet/2009/01/Transport"
+           GuidTransport="{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}"
+           CodeSiteSender="1.01."
+           CodeSiteReceiver="1."
+           TransportNumber="1"
+           CreatedAt="2026-03-24T09:00:00.000">
+
+  <INV GuidRecord="{B2C3D4E5-F6A7-8901-BCDE-F12345678901}"
+       VersionNo="1"
+       Schema="3"
+       CodeRecordOwner="1.01."
+       CodeVersionEditor="1.01."
+       Token="ABC-DEF-123"
+       ToTransportManual="false"
+       ChangedAt="2026-03-24T09:00:00.000"
+       ReportingDate="2026-03-24T09:00:00.000"
+       ReportingCounty="11001001"
+       CaseDefEpiManual="false">
+
+    <Group Name="ClinicalInfoAvailable">
+      <Field Name="ClinicalInfoAvailable" Value="20"/>
+    </Group>
+
+    <Group Name="FormINV">
+      <Field Name="FormINV"     Value="1"/>
+      <Field Name="Symptom0225" Value="true"/>
+      <Field Name="Symptom0130" Value="true"/>
+      <Field Name="Symptom0103" Value="true"/>
+      <Field Name="Symptom0064" Value="true"/>
+      <Field Name="Symptom0145" Value="false"/>
+      <Field Name="Symptom0179" Value="false"/>
+      <Field Name="Symptom0088" Value="true"/>
+      <Field Name="Symptom0158" Value="false"/>
+      <Field Name="Symptom0393" Value="false"/>
+      <Field Name="RisikoINV"   Value="0"/>
+    </Group>
+
+    <Group Name="StatusHospitalization">
+      <Field Name="StatusHospitalization" Value="20"/>
+    </Group>
+
+    <Group Name="StatusVaccination">
+      <Field Name="StatusVaccination" Value="20"/>
+    </Group>
+
+    <Group Name="StatusPlaceOfInf">
+      <Field Name="StatusPlaceOfInf" Value="10"/>
+    </Group>
+
+    <Group Name="RiskINV0001">
+      <Field Name="Exposition18" Value="false"/>
+      <Field Name="Exposition20" Value="true"/>
+    </Group>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         Fragebogen — vollstaendige Fragen und Antworten Q01–Q27
+         Format: Q##_Frage = Fragetext | Q##_Antwort = Antwort
+         ═══════════════════════════════════════════════════════════ -->
+    <Group Name="Fragebogen">
+
+      <Field Name="Q01_Frage"   Value="Aktenzeichen"/>
+      <Field Name="Q01_Antwort" Value="ABC-DEF-123"/>
+
+      <Field Name="Q07_Frage"   Value="Beruf / Name und Anschrift Arbeitgeber"/>
+      <Field Name="Q07_Antwort" Value="Informatiker"/>
+
+      <Field Name="Q08_Frage"   Value="Hatten Sie aufgrund der Erkrankung Symptome?"/>
+      <Field Name="Q08_Antwort" Value="Ja"/>
+
+      <Field Name="Q09_Frage"   Value="Hatten Sie Schnupfen?"/>
+      <Field Name="Q09_Antwort" Value="Ja"/>
+
+      <Field Name="Q10_Frage"   Value="Hatten Sie Husten?"/>
+      <Field Name="Q10_Antwort" Value="Ja"/>
+
+      <Field Name="Q11_Frage"   Value="Hatten Sie Halsschmerzen?"/>
+      <Field Name="Q11_Antwort" Value="Ja"/>
+
+      <Field Name="Q12_Frage"   Value="Hatten Sie Atemnot (Dyspnoe)?"/>
+      <Field Name="Q12_Antwort" Value="Ja"/>
+
+      <Field Name="Q13_Frage"   Value="Hatten Sie Bindehautentzuendung (Infektion des Auges)?"/>
+      <Field Name="Q13_Antwort" Value="Nein"/>
+
+      <Field Name="Q14_Frage"   Value="Hatten Sie Herzmuskelentzuendung (Myokarditis)?"/>
+      <Field Name="Q14_Antwort" Value="Nicht beantwortet"/>
+
+      <Field Name="Q15_Frage"   Value="Hatten Sie Erbrechen?"/>
+      <Field Name="Q15_Antwort" Value="Ja"/>
+      <Field Name="Q15_Anzahl"  Value="10"/>
+
+      <Field Name="Q16_Frage"   Value="Hatten Sie Durchfall?"/>
+      <Field Name="Q16_Antwort" Value="Nein"/>
+
+      <Field Name="Q17_Frage"   Value="Hatten Sie Fieber (Temperatur ueber 38 Grad C)?"/>
+      <Field Name="Q17_Antwort" Value="Ja"/>
+      <Field Name="Q17_Temperatur_Grad" Value="34"/>
+
+      <Field Name="Q18_Frage"   Value="Weitere Symptome (Freitext)"/>
+      <Field Name="Q18_Antwort" Value="Uebelkeit"/>
+
+      <Field Name="Q19_Frage"   Value="Haben Sie einen Arzt aufgesucht?"/>
+      <Field Name="Q19_Antwort" Value="Ja"/>
+      <Field Name="Q19_Arzt_Name" Value="Dr. Mueller"/>
+
+      <Field Name="Q20_Frage"   Value="Wurden Sie in einem Krankenhaus behandelt?"/>
+      <Field Name="Q20_Antwort" Value="Ja"/>
+      <Field Name="Q20_Krankenhaus_Name"      Value="Dr. Haus Klinik"/>
+      <Field Name="Q20_Krankenhaus_Aufnahme"  Value="10.10.2002"/>
+      <Field Name="Q20_Krankenhaus_Entlassung" Value="17.10.2002"/>
+
+      <Field Name="Q21_Frage"   Value="Wurde eine Pneumonie (Lungenentzuendung) diagnostiziert?"/>
+      <Field Name="Q21_Antwort" Value="Weiss ich nicht"/>
+
+      <Field Name="Q22_Frage"   Value="Wurden Sie beatmet oder auf der Intensivstation behandelt?"/>
+      <Field Name="Q22_Antwort" Value="Nein"/>
+
+      <Field Name="Q23_Frage"   Value="Wurden Sie in den letzten 6 Monaten gegen Influenza geimpft?"/>
+      <Field Name="Q23_Antwort" Value="Ja"/>
+      <Field Name="Q23_Impfstoff" Value="Biontec"/>
+      <Field Name="Q23_Impfdatum" Value="01.01.2002"/>
+
+      <Field Name="Q24_Frage"   Value="Kontakt mit Familienangehoerigen mit aehnlichen Symptomen (1-2 Tage vor Erkrankung)?"/>
+      <Field Name="Q24_Antwort" Value="Nein"/>
+
+      <Field Name="Q25_Frage"   Value="Kontakt mit Arbeitskollegen oder Freunden mit aehnlichen Symptomen?"/>
+      <Field Name="Q25_Antwort" Value="Ja"/>
+
+      <Field Name="Q26_Frage"   Value="Haben Sie eine Reise unternommen?"/>
+      <Field Name="Q26_Antwort" Value="Nein"/>
+
+      <Field Name="Q27_Frage"   Value="Direkten Kontakt zu Tieren (Gefluegel, Wildvoegel, Schweine)?"/>
+      <Field Name="Q27_Antwort" Value="Ja"/>
+      <Field Name="Q27_Datum"   Value="11.01.2026"/>
+      <Field Name="Q27_Ort"     Value="Hotel"/>
+      <Field Name="Q27_Tier"    Value="Gefluegel"/>
+      <Field Name="Q27_Art"     Value="Mahlzeit"/>
+
+    </Group>
+
+    <Addressee CodeSite="1.01." Implicit="true" Explicit="false"/>
+
+    <Track GuidTrack="{C3D4E5F6-A7B8-9012-CDEF-123456789012}"
+           Action="1"
+           TrackedAt="2026-03-24T09:00:00.000"
+           CodeSite="1.01."
+           VersionNoSite="1"
+           Software="SurvNetTool 1.0.0"/>
+
+  </INV>
+
+  <AddPers GuidRecord="{D4E5F6A7-B8C9-0123-DEFA-234567890123}"
+           VersionNo="1"
+           Schema="3"
+           CodeRecordOwner="1.01."
+           CodeVersionEditor="1.01."
+           ToTransportManual="false"
+           ChangedAt="2026-03-24T09:00:00.000"
+           Salutation="1"
+           Surname="Mustermann"
+           Forename="Max"
+           DateOfBirth="1999-01-10T00:00:00.000"
+           Sex="1"
+           Street="Musterstr. 123"
+           ZipCode="65183"
+           Place="Wiesbaden"
+           PhoneNumber1="+49 611 8899765"
+           CountryofBirthMYT="0">
+
+    <Addressee CodeSite="1.01." Implicit="true" Explicit="false"/>
+
+    <Track GuidTrack="{E5F6A7B8-C9D0-1234-EFAB-345678901234}"
+           Action="1"
+           TrackedAt="2026-03-24T09:00:00.000"
+           CodeSite="1.01."
+           VersionNoSite="1"
+           Software="SurvNetTool 1.0.0"/>
+
+  </AddPers>
+
+</Transport>

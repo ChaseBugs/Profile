@@ -1,0 +1,170 @@
+Abdullah Elsaid
+AI Engineer - Image Generation & Multimodal AI Specialist
+
+================================================================================
+PROFESSIONAL SUMMARY
+================================================================================
+
+Freelance AI Engineer with 5+ years of experience specializing in image generation AI, 
+multimodal AI systems, and technical advisory services. Proven track record in developing 
+end-to-end machine learning solutions using PyTorch and TensorFlow, with deep expertise in 
+Stable Diffusion, LoRA fine-tuning, and ControlNet for precise image composition control. 
+Experienced in annotation design and management for large-scale datasets, multimodal model 
+development, and leading projects as a technical advisor in collaboration with in-house 
+engineering teams.
+
+================================================================================
+TECHNICAL SKILLS
+================================================================================
+
+• Programming Languages: Python (5+ years), SQL, JavaScript
+• ML Frameworks: PyTorch, TensorFlow, Keras, Hugging Face Transformers
+• Image Generation: Stable Diffusion, LoRA, ControlNet, DreamBooth, ComfyUI
+• Computer Vision: OpenCV, PIL, image preprocessing and augmentation
+• Multimodal AI: CLIP, BLIP, vision-language models, feature fusion architectures
+• Data Processing: Pandas, NumPy, annotation tools (Label Studio, CVAT, custom tools)
+• CAD/3D Data: Experience with DXF, DWG formats, 3D point cloud processing
+• Cloud & Deployment: AWS, GCP, Docker, ONNX model conversion
+• Version Control: Git, GitHub, GitLab
+
+================================================================================
+WORK EXPERIENCE
+================================================================================
+
+[2021 - Present] Freelance AI Engineer & Technical Advisor
+Specializing in Image Generation AI and Multimodal Systems
+
+Project 1: Industrial Safety Manual Illustration Generation System
+Client: Manufacturing Company (Confidential)
+Duration: 8 months (2023-2024)
+Role: Technical Lead & Development Partner
+
+• Developed end-to-end AI system for generating safety training illustrations using Stable 
+  Diffusion, reducing illustration creation costs by 70% and standardizing quality
+• Implemented LoRA fine-tuning to reproduce specific illustration styles for people and 
+  construction equipment (excavators, cranes, forklifts)
+• Integrated ControlNet (Canny, OpenPose, Depth) to accurately control composition and 
+  positional relationships between people and objects, resolving shape distortion issues
+• Designed and managed annotation pipeline for 450+ training images, including bounding 
+  boxes, keypoints, and semantic segmentation masks
+• Built automated pipeline to generate illustrations from structured text data in Excel 
+  documents, implementing context-aware prompt engineering
+• Collaborated with in-house engineers to deploy model and integrate with existing content 
+  management system
+• Achieved 85% accuracy in generating contextually appropriate illustrations from text input
+
+Technologies: Stable Diffusion 1.5/XL, LoRA, ControlNet, PyTorch, Python, Excel parsing, 
+              custom annotation tools
+
+Project 2: Architectural Floor Plan Evaluation AI System
+Client: Architecture Software Company (Confidential)
+Duration: 6 months (2022-2023)
+Role: Technical Advisor & ML Engineer
+
+• Designed and developed multimodal AI model combining floor plan images with metadata 
+  (floor area, room connections, sunlight data, activity flow patterns)
+• Formulated comprehensive evaluation criteria incorporating numerical metrics (sunlight 
+  hours, area efficiency) and qualitative factors (room connectivity, daily activity lines)
+• Planned and executed annotation strategy for 600+ floor plans, creating efficient 
+  workflow using semi-automated tools to reduce annotation time by 40%
+• Developed feature extraction pipeline for CAD data (DXF format), extracting spatial 
+  relationships and room connection graphs
+• Built evaluation model achieving 78% correlation with expert architect assessments
+• Created technical roadmap from research phase to production deployment, including 
+  model optimization and integration planning
+• Provided ongoing technical advisory support to in-house development team
+
+Technologies: PyTorch, Vision Transformers, Graph Neural Networks, multimodal fusion, 
+              CAD data processing, annotation management
+
+Project 3: E-commerce Product Image Generation Platform
+Client: E-commerce Platform (Confidential)
+Duration: 4 months (2023)
+Role: ML Engineer
+
+• Fine-tuned Stable Diffusion models using LoRA for generating product images in 
+  consistent brand style
+• Implemented ControlNet for precise product placement and background composition control
+• Managed annotation of 300+ product images with style tags and composition guidelines
+• Reduced product photography costs by 60% through automated image generation
+• Deployed model as API service with ONNX optimization for production use
+
+Technologies: Stable Diffusion, LoRA, ControlNet, FastAPI, ONNX, Docker
+
+[2019 - 2021] Machine Learning Engineer
+AI Research & Development Company
+Full-time Position
+
+• Developed computer vision models for industrial quality inspection using PyTorch
+• Built end-to-end ML pipelines for image classification and object detection tasks
+• Designed annotation workflows for datasets of 500+ images, improving annotation 
+  efficiency through tool selection and process optimization
+• Collaborated with cross-functional teams including product managers and domain experts
+• Deployed models to production using TensorFlow Serving and ONNX Runtime
+
+Technologies: PyTorch, TensorFlow, OpenCV, YOLO, annotation tools, model deployment
+
+[2018 - 2019] Junior Machine Learning Engineer
+Tech Startup
+Full-time Position
+
+• Developed machine learning models for various computer vision tasks
+• Gained foundational experience in deep learning and model training
+• Participated in data collection and annotation processes
+• Contributed to research and development of multimodal AI prototypes
+
+Technologies: Python, TensorFlow, Keras, scikit-learn
+
+================================================================================
+KEY PROJECTS & ACHIEVEMENTS
+================================================================================
+
+1. Stable Diffusion + LoRA + ControlNet Integration
+   • Successfully combined LoRA fine-tuning with ControlNet for high-quality image 
+     generation with precise composition control
+   • Resolved common issues with object shape distortion and unnatural positional 
+     relationships
+   • Implemented in 3+ production projects
+
+2. Large-Scale Annotation Management
+   • Designed and managed annotation projects for 500+ images across multiple domains
+   • Created efficient annotation strategies reducing project timelines by 30-40%
+   • Selected and customized annotation tools (Label Studio, CVAT) for specific use cases
+
+3. Multimodal AI Model Development
+   • Developed evaluation models combining images with structured metadata
+   • Designed fusion architectures for combining visual and numerical data
+   • Achieved state-of-the-art results in domain-specific evaluation tasks
+
+4. Technical Advisory & Project Leadership
+   • Led 4+ projects as technical advisor, working alongside in-house engineering teams
+   • Provided technical guidance on model architecture, training strategies, and 
+     deployment approaches
+   • Successfully translated business requirements into technical solutions
+
+================================================================================
+EDUCATION
+================================================================================
+
+[2018] Bachelor of Science in Computer Science
+       Banha University
+
+================================================================================
+CERTIFICATIONS & CONTINUING EDUCATION
+================================================================================
+
+• Deep Learning Specialization (Coursera)
+• Advanced Computer Vision (online course)
+• Stable Diffusion & Image Generation (self-study and practical projects)
+• Technical blog posts on Stable Diffusion fine-tuning and ControlNet implementation
+• Open-source contributions to image generation tools
+• Portfolio of generated images demonstrating LoRA + ControlNet capabilities
+
+================================================================================
+LANGUAGES
+================================================================================
+
+• English: Native/Fluent
+
+================================================================================
+

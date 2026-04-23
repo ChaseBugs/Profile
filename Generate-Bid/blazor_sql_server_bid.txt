@@ -1,0 +1,16 @@
+Hello
+
+I am a full-stack developer with 6+ years of Blazor and SQL Server experience.
+
+Technical Approach: Blazor Server/WebAssembly with ASP.NET Core. Entity Framework Core or ADO.NET for SQL Server integration. FluentValidation (server-side) and Data Annotations (client-side) for validation. Git for version control.
+
+Experience: Built multiple Blazor data-entry applications with complex forms. Integrated web apps with existing SQL Server databases (tables, views, stored procedures) without disrupting live operations. Worked directly with production codebases.
+
+Validation: Multi-layer approach—client-side real-time validation, server-side business rules, database constraints. Ensures data integrity and seamless integration.
+
+Deliverables: Error-free pages on staging, all validation tests passed, reliable SQL commits, clean documented code, full integration with existing database objects.
+
+I will review your database diagrams and sample data, then implement forms with proper validation and transaction management. Ready to start immediately.
+
+Best regards
+

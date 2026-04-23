@@ -1,0 +1,28 @@
+Hello
+
+I am a full-stack developer with 5+ years of experience building scalable web applications with React, Node.js, and TypeScript. I'm excited about the opportunity to help build your social and event-driven platform.
+
+Experience:
+• React.js + TypeScript: 4+ years building responsive web applications
+• Node.js + Express.js: 5+ years developing RESTful and GraphQL APIs
+• PostgreSQL and MongoDB: Database design, optimization, and data modeling
+• Docker, CI/CD: Containerization and deployment pipelines
+• Cloud Deployment: AWS and Vercel
+• Collaboration: Experience working with mobile teams (Flutter) and designers
+
+Work Style:
+• Independent freelancer (no agency)
+• Full-time commitment: 30-40 hours/week available
+• Hubstaff tracking: Comfortable with time tracking during agreed working hours
+• Proactive communication and clean, maintainable code
+
+GitHub & Portfolio:
+[GitHub: your-username] - Examples of React + TypeScript and Node.js projects
+[Portfolio URL] - Live examples of full-stack applications
+
+I thrive on connecting front and back ends into seamless experiences. Ready to commit full-time and help shape your next big product.
+
+Available to start immediately.
+
+Best regards
+

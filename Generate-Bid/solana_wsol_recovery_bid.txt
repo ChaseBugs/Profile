@@ -1,0 +1,25 @@
+Hello
+
+Blockchain developer with Solana CLI experience. I'll help you send wSOL to your Coinbase address using a keypair wallet (CLI) to test the recovery tool.
+
+Approach:
+1. Setup Solana CLI and keypair wallet
+2. Create wSOL ATA for Coinbase address
+3. Transfer wSOL using spl-token transfer
+4. Provide transaction signature (txid) for Solscan verification
+
+Experience:
+- Solana CLI: Keypair management, SPL token operations
+- wSOL transfers and ATA creation
+- Transaction verification on Solscan
+
+Deliverables:
+- Transaction signature (txid)
+- Solscan verification link
+- Step-by-step documentation
+
+
+Ready to start immediately.
+
+Best regards
+

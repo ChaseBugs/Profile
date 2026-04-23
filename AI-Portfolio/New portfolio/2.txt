@@ -1,0 +1,5 @@
+Real-Time Website Change Monitoring System
+
+* Real-time website monitoring per custom minute by web scraping
+* Calculation of changed percentage by image processing
+* Report with image into Inbox

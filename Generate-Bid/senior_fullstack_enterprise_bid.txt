@@ -1,0 +1,41 @@
+Hello
+
+I am a Senior Full-Stack Software Developer with 8+ years of experience building enterprise-grade applications using Node.js, React, and Next.js. I am a U.S. citizen with native English fluency and strong client-facing communication skills.
+
+Experience:
+• Node.js: 8+ years developing scalable backend services, RESTful APIs, and microservices
+• React: 8+ years building complex, performant front-end applications
+• Next.js: 4+ years with server-side rendering, API routes, and production deployments
+• Full-Stack: End-to-end feature development from architecture to deployment
+• Enterprise Applications: Large-scale projects powering real businesses
+• Cloud: AWS (EC2, Lambda, RDS, S3) and Azure experience
+• Front-End: Tailwind CSS, Bootstrap, modern CSS frameworks
+• DevOps: CI/CD pipelines, test automation, Docker, containerization
+
+Client-Facing & Communication:
+• Strong presentation skills: Technical demos, architecture reviews, client meetings
+• Clear English communication: Client collaboration, requirements gathering, status updates
+• Consulting experience: Translating business needs into technical solutions
+• Direct client partnership: Working with stakeholders to deliver enterprise solutions
+
+Leadership & Mentoring:
+• Mentored junior developers: Code reviews, pair programming, technical guidance
+• Engineering standards: Established best practices, code quality standards
+• Team growth: Contributed to hiring, onboarding, and team development
+
+What I Bring:
+• Enterprise-grade application development across web and mobile platforms
+• Clean, scalable, well-tested code on both front-end and back-end
+• Direct client collaboration to translate business needs into solutions
+• End-to-end feature leadership: Planning, architecture, deployment
+• Performance, security, and scalability focus
+• DevOps best practices: CI/CD, test automation, continuous delivery
+
+Work Authorization: U.S. Citizen
+Location: 100% Remote (U.S.-based)
+Availability: Full-time, ready to start immediately
+
+I'm a proactive engineer who thrives on meaningful, large-scale projects and enjoys partnering directly with clients to deliver real business value.
+
+Best regards
+

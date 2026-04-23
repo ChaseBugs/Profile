@@ -1,0 +1,41 @@
+mail	mmarkusschuster87@gmail.com
+	
+pass	Zara1235
+
+
+nation	Germany
+
+NAME	Markus Schuster
+BIRTHDAY	11. 09. 1987
+PHONE 
+
+Address. 
+Zip Code. 
+
+Street. 
+
+World ward Elite Company
+
+-Education
+
+Institution
+Technical University of Braunschweig
+
+Major				Degree
+Computer Science		Bachelor's Degree.
+
+School location
+Germany Brunswick
+
+I learned a lot during college.
+In the process, I became very interested in the field of artificial intelligence and game development.
+The Masch.Bau student house, where I stayed during college, was very beautiful and a place for discussion and exploration of new knowledge.
+
+
+
+
+I hope to get a job in a competitive company that is challenge and adaptation, creativity and innovation.
+The leap and advance is my heart.
+As a Senior Game Developer, I want to make great products with you.
+Best regards.
+Markus.

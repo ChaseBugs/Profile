@@ -1,0 +1,180 @@
+SOLANA wSOL RECOVERY PROJECT - DETAILED STEPS
+=============================================
+
+PROJECT OVERVIEW:
+Send wSOL to Coinbase address using CLI wallet (keypair) to test recovery tool.
+Modern wallets cannot be used - must use CLI wallet with keypair.
+
+=============================================
+STEP-BY-STEP IMPLEMENTATION
+=============================================
+
+STEP 1: ENVIRONMENT SETUP
+-------------------------
+1. Install Solana CLI tools:
+   sh -c "$(curl -sSfL https://release.solana.com/stable/install)"
+
+2. Verify installation:
+   solana --version
+   spl-token --version
+
+3. Set RPC endpoint (mainnet):
+   solana config set --url https://api.mainnet-beta.solana.com
+
+4. Generate or import keypair:
+   # Generate new keypair
+   solana-keygen new --outfile ~/recovery-wallet.json
+   
+   # OR import existing
+   solana-keygen recover 'prompt://?full-path=/path/to/keypair.json'
+
+5. Fund wallet with SOL for fees:
+   solana balance
+   # Need at least 0.01 SOL for transaction fees
+
+STEP 2: PREPARE COINBASE ADDRESS
+---------------------------------
+1. Get your Coinbase Solana address (base58 format)
+2. Verify address format:
+   solana address --address YOUR_COINBASE_ADDRESS
+
+STEP 3: CREATE wSOL ATA (Associated Token Account)
+--------------------------------------------------
+1. wSOL Token Mint Address:
+   So11111111111111111111111111111111111111112
+
+2. Check if ATA exists:
+   spl-token accounts --owner YOUR_COINBASE_ADDRESS
+
+3. Create ATA if needed:
+   spl-token create-account So11111111111111111111111111111111111111112 --owner YOUR_COINBASE_ADDRESS
+   
+   OR using Solana CLI:
+   spl-token create-account So11111111111111111111111111111111111111112 --owner YOUR_COINBASE_ADDRESS --fee-payer ~/recovery-wallet.json
+
+4. Verify ATA creation:
+   spl-token accounts --owner YOUR_COINBASE_ADDRESS
+
+STEP 4: WRAP SOL TO wSOL (if needed)
+-------------------------------------
+1. Check if you have wSOL in your wallet:
+   spl-token balance So11111111111111111111111111111111111111112
+
+2. If you need to wrap SOL to wSOL:
+   # Get your wallet's ATA address first
+   spl-token accounts --owner $(solana address -k ~/recovery-wallet.json)
+   
+   # Wrap SOL (e.g., wrap 0.1 SOL)
+   spl-token wrap 0.1
+
+3. Verify wSOL balance:
+   spl-token balance So11111111111111111111111111111111111111112
+
+STEP 5: TRANSFER wSOL TO COINBASE ADDRESS
+------------------------------------------
+1. Get Coinbase address wSOL ATA:
+   # ATA is derived from: owner + token mint
+   # Can use: spl-token accounts --owner YOUR_COINBASE_ADDRESS
+   
+   # Or calculate ATA address:
+   spl-token create-account So11111111111111111111111111111111111111112 --owner YOUR_COINBASE_ADDRESS --no-fund
+
+2. Transfer wSOL:
+   spl-token transfer \
+     So11111111111111111111111111111111111111112 \
+     AMOUNT \
+     YOUR_COINBASE_ADDRESS \
+     --owner ~/recovery-wallet.json \
+     --fee-payer ~/recovery-wallet.json
+   
+   Example (transfer 0.01 wSOL):
+   spl-token transfer So11111111111111111111111111111111111111112 0.01 YOUR_COINBASE_ADDRESS --owner ~/recovery-wallet.json --fee-payer ~/recovery-wallet.json
+
+3. Transaction will output signature (txid)
+   Example output: "Signature: 5j7s8K9m...xyz"
+
+STEP 6: VERIFY TRANSACTION
+---------------------------
+1. Copy transaction signature (txid) from Step 5
+
+2. Verify on Solscan:
+   https://solscan.io/tx/YOUR_TXID
+
+3. Verify on Solana Explorer:
+   https://explorer.solana.com/tx/YOUR_TXID?cluster=mainnet-beta
+
+4. Confirm:
+   - Transaction status: Success
+   - Token: wSOL (So11111111111111111111111111111111111111112)
+   - Recipient: Your Coinbase address
+   - Amount: Correct wSOL amount
+
+STEP 7: RECOVERY ATTEMPT
+-------------------------
+1. Use the transaction signature (txid) from Step 5
+2. Attempt recovery using Coinbase recovery tool
+3. Provide txid as proof of transaction
+4. Follow Coinbase recovery process
+
+=============================================
+ALTERNATIVE: USING SOLANA WEB3.JS (if CLI issues)
+=============================================
+
+If CLI has issues, can use Node.js script:
+
+1. Install dependencies:
+   npm install @solana/web3.js @solana/spl-token
+
+2. Create script (transfer-wsol.js):
+   const { Connection, Keypair, PublicKey } = require('@solana/web3.js');
+   const { getAssociatedTokenAddress, createTransferInstruction, getAccount } = require('@solana/spl-token');
+   
+   // Setup
+   const connection = new Connection('https://api.mainnet-beta.solana.com');
+   const payer = Keypair.fromSecretKey(/* your keypair */);
+   const coinbaseAddress = new PublicKey('YOUR_COINBASE_ADDRESS');
+   const wsolMint = new PublicKey('So11111111111111111111111111111111111111112');
+   
+   // Get/create ATA
+   const ata = await getAssociatedTokenAddress(wsolMint, coinbaseAddress);
+   
+   // Create transfer instruction
+   const transferInstruction = createTransferInstruction(
+     sourceATA,
+     ata,
+     payer.publicKey,
+     amount * 1e9 // Convert to lamports
+   );
+   
+   // Send transaction
+   const tx = await connection.sendTransaction(/* ... */);
+   console.log('Transaction signature:', tx);
+
+=============================================
+TROUBLESHOOTING
+=============================================
+
+Issue: "ATA not found"
+Solution: Create ATA first using spl-token create-account
+
+Issue: "Insufficient funds"
+Solution: Ensure wallet has SOL for fees (0.01+ SOL)
+
+Issue: "Invalid address"
+Solution: Verify Coinbase address is correct base58 format
+
+Issue: "Transaction failed"
+Solution: Check RPC endpoint, verify network (mainnet/devnet)
+
+=============================================
+DELIVERABLES CHECKLIST
+=============================================
+
+✓ Transaction signature (txid)
+✓ Solscan verification link
+✓ Transaction details (amount, recipient, token)
+✓ Recovery attempt instructions
+✓ Documentation of all commands used
+
+=============================================
+

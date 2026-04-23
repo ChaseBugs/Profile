@@ -1,0 +1,133 @@
+Hello.  
+Nice to meet you.
+My name is Jennie Yong.
+I am looking for a job now.
+I have more than  7 years of experience in Frontend.
+Thanks for giving me a chance to apply on this job.
+As a senior software developer, I am very interested in this job.
+
+My deep experiences includes : 
+-Client Side
+✅HTML, CSS, JavaScript, Jquery, Bootstrap
+✅React.JS, Vue.JS, Angular.Js, TypeScript, Next.js/Nuxt.js, React Native/Flutter, Svelte.JS
+-Design
+✅Material UI/Antd Design/React Bootstrap/Tailwind/Sass
+✅UI/UX design, Figma, Adobe XD
+-Server Side
+✅Node.JS/Express.JS, Ruby on Rails, Django/Flask, ASP.NET, Laravel, Spring, Golang
+✅Mongo DB/My SQL/Google Firebase/Postgre SQL/MS SQL Server/SQLite
+-Tools
+✅Github/GitLab/Bitbucket, Trello, Azure DevOps, AWS Service, GCP
+✅GraphQL, Apollo, Jest, Nginx, Cloud Services, Web Hosting
+
+-Projects
+https://solsapp.com/
+https://caladex.org 
+https://vinovest.co 
+https://www.whiskeyvest.co/ 
+https://calahex.com 
+https://app.xwg.games/ 
+
+ I have rich experience with React.js, Vue.js and Angular.js for frontend especially using Redux (Thunk or Saga) or VueX with Hooks + Typescript for 6+ years.
+I have developed backend with Node.JS, Express.JS, Django, RoR and ASP.NET core.
+I am very familiar with AWS, GraphQL, PostgreSQL, MongoDB, Firebase, Unit test tools and DevOps tools including Github, Trello, Azure, GCP, etc.
+I have developed plenty of Backend APIs and integrate several Restful services and 3rd party APIs into backend.
+And also developed engines using Python or Javascript myself to improve the backend speed and security and integrated into backend.
+ 
+User experience & clean frontend design and Clean architecture based Project development are my major skills.
+These are my latest projects based on the above tech-skills.
+ 
+Web: https://solsapp.com/
+Tech-stack: React, Redux, TypeScript, Firebase, MongoDB, NFT, Express.JS
+What I do:
+        • Frontend Project High Quality Structure.
+        • React Auth Routing using @okta/okta-react library.
+        • Auth Form using Firebase Google auth, Recaptcha Auth, Phone Auth, Email and Password Auth.
+        • Email Verification flow using Firebase authentication template.
+        • Product creating flow using IPFS.
+        • NFT minting flow using web3.js.
+        • Transaction data management using Firebase Real-time database.
+        • Some security functions developed in Firebase Functions using Express.JS.
+        • [Editing photo] UI of Setting Page using only CSS3 and Canvas(Not Plugin).
+        • Stripe Payment flow using stripe 3th party API.
+        • Multi-Digital asset display UI using canvas, pdf-viewer and so on.
+        • Restricted or Public link sending logic in product page using Twilio, Email JS libraries.
+        • Graph UI of dashboard page using React-Apex chart library.
+        • Parsing CSV files, converting CSV to JSON flow using json2csv and react-csv library in Customers page.
+        • RSA encryption and decryption part about products uploaded in IPFS using crypto library.
+        • NFT Smart Contract with ERC1155 using solidity, truffle, ganache, Kovan test network and main network.
+        • Mobile responsive.
+        • Front-end project hosting using Godaddy.
+        • Developed test case with Jest and Enzyme.
+ 
+Web: https://caladex.org 
+Tech-stack: React, Redux, MySQL,  Flutter
+What I do:
+        • Crypto Exchange Page UI.
+        • Wallet connect UI using web3.js and web3Modal.
+        • Staking Page UI.
+        • Balance Page UI using web3.js.
+        • React Auth Routing using @okta/okta-react library.
+        • High quality CRUD on admin page related with token using CKEditor, Pdfjs-Worker library.
+        • ERC20 based token deposit and withdraw flow using web3.js.
+        • Staking end point and Payout auto check using cronJob library on backend side.
+        • UI, Redux testcase using Enzyme and Jest library.
+        • Weighted calculation logic for token price.
+        • 3th party API to get large data from Coingecko on backend side.
+        • Crypto exchange, trade, order flow on backend.
+        • Frontend Testcase using Enzyme.
+        • Frontend and Backend project hosting using DigitalOcean.
+        • Guidance and management about frontend team members. 
+ 
+Web: https://calahex.com 
+Tech-stack: React.js + Express.js + Node.js + MongoDB
+What I do:
+        • Crypto Exchange Page UI.
+        • Low-latency, Bidirectional and Event-based communication using socket library.
+        • TradingView widget UI.
+        • Wallet Page UI.
+        • Payment flow using Nowpayment 3th party API.
+        • Animated common Card component using AOS library.
+        • Multi-Language platform using React createContext, useContext Hook.
+        • SignIn, SignUp, Profile Form UI.
+        • Poloniex 3th party API using axio library.
+        • React Auth Routing using @okta/okta-react library.
+        • UI, Redux testcase with Enzyme, Jest library.
+        • Auth, Exchange, Payment API validators, routers, controllers.
+        • Restful api related with crypto exchange, trading, order logic on Expressjs backend side. 
+        • Weighted average calculation logic for crypto price.
+        • Crypto,User, Wallet, Order schemas and Relation mapping for data which is stored in MongoDB.
+        • Backend Project Testcase using Mocha.
+        • Project Hosting using DigitalOcean. 
+        
+ 
+Web: https://app.xwg.games/ 
+Tech-stack: React.js + Redux + Material UI + Socket.io
+What I do:
+        • Navbar component with high structure.
+        • Dropdown Menu of Navbar animation Effect using CSS3.
+        • DreamCard Number Animation Effect of Dashboard Page.
+        • Loading Component using Gradient Text Animation Effect Using CSS3.
+        • Volume & Transactions Graph of Analytics Page using react-apexchart library.
+        • Multi-Language platform using React createContext, useContext Hook.
+        • INPUT UI common components( Button, TextField, List ... )
+        • Pool Page UI, Game Page UI, Fusion Page.
+        • NFT smart contract interaction using Web3.js
+        • Binance Block chain connection flow and UI using web3.js and ethers.js
+        • Real-time Chat using React hook, express and socket.io in Fusion page.
+        • Redux action functions for interacting with Express.js Backend using axios library.
+        • React Auth Routing using @okta/okta-react library.
+        • Frontend Testcase using Enzyme.
+        • Project Hosting using DigitalOcean. 
+ 
+I have a Bachelor degree in computer science.
+ 
+Working with a startup company which has creative ideas as a remote worker and contributes to achieve success with all my effort has been my happiness until now.
+I think communication and co-operative work with perfect team spirit is key for project success.
+I can work in your time zone as a full time and I am just ready to start work now.
+ 
+I hope you consider my profile website and past experiences carefully and give me a chance to take part in your great idea implementation.
+ 
+Could you contact me via chat and discuss in detail about this job?
+ 
+Regards.

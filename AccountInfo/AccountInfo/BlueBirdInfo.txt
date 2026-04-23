@@ -1,0 +1,34 @@
+-GitInfo
+Topcodebeast
+maxb47163@gmail.com
+
+git config --local user.email maxb47163@gmail.com
+git config --local user.name TopCodeBeast
+
+
+
+(invite)
+Hexzilla256@gmail.com
+
+
+-HabStaff Account
+maxb47163@gmail.com 
+star1234!@#$STAR
+
+-AdminPage
+https://admin.lightsim.io/admin/lightsim
+user: incognito@terra.ru
+pass: terra
+
+-API
+https://lightsim.io/api/rapidoc#overview
+
+
+-Deploy
+https://lightsim-dev.netlify.app/
+
+
+
+-Figma
+maxdev256@gmail.com
+$Devlover123!@#

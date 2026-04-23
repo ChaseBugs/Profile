@@ -1,0 +1,43 @@
+Apologies for the confusion earlier! Here's a more direct and perfectly similar version, following the structure you requested:
+
+Data Scientist — Kea.ai
+
+Voice AI Model Development & Optimization
+
+Developed machine learning models for speech recognition and natural language processing (NLP) to interpret customer orders over the phone, ensuring high accuracy in noisy environments and across various accents.
+Applied transfer learning to speed up training times and improve the model's ability to generalize across diverse datasets.
+Optimized deep learning models for efficient inference on mobile and edge devices, ensuring real-time order processing. Tools/Libraries: TensorFlow, PyTorch, SpeechRecognition, spaCy
+Menu Item & Order Recognition
+
+Created algorithms to recognize and interpret complex menu items and customizations, achieving 99.3% accuracy in order processing.
+Implemented image processing workflows using OpenCV and Pillow to enhance the recognition of menu items across different conditions (lighting, rotation, and blur). Tools/Libraries: OpenCV, Pillow, TensorFlow Lite, Keras
+Data Analytics for Recognition Quality
+
+Leveraged Pandas and Matplotlib to track key performance metrics, including order accuracy, false positives, and customer satisfaction.
+Generated visual business insights and reports to inform decision-making and guide model retraining efforts. Tools/Libraries: Pandas, Matplotlib, SQL, Seaborn
+Real-Time Data Processing & High-Throughput Workloads
+
+Utilized Celery with RabbitMQ/Redis to handle high-frequency calls and orders asynchronously, ensuring low-latency performance even during peak traffic.
+Implemented multiprocessing and task dispatching strategies to optimize throughput and reduce average processing times for large batches of image data. Tools/Libraries: Celery, RabbitMQ, Redis
+Customer Engagement & Dynamic FAQs
+
+Developed AI-powered dynamic FAQs to respond to real-time customer queries, reducing manual intervention and improving overall customer experience.
+Continuously enhanced the conversational interface to ensure a seamless and intuitive customer interaction flow. Tools/Libraries: Dialogflow, Rasa, TensorFlow, spaCy
+Cloud & Deployment
+
+Packaged and deployed machine learning models as Docker containers, ensuring consistent environments from testing to production.
+Utilized Kubernetes to scale models efficiently, ensuring high availability and handling increased restaurant traffic without performance degradation. Tools/Libraries: Docker, Kubernetes, Flask, Django
+Agile Development & Continuous Integration
+
+Led version control efforts with Git for consistent repository management, ensuring smooth collaboration within cross-functional teams.
+Integrated GitHub Actions for automated unit tests, security scanning, and deployment pipelines to maintain code quality and accelerate development cycles.
+Worked in SCRUM-based teams using JIRA, delivering incremental updates based on customer feedback and real-time insights. Tools/Libraries: Git, GitHub Actions, JIRA
+Key Skills & Libraries:
+
+Machine Learning: TensorFlow, PyTorch, Keras, Scikit-learn
+NLP & Speech Recognition: spaCy, SpeechRecognition, Dialogflow, Rasa
+Data Analysis & Visualization: Pandas, NumPy, Matplotlib, Seaborn
+Real-Time Data Processing: Celery, Redis, RabbitMQ
+Model Optimization: TensorFlow Lite, ONNX, SciPy
+Cloud & Deployment: Docker, Kubernetes, Flask, Django
+This version matches the original structure more closely, highlighting specific tasks, tools, and libraries used by the Data Scientist at Kea.ai. Let me know if further tweaks are needed!

@@ -1,0 +1,74 @@
+- Solstice (May 2020 - Jul 2022)
+Social Digital Product Marketing Platform
+Senior Full-stack Engineer and PM
+Social digital product marketing platform using NFT and stripe payment integration and social distribution
+Web(Product): https://www.solsapp.com
+Tech-stack: Web (React.js + Typescript + Redux + Node.js + MongoDB + Firebase + Stripe + Node.js + IPFS + NFT + Smart Contracts / Rust / Solana)
+What I do:
+As a senior full-stack engineer, I designed and developed user-friendly websites, including optimized check-out page that increased user clicks, and finally customer purchases by 20% using React and Typescript.
+I developed firebase backend functions and firestore for DB and integrate these to frontend and also developed the NFT marketplace logic for digital product marketing using Solana smart contract (Rust) and FIAT payment integration using Stripe.
+I also completed Ghost API integration in the Solstice app and fixed bugs from existing websites and performance upgrade in websites built by React with lazy loading and restructuring components and fix bugs that can emerge from various versions of UI frameworks.
+I managed website projects from initial design through completion, optimizing all cross-browser and multi-platform compatibility and performed maintenance, performance upgrading, and code refactoring to improve the quality of the codebase.
+And also implemented IPFS private/public logic and RSA algorithm based encryption for secure digital product management and product link distributing logic via social platforms - Linkedin, Twitter, Youtube, Tiktok and phone sms (twilio.js) / email (email.js).
+I made this platform let users can upload several kind of products (video, audio, image, doc, license, etc) and sell / buy products using card (FIAT) via stripe (stripe.js) or coin as they want.
+There are several kinds of selling logic (Legendary / Rare / Recurring / Free) for product marketing and bidding price logic and reselling logic for buyers and creators.
+As a PM, I recommended team members (blockchain engineer, mobile engineer, QA tester) on this project and lead them as a PM to archive completion of MVP and v1.0
+
+- Telmie (Oct 2018 - Apr 2020)
+Communication based Leaning Platform
+Full-stack Engineer
+Marketplace and a telecommunications Platform that offers paid video chat and voice calls with experts in any field
+Web(Product): https://www.telmie.com
+Mobile(iPhone): https://apps.apple.com/gb/app/telmie/id1345950689
+Tech-stack: Web (React.js / Next.js + Typescript + Redux + React Hooks + Node.js + WebRTC + Zapier), Mobile (React-Native)
+What I do:
+This is all-in-one platform and bespoke matching service that combines the best of online, video and face-to-face learning and online marketplace for professional services in real-time.
+As a full-stack engineer, I have upgraded the video call speed and quality by integrating new WebRTC library and implement blockchain tech based chat function for safety and private chat.
+I designed and built a product management platform on a knowledge graph, utilizing a range of technologies and worked on providing API endpoints with Node.js/Inversify and MongoDB.
+And upgraded the metronic theme based frontend into React.js/Next.js based frontend and speed up, optimize website and ensure applications security and ability to interact with multiple APIs and database.
+I implemented server that expedited document generation and search functionality by 20%, earning commendation and award from upper management and wrote scripts to use and manipulate data from various sources.
+I also performed technical tasks mostly using Node.js, MongoDB and nontechnical tasks that involved communicating with clients worked with designers to solve UX problems, improve operations and provide exceptional customer service.
+And I make Zapier app to integrate telmie platform chat and booking system with gmail and google calendar automatically.
+I built from scratch admin platform for managing platform's database entities and users using React, Node.js and Mongoose.
+I developed the mobile hybrid app (Android & iOS) using React-Native and published to app store and play store.
+
+- Cryptonary (Jan 2017 - Sep 2018)
+Crypto school manage platform
+Frontend Engineer
+Course platform for market insights, actionable technical analysis, and highlight emerging trends
+Web(Product): https://www.cryptonary.com
+Tech-stack: Web (React.js + Redux + Node.js + Express.js + MongoDB + Babel + D3.js + GraphQL)
+What I do:
+As a frontend engineer, I completely redesigned the visual user interface using a custom Twitter Bootstrap theme and implemented complex UI components with React and SCSS.
+I handled responsive design layouts for views and implemented reusable components for UX using jQuery and improved the UX by creating several DnD-based components.
+And worked with a React/Redux environment on a major enterprise product already in production.
+Also designed a Linkedin-like profile page with in-place editing and updating using Ajax and server-side rendered templates.
+I implemented a downloadable custom PDF report using HTML to-PDF rendering techniques to ensure proper formatting and layout of the final document.
+I created reusable D3.js charts using Raphael.js to draw SVG on browsers and integrated charts libraries based on D3 and React.
+And created a xQuery Selector generator from a HTML DOM Node and element.
+Also created a Pop CSS editor for elements and a new front-end app based on React/Redux.
+I optimized to front-end portion to make a fully functional and performant website using Webpack and many other compressing tools.
+I made a mobile version for an already existing website suitable for all platforms and browsers.
+
+- Social Stream (Sep 2015 - Dec 2016)
+Social connecting platform
+Mobile Developer
+Connecting platform for your business' social media content from a variety of networks, including Facebook, Twitter, Instagram, Pinterest, Tumblr, and more!
+Web(Product): https://www.socialstream.io
+Tech-stack: Swift (iOS native) + Java (Android native) + Google Analytics + Firebase + Salesforce + Twilio API + Stripe + GraphQL + Libraries (Core Data + UIKit + PushKit + HealthKit + Core Bluetooth + CloudKit + Admob/Chartboost)
+What I do:
+As a mobile developer, I developed mobile native application for Android and iPhone using Java and Swift.
+I developed Calllidus Cloud Configure Price Quote app from scratch and a fully functional chat using socket.io and push notifications.
+Also created integration with Salesforce and created working offline mode and sync procedure for the app and also integrated google analytics for advertisement analytics.
+I also created robust Bluetooth pairing and reconnection flows and integrated third-party APIs and utilized mobile OS capabilities to power device features.
+I built an iOS Ad Blocking app with NEPacketTunnelProvider API, which was a real challenge, even the Apple guy said it seemed to be impossible, but I finally figured it out.
+I built firebase for backend development using firestore and integrated twilio APIs for SMS verification logic and also integrated Stripe for several payment integration including Paypal, Visa/Master Card, Bank account.
+I participated in developing an innovative social networking mobile application as a frontend developer.
+
+
+
+
+
+
+
+

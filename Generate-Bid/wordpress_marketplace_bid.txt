@@ -1,0 +1,22 @@
+Hello
+
+WordPress developer with 5+ years building custom marketplaces. Experience with CPTs, taxonomies, user roles, Stripe/PayPal integration.
+
+Examples:
+1. Content Marketplace - Publishers list opportunities, advertisers browse/filter/purchase. Stripe/PayPal, custom dashboards, order workflow.
+2. Service Marketplace - Buyer/seller dashboards, order management, Stripe escrow, custom plugin architecture.
+3. Job Board - Posting/bidding system, payment escrow, advanced filtering.
+
+Approach:
+Week 1-2: Core architecture (CPTs: Sites/Orders, taxonomies, user roles, database schema)
+Week 3-4: Publisher dashboard (site management, order acceptance, URL submission)
+Week 5-6: Advertiser dashboard (browse/filter sites, order placement, status tracking)
+Week 7: Stripe/PayPal integration
+Week 8-9: UI/UX, testing, optimization
+
+Budget: $8,000-$12,000 | Timeline: 8-10 weeks
+
+Clean, documented custom plugin code. Ready to start.
+
+Best regards
+

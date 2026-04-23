@@ -1,0 +1,19 @@
+10 10
+Hello
+
+I am an Android developer with 5+ years of experience building native apps and widgets. I understand you need an MVP widget for Android and iOS that displays rotating promotional images from your website.
+
+Phase 1 MVP: Native Android widget (Kotlin) displaying images from JSON/API feed. Click-through URLs, image caching, periodic refresh, fallback image, push notifications for new ads, personalization (category selection), rewards/favorites feature, interactive elements (polls/tips).
+
+Technical Approach: Native Android development in Kotlin. Clean architecture with separation of concerns for easy future updates. Retrofit for API calls, Room for caching, WorkManager for periodic refresh, Firebase Cloud Messaging for push notifications. Full documentation included.
+
+iOS Note: For iOS, I'll use WidgetKit and SwiftUI to create equivalent functionality, ensuring feature parity between platforms.
+
+Code Quality: Well-structured, documented codebase ready for Phase 2 enhancements. Modular design allows easy feature additions.
+
+Deliverables: Working MVP on both platforms, clean minimal design, full documentation, code structured for future updates.
+
+I'm ready to start immediately and can work within a modest budget for Phase 1, with clear roadmap for Phase 2 advanced features.
+
+Best regards
+

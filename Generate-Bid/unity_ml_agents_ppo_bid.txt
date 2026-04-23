@@ -1,0 +1,21 @@
+Hello
+
+I am a machine learning engineer with 5+ years of experience in reinforcement learning and Unity ML-Agents. I understand you have a Unity project already integrated with ML-Agents and need expert guidance to get a PPO agent training smoothly and converging to a reliable policy.
+
+Technical Approach:
+I will optimize your reward shaping and observation design, set up optimized YAML trainer configurations, tune hyperparameters (learning rate, batch size, gamma, lambda, network architecture), configure TensorFlow/PyTorch backend with TensorBoard logging, launch and monitor training runs, diagnose instability or divergence issues, and iterate until the agent meets your performance target.
+
+Experience:
+Unity ML-Agents (PPO, SAC), TensorFlow/PyTorch backends, hyperparameter optimization, curriculum learning, TensorBoard logging, and ONNX model deployment.
+
+Deliverables:
+• Updated ML-Agents configuration files (YAML) with optimized PPO settings
+• Supporting Python scripts for training, monitoring, and model conversion
+• A trained PPO model (.onnx) that meets your agreed-upon reward threshold
+• Documentation with key settings, training duration, and step-by-step reproduction guide
+• Optional: Annotated notebook describing training progression
+
+I'm comfortable with screen-sharing and will document each step so you can maintain and extend the setup after hand-off. Ready to start immediately.
+
+Best regards
+

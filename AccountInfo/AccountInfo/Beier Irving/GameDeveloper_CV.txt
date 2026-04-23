@@ -1,0 +1,48 @@
+-Summary
+Adept at developing video games, performing various project management tasks, and conducting code reviews. 
+Strong knowledge holders of game engineering concepts such as server/client architectures, scalability, connectivity, algorithm analysis, asset and data. 
+Offers well-developed analytical skills and important ability to remain calm in stressful situ5+ years of Unity experience on multiple mobile platformsations. 
+Drive to succeed, passion for what i am creating, respect for clients, focus on continuous improvement, and a willingness to thrive in an environment built around trust, honesty. 
+These are my core values!
+
+-WORK EXPERIENCE
+1.Block Auto Gaming(2010/3 ~ 2014/04)
+-While carrying out the basic business of game operation, 
+ I joined the automatic hunting (aka auto) prevention team, which was a headache in game operation at the time.
+-In the team, I conducted an auto program detection and repulsion project using process inspection of rootkit idea and pattern inspection.
+2.Betting Game Development(2015/05 ~ 2019/12)
+-From 2015 to 2019, I conducted business in Chinese betting game development companies such as slot machines, casinos, poker, powerball, and lottery that provide services in China, Thailand, Vietnam, and Mongolia.
+-In this period, I have been worked in the gambling game development and service industry, leading a development team of 5-7 developer and conducted the business as a team leader. 
+ In addition, while actually servicing the game developed by our team, communication with users was also conducted smoothly, increasing customer satisfaction.
+
+CERTIFICATES
+-Expert Game Programmer Certification(Unity 2020/03)
+-Associate Certified Game Programmer(Unity 2019/06)
+
+PERSONAL PROJECTS
+1.Betting Game(2015/05 ~ 2019/11)
+ o Wrote and developed application specific code based on design requirements as well as implemented new game features or functionality under the direction of programming leads
+ o Worked with lead engineers and designers for designing, developing, and maintaining a suite of internal tools, templates and related systems to provide assistance with rapid and efficient game development process
+ o Assisted in documenting technical specifications for gameplay systems and gaming codes for future references as well as in debugging and optimizing existing game applications as required
+ o Collaborated with game designers, producers, developers and artists to ensure highest quality product as well as assisted in play testing
+ o Optimized server programe to increase the number of simultaneous subscribers.
+ o For server administrators, we developed a server administrator program with a familiar UI using Net.core.
+2.Driving School 2017(2015/09 ~ 2016/10)
+ o Developed schedules and determined milestones for gaming projects as well as ensured team followed current architecture and operating environment while solving complex technical problems during game production
+ o Maintained project specific documentation for technical team as well as worked with designers, developers and senior programmers to create and modify game features and content as required
+ o Wrote and developed application specific code based on design requirements as well as implemented new game features or functionality under the direction of programming leads
+3.Indie Wrestler(2021/10 ~ present)
+ o Performing testing and debugging of game applications to identify and fix program issues as well as working with development team in making improvements such as updating, develop add-ons, expansion packs or new levels
+ o Keeping up-to-date knowledge of latest advancements in gaming industry as well as contributing innovative ideas towards various aspects of game application design and development
+ o Designed, maintained, and executed well-documented and extensible programs for high-quality and efficient game applications in compliance with established coding standards and best practices
+ o Collaborating with the technical team to design compelling and new game features or elements such as animation sequences, interfaces, effects, and mechanics
+
+EDUCATION
+M.S. Computer Science | Specialisation in Game Development( University of Southern California )
+06/2013 ~ 05/2015 Los Angeles, CA
+Core Computer Science | Core Game Development | Game Development Infrastructure
+
+B.S. in Computer Science( University of Southern California )
+01/2009 ~ 03/2013 Los Angeles, CA
+Game Production | Visual Design For Games and Interactive | Computer Animation | Video Game Programming Game Hardware Architectures | Game Engine Programming | Serious Game Development Introductory and Intermediate Game Design
+

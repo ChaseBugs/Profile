@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)https://www.javatpoint.com/expressjs-interview-questions -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<link rel="SHORTCUT ICON" href="https://static.javatpoint.com/images/favicon2.png">
+<link rel="stylesheet" type="text/css" href="./Express_files/link.css">
+<link rel="dns-prefetch" href="https://clients1.google.com/"><link rel="dns-prefetch" href="https://static.javatpoint.com/"><link rel="dns-prefetch" href="https://googleads.g.doubleclick.net/"><link rel="dns-prefetch" href="https://www.google.com/"><link rel="dns-prefetch" href="https://feedify.net/">
+<title>Express.js Interview Questions and Answers (2023) - javatpoint</title>
+<meta name="keywords" content="interview questions, interview questions and answers, control systems, comapny interview questions and answers, typescript, java, php, interview, agile, jira, blockchain, react, machine learning, django, hadoop, hibernate, spring, android, tensorflow, companies interview questions, blockchain interview questions, question and answer, python, c, c#, cpp, database, beginners, professionals, basic, frequently, asked">
+<meta name="description" content="Most Asked Express.js Interview Questions and Answers with interview questions and answers, .net, php, database, hr, spring, hibernate, android, oracle, sql, asp.net, c#, python, c, c++ etc.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="canonical" href="https://www.javatpoint.com/expressjs-interview-questions">
+<meta name="theme-color" content="#4CAF50">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta name="twitter:title" property="og:title" content="Express.js Interview Questions and Answers (2023) - javatpoint">
+<meta name="twitter:description" property="og:description" content="Most Asked Express.js Interview Questions and Answers with interview questions and answers, .net, php, database, hr, spring, hibernate, android, oracle, sql, asp.net, c#, python, c, c++ etc.">
+<meta property="og:url" content="https://www.javatpoint.com/expressjs-interview-questions">
+<meta property="og:site_name" content="www.javatpoint.com">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@pagejavatpoint">
+<meta name="twitter:domain" content="www.javatpoint.com">
+<meta name="twitter:creator" content="@pagejavatpoint">
+
+<link href="https://www.javatpoint.com/manifest.json" rel="manifest">
+<script async="" src="./Express_files/async-ads.js.download"></script><script type="text/javascript" async="" src="./Express_files/ga.js.download"></script><script type="text/javascript" async="" src="./Express_files/f.txt"></script><script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//delivery.adrecover.com/37784/adRecover.js?ts=1543562646174'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script><script src="./Express_files/adRecover.js.download" type="text/javascript" async=""></script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//cdn.adpushup.com/37780/adpushup.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script><script src="./Express_files/adpushup.js.download" type="text/javascript" async=""></script>
+<script src="./Express_files/cse_element__en.js.download" type="text/javascript"></script><link type="text/css" rel="stylesheet" href="./Express_files/default+en.css"><link type="text/css" rel="stylesheet" href="./Express_files/espresso.css"><style type="text/css">.dp-j .annotation { color: #646464; }.dp-j .number { color: #C00000; }</style><style type="text/css">.dp-j .annotation { color: #646464; }.dp-j .number { color: #C00000; }</style><style type="text/css">.dp-j .annotation { color: #646464; }.dp-j .number { color: #C00000; }</style><style type="text/css">.dp-j .annotation { color: #646464; }.dp-j .number { color: #C00000; }</style><style type="text/css">.dp-j .annotation { color: #646464; }.dp-j .number { color: #C00000; }</style><style type="text/css">.dp-j .annotation { color: #646464; }.dp-j .number { color: #C00000; }</style><style type="text/css">.dp-j .annotation { color: #646464; }.dp-j .number { color: #C00000; }</style><style type="text/css">.dp-j .annotation { color: #646464; }.dp-j .number { color: #C00000; }</style><style type="text/css">.dp-j .annotation { color: #646464; }.dp-j .number { color: #C00000; }</style><style type="text/css">.dp-j .annotation { color: #646464; }.dp-j .number { color: #C00000; }</style><style type="text/css">.dp-j .annotation { color: #646464; }.dp-j .number { color: #C00000; }</style><style type="text/css">.dp-j .annotation { color: #646464; }.dp-j .number { color: #C00000; }</style><style type="text/css">.dp-j .annotation { color: #646464; }.dp-j .number { color: #C00000; }</style><style type="text/css">.dp-j .annotation { color: #646464; }.dp-j .number { color: #C00000; }</style><style type="text/css">.dp-j .annotation { color: #646464; }.dp-j .number { color: #C00000; }</style><style type="text/css">.dp-j .annotation { color: #646464; }.dp-j .number { color: #C00000; }</style><style type="text/css">.dp-j .annotation { color: #646464; }.dp-j .number { color: #C00000; }</style><style type="text/css">.gsc-control-cse{font-family:georgia, arial, serif}.gsc-control-cse .gsc-table-result{font-family:georgia, arial, serif}.gsc-refinementsGradient{background:linear-gradient(to left,rgba(255,255,255,1),rgba(255,255,255,0))}.gsc-control-cse{border-color:#FFFFFF;background-color:#FFFFFF}input.gsc-input,.gsc-input-box,.gsc-input-box-hover,.gsc-input-box-focus{border-color:#D3BCA1}.gsc-search-button-v2,.gsc-search-button-v2:hover,.gsc-search-button-v2:focus{border-color:#300D00;background-color:#461200;background-image:none;filter:none}.gsc-search-button-v2 svg{fill:#FFFFFF}.gsc-tabHeader.gsc-tabhActive,.gsc-refinementHeader.gsc-refinementhActive{color:#461200;border-color:#461200;background-color:#FFFFFF}.gsc-tabHeader.gsc-tabhInactive,.gsc-refinementHeader.gsc-refinementhInactive{color:#950000;border-color:#950000;background-color:#FFFFFF}.gsc-webResult.gsc-result,.gsc-results .gsc-imageResult{border-color:#FFFFFF;background-color:#FFFFFF}.gsc-webResult.gsc-result:hover{border-color:#FFFFFF;background-color:#FFFFFF}.gs-webResult.gs-result a.gs-title:link,.gs-webResult.gs-result a.gs-title:link b,.gs-imageResult a.gs-title:link,.gs-imageResult a.gs-title:link b{color:#950000}.gs-webResult.gs-result a.gs-title:visited,.gs-webResult.gs-result a.gs-title:visited b,.gs-imageResult a.gs-title:visited,.gs-imageResult a.gs-title:visited b{color:#950000}.gs-webResult.gs-result a.gs-title:hover,.gs-webResult.gs-result a.gs-title:hover b,.gs-imageResult a.gs-title:hover,.gs-imageResult a.gs-title:hover b{color:#950000}.gs-webResult.gs-result a.gs-title:active,.gs-webResult.gs-result a.gs-title:active b,.gs-imageResult a.gs-title:active,.gs-imageResult a.gs-title:active b{color:#950000}.gsc-cursor-page{color:#950000}a.gsc-trailing-more-results:link{color:#950000}.gs-webResult:not(.gs-no-results-result):not(.gs-error-result) .gs-snippet,.gs-fileFormatType{color:#333333}.gs-webResult div.gs-visibleUrl{color:#A25B08}.gs-webResult div.gs-visibleUrl-short{color:#A25B08}.gsc-cursor-box{border-color:#FFFFFF}.gsc-results .gsc-cursor-box .gsc-cursor-page{border-color:#950000;background-color:#FFFFFF;color:#950000}.gsc-results .gsc-cursor-box .gsc-cursor-current-page{border-color:#461200;background-color:#FFFFFF;color:#461200}.gsc-webResult.gsc-result.gsc-promotion{border-color:#FEFEDC;background-color:#FFFFCC}.gsc-completion-title{color:#950000}.gsc-completion-snippet{color:#333333}.gs-promotion a.gs-title:link,.gs-promotion a.gs-title:link *,.gs-promotion .gs-snippet a:link{color:#0000CC}.gs-promotion a.gs-title:visited,.gs-promotion a.gs-title:visited *,.gs-promotion .gs-snippet a:visited{color:#0000CC}.gs-promotion a.gs-title:hover,.gs-promotion a.gs-title:hover *,.gs-promotion .gs-snippet a:hover{color:#0000CC}.gs-promotion a.gs-title:active,.gs-promotion a.gs-title:active *,.gs-promotion .gs-snippet a:active{color:#0000CC}.gs-promotion .gs-snippet,.gs-promotion .gs-title .gs-promotion-title-right,.gs-promotion .gs-title .gs-promotion-title-right *{color:#333333}.gs-promotion .gs-visibleUrl,.gs-promotion .gs-visibleUrl-short{color:#A25B08}.gcsc-find-more-on-google{color:#950000}.gcsc-find-more-on-google-magnifier{fill:#950000}</style><style type="text/css">.gscb_a{display:inline-block;font:27px/13px arial,sans-serif}.gsst_a .gscb_a{color:#a1b9ed;cursor:pointer}.gsst_a:hover .gscb_a,.gsst_a:focus .gscb_a{color:#36c}.gsst_a{display:inline-block}.gsst_a{cursor:pointer;padding:0 4px}.gsst_a:hover{text-decoration:none!important}.gsst_b{font-size:16px;padding:0 2px;position:relative;user-select:none;-webkit-user-select:none;white-space:nowrap}.gsst_e{vertical-align:middle;opacity:0.55;}.gsst_a:hover .gsst_e,.gsst_a:focus .gsst_e{opacity:0.72;}.gsst_a:active .gsst_e{opacity:1;}.gsst_f{background:white;text-align:left}.gsst_g{background-color:white;border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);margin:-1px -3px;padding:0 6px}.gsst_h{background-color:white;height:1px;margin-bottom:-1px;position:relative;top:-1px}.gsib_a{width:100%;padding:4px 6px 0}.gsib_a,.gsib_b{vertical-align:top}.gssb_c{border:0;position:absolute;z-index:989}.gssb_e{border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);cursor:default}.gssb_f{visibility:hidden;white-space:nowrap}.gssb_k{border:0;display:block;position:absolute;top:0;z-index:988}.gsdd_a{border:none!important}.gsq_a{padding:0}.gssb_a{padding:0 7px}.gssb_a,.gssb_a td{white-space:nowrap;overflow:hidden;line-height:22px}#gssb_b{font-size:11px;color:#36c;text-decoration:none}#gssb_b:hover{font-size:11px;color:#36c;text-decoration:underline}.gssb_g{text-align:center;padding:8px 0 7px;position:relative}.gssb_h{font-size:15px;height:28px;margin:0.2em;-webkit-appearance:button}.gssb_i{background:#eee}.gss_ifl{visibility:hidden;padding-left:5px}.gssb_i .gss_ifl{visibility:visible}a.gssb_j{font-size:13px;color:#36c;text-decoration:none;line-height:100%}a.gssb_j:hover{text-decoration:underline}.gssb_l{height:1px;background-color:#e5e5e5}.gssb_m{color:#000;background:#fff}.gssb_a{padding:0 9px}.gsib_a{padding:5px 9px 4px 9px}.gscb_a{line-height:27px}.gssb_e{border:0}.gssb_l{margin:5px 0}input.gsc-input::-webkit-input-placeholder{font-size:14px}input.gsc-input:-moz-placeholder{font-size:14px}input.gsc-input::-moz-placeholder{font-size:14px}input.gsc-input:-ms-input-placeholder{font-size:14px}input.gsc-input:focus::-webkit-input-placeholder{color:transparent}input.gsc-input:focus:-moz-placeholder{color:transparent}input.gsc-input:focus::-moz-placeholder{color:transparent}input.gsc-input:focus:-ms-input-placeholder{color:transparent}.gssb_c .gsc-completion-container{position:static}.gssb_c{z-index:5000}.gsc-completion-container table{background:transparent;font-size:inherit;font-family:inherit}.gssb_c > tbody > tr,.gssb_c > tbody > tr > td,.gssb_d,.gssb_d > tbody > tr,.gssb_d > tbody > tr > td,.gssb_e,.gssb_e > tbody > tr,.gssb_e > tbody > tr > td{padding:0;margin:0;border:0}.gssb_a table,.gssb_a table tr,.gssb_a table tr td{padding:0;margin:0;border:0}</style></head>
+<body onload="highlightlink()">
+
+<button onclick="topFunction()" id="myBtn">&#8679; SCROLL TO TOP</button>
+<div id="page" style="margin:-8px;background-color:#f5f5f4">
+<div id="container">
+<div class="header">
+<table style="width:100%;margin-bottom:5px"> <tbody><tr> <td> <div style="clear:both;float:left;width:230px;margin-top:15px;margin-left:20px"> <a href="https://www.javatpoint.com/"><img src="./Express_files/jtp_logo.png" alt="Javatpoint Logo"></a> </div> <div style="float:left;width:60%;"><script> (function() { var cx = '005383125436438536544:y1edweedxwi'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = 'https://cse.google.com/cse.js?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script><div id="___gcse_0"><div class="gsc-control-cse gsc-control-cse-en"><div class="gsc-control-wrapper-cse" dir="ltr"><form class="gsc-search-box gsc-search-box-tools" accept-charset="utf-8"><table cellspacing="0" cellpadding="0" role="presentation" class="gsc-search-box"><tbody><tr><td class="gsc-input"><div class="gsc-input-box" id="gsc-iw-id1"><table cellspacing="0" cellpadding="0" role="presentation" id="gs_id50" class="gstl_50 gsc-input" style="width: 100%; padding: 0px;"><tbody><tr><td id="gs_tti50" class="gsib_a"><input autocomplete="off" type="text" size="10" class="gsc-input" name="search" title="search" aria-label="search" id="gsc-i-id1" style="width: 100%; padding: 0px; border: none; margin: 0px; height: auto; outline: none;" dir="ltr" spellcheck="false"></td><td class="gsib_b"><div class="gsst_b" id="gs_st50" dir="ltr"><a class="gsst_a" href="javascript:void(0)" style="display: none;" title="Clear search box" role="button"><span class="gscb_a" id="gs_cb50" aria-hidden="true">×</span></a></div></td></tr></tbody></table></div></td><td class="gsc-search-button"><button class="gsc-search-button gsc-search-button-v2"><svg width="13" height="13" viewBox="0 0 13 13"><title>search</title><path d="m4.8495 7.8226c0.82666 0 1.5262-0.29146 2.0985-0.87438 0.57232-0.58292 0.86378-1.2877 0.87438-2.1144 0.010599-0.82666-0.28086-1.5262-0.87438-2.0985-0.59352-0.57232-1.293-0.86378-2.0985-0.87438-0.8055-0.010599-1.5103 0.28086-2.1144 0.87438-0.60414 0.59352-0.8956 1.293-0.87438 2.0985 0.021197 0.8055 0.31266 1.5103 0.87438 2.1144 0.56172 0.60414 1.2665 0.8956 2.1144 0.87438zm4.4695 0.2115 3.681 3.6819-1.259 1.284-3.6817-3.7 0.0019784-0.69479-0.090043-0.098846c-0.87973 0.76087-1.92 1.1413-3.1207 1.1413-1.3553 0-2.5025-0.46363-3.4417-1.3909s-1.4088-2.0686-1.4088-3.4239c0-1.3553 0.4696-2.4966 1.4088-3.4239 0.9392-0.92727 2.0864-1.3969 3.4417-1.4088 1.3553-0.011889 2.4906 0.45771 3.406 1.4088 0.9154 0.95107 1.379 2.0924 1.3909 3.4239 0 1.2126-0.38043 2.2588-1.1413 3.1385l0.098834 0.090049z"></path></svg></button></td><td class="gsc-clear-button"><div class="gsc-clear-button" title="clear results">&nbsp;</div></td></tr></tbody></table></form><div class="gsc-results-wrapper-nooverlay"><div class="gsc-positioningWrapper"><div class="gsc-tabsAreaInvisible"><div aria-label="refinement" role="tab" class="gsc-tabHeader gsc-inline-block gsc-tabhActive">Custom Search</div><span class="gs-spacer"> </span></div></div><div class="gsc-positioningWrapper"><div class="gsc-refinementsAreaInvisible"></div></div><div class="gsc-above-wrapper-area-invisible"><table cellspacing="0" cellpadding="0" role="presentation" class="gsc-above-wrapper-area-container"><tbody><tr><td class="gsc-result-info-container"><div class="gsc-result-info-invisible"></div></td><td class="gsc-orderby-container"><div class="gsc-orderby-invisible"><div class="gsc-orderby-label gsc-inline-block">Sort by:</div><div class="gsc-option-menu-container gsc-inline-block"><div class="gsc-selected-option-container gsc-inline-block"><div class="gsc-selected-option">Relevance</div><div class="gsc-option-selector"></div></div><div class="gsc-option-menu-invisible"><div class="gsc-option-menu-item gsc-option-menu-item-highlighted"><div class="gsc-option">Relevance</div></div><div class="gsc-option-menu-item"><div class="gsc-option">Date</div></div></div></div></div></td></tr></tbody></table></div><div class="gsc-adBlockInvisible"></div><div class="gsc-wrapper"><div class="gsc-adBlockInvisible"></div><div class="gsc-resultsbox-invisible"><div class="gsc-resultsRoot gsc-tabData gsc-tabdActive"><div><div class="gsc-expansionArea"></div></div></div></div></div></div></div></div></div> </div> </td> </tr></tbody></table>
+</div>
+<div class="headermobile">
+<div style="margin-top:10px;padding:0px;text-align:left;">
+<span style="float:left"><input type="image" src="./Express_files/menuhome64.png" onclick="showmenu()"></span>
+<span style="float:left"><a href="https://www.javatpoint.com/"><img src="./Express_files/jtp_logo(1).png" alt="Javatpoint Logo"></a></span>
+</div>
+<div style="margin:0px;padding:0px;clear:both">
+<form class="navbar-search-m" method="get" action="https://www.google.com/search" target="_blank">
+<input type="text" name="q" class="search-query span2-m" placeholder="Search on javatpoint..." title="Search on Javatpoint">
+<input type="hidden" name="sitesearch" value="www.javatpoint.com">
+</form>
+</div>
+</div>
+<div id="link" style="clear:both">
+<div class="ddsmoothmenu"><ul>
+<li><a href="https://www.javatpoint.com/"><img src="./Express_files/home.png" alt="home"> Home</a></li>
+<li><a href="https://www.javatpoint.com/interview-questions-and-answers" class="selected"><img src="./Express_files/interview.png" alt="interview questions"> Interview Questions</a></li>
+<li><a href="https://www.javatpoint.com/corejava-interview-questions"><img src="./Express_files/java.png" alt="Java Interview Questions"> Java</a></li>
+<li><a href="https://www.javatpoint.com/sql-interview-questions"><img src="./Express_files/sql.png" alt="SQL Interview Questions"> SQL</a></li>
+<li><a href="https://www.javatpoint.com/python-interview-questions"><img src="./Express_files/python.png" alt="Python Interview Questions"> Python</a></li>
+<li><a href="https://www.javatpoint.com/javascript-interview-questions"><img src="./Express_files/js.png" alt="JavaScript Interview Questions"> JavaScript</a></li>
+<li><a href="https://www.javatpoint.com/top-angular-interview-questions"><img src="./Express_files/angular.png" alt="Angular Interview Questions"> Angular</a></li>
+<li><a href="https://www.javatpoint.com/selenium-interview-questions"><img src="./Express_files/selenium.png" alt="Selenium Interview Questions"> Selenium</a></li>
+<li><a href="https://www.javatpoint.com/spring-boot-interview-questions"><img src="./Express_files/spring-boot.png" alt="Spring Boot Interview Questions"> Spring Boot</a></li>
+<li><a href="https://www.javatpoint.com/job-interview-questions"><img src="./Express_files/hr.png" alt="HR Interview Questions"> HR</a></li>
+<li><a href="https://www.javatpoint.com/c-interview-questions"><img src="./Express_files/c.png" alt="C Interview Questions"> C</a></li>
+<li><a href="https://www.javatpoint.com/data-structure-interview-questions"><img src="./Express_files/ds.png" alt="Data Structure Interview Questions"> Data Structure</a></li>
+<li><a href="https://www.javatpoint.com/dbms-interview-questions"><img src="./Express_files/dbms.png" alt="DBMS Interview Questions"> DBMS</a></li>
+<li><a href="https://www.javatpoint.com/html-interview-questions"><img src="./Express_files/html.png" alt="HTML Interview Questions"> HTML</a></li>
+<li><a href="https://www.javatpoint.com/c-sharp-interview-questions"><img src="./Express_files/csharp.png" alt="C# Interview Questions"> C#</a></li>
+<li><a href="https://www.javatpoint.com/cpp-interview-questions"><img src="./Express_files/cpp.png" alt="C++ Interview Questions"> C++</a></li>
+</ul><br style="clear: left"></div>
+</div>
+<div class="mobilemenu" style="clear:both">
+
+
+</div>
+<div id="menu">
+
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">All Interview</span></h2>
+</div>
+<div class="leftmenu">
+<a href="https://www.javatpoint.com/interview-tips"><span>Interview Tips</span></a>
+<a href="https://www.javatpoint.com/job-interview-questions"><span>JOB/HR Interview</span></a>
+<a href="https://www.javatpoint.com/competency-based-interview-questions"><span>Competency Interview</span></a>
+<a href="https://www.javatpoint.com/business-analyst-interview-questions"><span>Business Analyst</span></a>
+<a href="https://www.javatpoint.com/behavioral-interview-questions"><span>Behavioral Interview</span></a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Company Interview</span></h2>
+</div>
+<div class="leftmenu">
+<a href="https://www.javatpoint.com/company-interview-questions-and-recruitment-process"><span>Company Interview</span></a>
+<a href="https://www.javatpoint.com/ibm-interview-questions"><span>IBM Interview</span></a>
+<a href="https://www.javatpoint.com/infosys-interview-questions"><span>Infosys Interview</span></a>
+<a href="https://www.javatpoint.com/capgemini-interview-questions"><span>Capgemini Interview</span></a>
+<a href="https://www.javatpoint.com/cognizant-interview-questions"><span>Cognizant Interview</span></a>
+<a href="https://www.javatpoint.com/wipro-interview-questions"><span>Wipro Interview</span></a>
+<a href="https://www.javatpoint.com/accenture-interview-questions"><span>Accenture Interview</span></a>
+<a href="https://www.javatpoint.com/igate-interview-questions"><span>iGate Interview</span></a>
+<a href="https://www.javatpoint.com/tcs-interview-questions"><span>TCS Interview</span></a>
+<a href="https://www.javatpoint.com/hcl-interview-questions"><span>HCL Interview</span></a>
+<a href="https://www.javatpoint.com/adobe-interview-questions">Adobe Interview</a>
+<a href="https://www.javatpoint.com/microsoft-interview-questions">Microsoft Interview</a>
+<a href="https://www.javatpoint.com/dxc-technology-interview-questions">DXC Technology Interview</a>
+<a href="https://www.javatpoint.com/ericsson-interview-questions">Ericsson Interview</a>
+<a href="https://www.javatpoint.com/exl-interview-questions">EXL Service Interview</a>
+<a href="https://www.javatpoint.com/indiamart-interview-questions">IndiaMART Interview</a>
+<a href="https://www.javatpoint.com/intuit-interview-questions">Intuit Interview</a>
+<a href="https://www.javatpoint.com/spacex-interview-questions">SpaceX Interview</a>
+<a href="https://www.javatpoint.com/sapient-interview-questions">Sapient Interview</a>
+<a href="https://www.javatpoint.com/amazon-interview-questions">Amazon Interview</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Technical Interview</span></h2>
+</div>
+<div class="leftmenu">
+<a href="https://www.javatpoint.com/c-interview-questions"><span>C Interview</span></a>
+<a href="https://www.javatpoint.com/cpp-interview-questions"><span>C++ Interview</span></a>
+<a href="https://www.javatpoint.com/data-structure-interview-questions"><span>Data Structure Interview</span></a>
+<a href="https://www.javatpoint.com/linux-interview-questions"><span>Linux Interview</span></a>
+<a href="https://www.javatpoint.com/unix-interview-questions"><span>Unix Interview</span></a>
+<a href="https://www.javatpoint.com/shell-scripting-interview-questions"><span>Shell Scripting</span></a>
+<a href="https://www.javatpoint.com/networking-interview-questions"><span>Networking Interview</span></a>
+<a href="https://www.javatpoint.com/ccna-interview-questions"><span>CCNA Interview</span></a>
+<a href="https://www.javatpoint.com/android-interview-questions"><span>Android Interview</span></a>
+<a href="https://www.javatpoint.com/cloud-computing-interview-questions"><span>Cloud Computing</span></a>
+<a href="https://www.javatpoint.com/hadoop-interview-questions"><span>Hadoop Interview</span></a>
+<a href="https://www.javatpoint.com/software-testing-interview-questions"><span>Testing/QTP Interview</span></a>
+<a href="https://www.javatpoint.com/selenium-interview-questions"><span>Selenium Interview</span></a>
+<a href="https://www.javatpoint.com/web-services-interview-questions"><span>Web Services Interview</span></a>
+<a href="https://www.javatpoint.com/operating-system-interview-questions"><span>OS Interview</span></a>
+<a href="https://www.javatpoint.com/excel-interview-questions"><span>Excel Interview</span></a>
+<a href="https://www.javatpoint.com/seo-interview-questions"><span>SEO Interview</span></a>
+<a href="https://www.javatpoint.com/digital-marketing-interview-questions-and-answers"><span>Digital Marketing</span></a>
+<a href="https://www.javatpoint.com/python-interview-questions"><span>Python Interview</span></a>
+<a href="https://www.javatpoint.com/django-interview-questions-and-answers"><span>Django Interview</span></a>
+<a href="https://www.javatpoint.com/pascal-interview-questions-and-answers"><span>Pascal Interview</span></a>
+<a href="https://www.javatpoint.com/ruby-interview-questions"><span>Ruby Interview</span></a>
+<a href="https://www.javatpoint.com/ruby-on-rails-interview-questions"><span>Ruby on Rails Interview</span></a>
+<a href="https://www.javatpoint.com/memcached-interview-questions-and-answers"><span>Memcached Interview</span></a>
+<a href="https://www.javatpoint.com/go-programming-interview-questions"><span>Go Interview</span></a>
+<a href="https://www.javatpoint.com/openstack-interview-questions-and-answers"><span>OpenStack Interview</span></a>
+<a href="https://www.javatpoint.com/scala-interview-questions"><span>Scala Interview</span></a>
+<a href="https://www.javatpoint.com/control-systems-interview-questions"><span>Control Systems</span></a>
+<a href="https://www.javatpoint.com/electrical-machines-interview-questions"><span>Electrical Machines</span></a>
+<a href="https://www.javatpoint.com/power-system-interview-questions"><span>Power System</span></a>
+<a href="https://www.javatpoint.com/digital-electronics-interview-questions"><span>Digital Electronics</span></a>
+<a href="https://www.javatpoint.com/robotics-interview-questions">Robotics Interview</a>
+<a href="https://www.javatpoint.com/typescript-interview-questions">TypeScript Interview</a>
+<a href="https://www.javatpoint.com/swift-interview-questions">Swift Interview</a>
+<a href="https://www.javatpoint.com/blockchain-interview-questions">Blockchain Interview</a>
+<a href="https://www.javatpoint.com/bitcoin-interview-questions">Bitcoin Interview</a>
+<a href="https://www.javatpoint.com/aws-interview-questions">AWS Interview</a>
+<a href="https://www.javatpoint.com/informatica-interview-questions">Informatica Interview</a>
+<a href="https://www.javatpoint.com/qa-interview-questions">QA Interview</a>
+<a href="https://www.javatpoint.com/react-interview-questions">React Interview</a>
+<a href="https://www.javatpoint.com/git-interview-questions">GIT Interview</a>
+<a href="https://www.javatpoint.com/j2ee-interview-questions">J2EE Interview</a>
+<a href="https://www.javatpoint.com/deep-learning-interview-questions">Deep Learning</a>
+<a href="https://www.javatpoint.com/salesforce-interview-questions">Salesforce Interview</a>
+<a href="https://www.javatpoint.com/testng-interview-questions">TestNG Interview</a>
+<a href="https://www.javatpoint.com/agile-interview-questions">Agile Interview</a>
+<a href="https://www.javatpoint.com/machine-learning-interview-questions">Machine Learning</a>
+<a href="https://www.javatpoint.com/api-testing-interview-questions">API Testing</a>
+<a href="https://www.javatpoint.com/algorithm-interview-questions">Algorithm</a>
+<a href="https://www.javatpoint.com/java-design-pattern-interview-questions">Java Design Pattern</a>
+<a href="https://www.javatpoint.com/teradata-interview-questions">Teradata</a>
+<a href="https://www.javatpoint.com/tensorflow-interview-questions">TensorFlow</a>
+<a href="https://www.javatpoint.com/linq-interview-questions">LINQ</a>
+<a href="https://www.javatpoint.com/mainframe-interview-questions">Mainframe</a>
+<a href="https://www.javatpoint.com/laravel-interview-questions">Laravel</a>
+<a href="https://www.javatpoint.com/jira-interview-questions">JIRA</a>
+<a href="https://www.javatpoint.com/jcl-interview-questions">JCL</a>
+<a href="https://www.javatpoint.com/pytorch-interview-questions">Pytorch</a>
+<a href="https://www.javatpoint.com/etl-testing-interview-questions">ETL Testing</a>
+<a href="https://www.javatpoint.com/linked-list-interview-questions">Linked List</a>
+<a href="https://www.javatpoint.com/datastage-interview-questions">DataStage</a>
+<a href="https://www.javatpoint.com/tableau-interview-questions">Tableau</a>
+<a href="https://www.javatpoint.com/sap-abap-interview-questions">SAP ABAP</a>
+<a href="https://www.javatpoint.com/daa-interview-questions">DAA</a>
+<a href="https://www.javatpoint.com/computer-graphics-interview-questions">Computer Graphics</a>
+<a href="https://www.javatpoint.com/data-science-interview-questions">Data Science</a>
+<a href="https://www.javatpoint.com/software-engineering-interview-questions">Software Engineering</a>
+<a href="https://www.javatpoint.com/power-bi-interview-questions">Power BI</a>
+<a href="https://www.javatpoint.com/xamarin-interview-questions">Xamarin</a>
+<a href="https://www.javatpoint.com/ansible-interview-questions">Ansible</a>
+<a href="https://www.javatpoint.com/data-warehouse-interview-questions">Data Warehouse</a>
+<a href="https://www.javatpoint.com/ionic-interview-questions">Ionic</a>
+<a href="https://www.javatpoint.com/devops-interview-questions">Devops</a>
+<a href="https://www.javatpoint.com/react-native-interview-questions">React Native</a>
+<a href="https://www.javatpoint.com/python-pandas-interview-questions">Python Pandas</a>
+<a href="https://www.javatpoint.com/http-interview-questions">HTTP Interview</a>
+<a href="https://www.javatpoint.com/kali-linux-interview-questions">Kali Linux Interview</a>
+<a href="https://www.javatpoint.com/powershell-interview-questions">PowerShell Interview</a>
+<a href="https://www.javatpoint.com/sharepoint-interview-questions">SharePoint Interview</a>
+<a href="https://www.javatpoint.com/talend-interview-questions">Talend Interview</a>
+<a href="https://www.javatpoint.com/microsoft-azure-interview-questions">Microsoft Azure Interview</a>
+<a href="https://www.javatpoint.com/r-interview-questions">R Interview</a>
+<a href="https://www.javatpoint.com/flutter-interview-questions">Flutter Interview</a>
+<a href="https://www.javatpoint.com/matlab-interview-questions">MATLAB Interview</a>
+<a href="https://www.javatpoint.com/es6-interview-questions">ES6 Interview</a>
+<a href="https://www.javatpoint.com/rpa-interview-questions">RPA Interview</a>
+<a href="https://www.javatpoint.com/desktop-support-interview-questions">Desktop Support Interview</a>
+<a href="https://www.javatpoint.com/angular-8-interview-questions">Angular 8 Interview</a>
+<a href="https://www.javatpoint.com/graphql-interview-questions">GraphQL Interview</a>
+<a href="https://www.javatpoint.com/vue-js-interview-questions">Vue.js Interview</a>
+<a href="https://www.javatpoint.com/automation-anywhere-interview-questions">Automation Anywhere Interview</a>
+<a href="https://www.javatpoint.com/artificial-intelligence-interview-questions">AI Interview</a>
+<a href="https://www.javatpoint.com/uipath-interview-questions">UiPath Interview</a>
+<a href="https://www.javatpoint.com/blue-prism-interview-questions">Blue Prism Interview</a>
+<a href="https://www.javatpoint.com/ssis-interview-questions">SSIS Interview</a>
+<a href="https://www.javatpoint.com/mobile-computing-interview-questions">Mobile Computing Interview</a>
+<a href="https://www.javatpoint.com/itil-interview-questions">ITIL Interview</a>
+<a href="https://www.javatpoint.com/sas-interview-questions">SAS Interview</a>
+<a href="https://www.javatpoint.com/elasticsearch-interview-questions">Elasticsearch Interview</a>
+<a href="https://www.javatpoint.com/entity-framework-interview-questions">Entity Framework Interview</a>
+<a href="https://www.javatpoint.com/rxjs-interview-questions">RxJS Interview</a>
+<a href="https://www.javatpoint.com/accounting-interview-questions">Accounting Interview</a>
+<a href="https://www.javatpoint.com/electronjs-interview-questions">Electron.js Interview</a>
+<a href="https://www.javatpoint.com/knockout-js-interview-questions">Knockout JS Interview</a>
+<a href="https://www.javatpoint.com/top-angular-interview-questions">Top Angular Interview</a>
+<a href="https://www.javatpoint.com/ias-interview-questions">IAS Interview Question</a>
+<a href="https://www.javatpoint.com/banking-interview-questions">Banking Interview</a>
+<a href="https://www.javatpoint.com/interview-questions-for-freshers">Interview Questions for Freshers</a>
+<a href="https://www.javatpoint.com/powerpoint-interview-questions">PowerPoint Interview</a>
+<a href="https://www.javatpoint.com/bpo-interview-questions">BPO Interview</a>
+<a href="https://www.javatpoint.com/civil-engineering-interview-questions">Civil Engineering Interview</a>
+<a href="https://www.javatpoint.com/apache-spark-interview-questions">Apache Spark Interview</a>
+<a href="https://www.javatpoint.com/data-mining-interview-questions">Data Mining Interview</a>
+<a href="https://www.javatpoint.com/java-support-interview-questions">Java Support Interview</a>
+<a href="https://www.javatpoint.com/kubernetes-interview-questions">Kubernetes Interview</a>
+<a href="https://www.javatpoint.com/web-api-interview-questions">Web API Interview</a>
+<a href="https://www.javatpoint.com/scrum-master-interview-questions">Scrum Master Interview</a>
+<a href="https://www.javatpoint.com/system-design-interview-questions">System Design Interview</a>
+<a href="https://www.javatpoint.com/ssb-interview-questions">SSB Interview Questions</a>
+<a href="https://www.javatpoint.com/teachers-interview-questions">Teachers Interview Questions</a>
+<a href="https://www.javatpoint.com/finance-interview-questions">Finance Interview Questions</a>
+<a href="https://www.javatpoint.com/technical-support-interview-questions">Technical Support Interview</a>
+<a href="https://www.javatpoint.com/active-directory-interview-questions">Active Directory Interview</a>
+<a href="https://www.javatpoint.com/appium-interview-questions">Appium Interview</a>
+<a href="https://www.javatpoint.com/cucumber-interview-questions">Cucumber Interview</a>
+<a href="https://www.javatpoint.com/full-stack-developer-interview-questions-java">Full-Stack Developer</a>
+<a href="https://www.javatpoint.com/servicenow-interview-questions">ServiceNow Interview</a>
+<a href="https://www.javatpoint.com/nursing-interview-questions">Nursing Interview</a>
+<a href="https://www.javatpoint.com/sales-interview-questions">Sales Interview</a>
+<a href="https://www.javatpoint.com/microservices-interview-questions">Microservices Interview</a>
+<a href="https://www.javatpoint.com/electrical-engineering-interview-questions">Electrical Engineering Interview</a>
+<a href="https://www.javatpoint.com/accounts-payable-interview-questions">Accounts Payable Interview</a>
+<a href="https://www.javatpoint.com/visa-interview-questions">VISA Interview</a>
+<a href="https://www.javatpoint.com/vlsi-interview-questions">VLSI Interview</a>
+<a href="https://www.javatpoint.com/autocad-interview-questions">AutoCAD Interview</a>
+<a href="https://www.javatpoint.com/verilog-interview-questions">Verilog Interview</a>
+<a href="https://www.javatpoint.com/oops-interview-questions">OOPs Interview</a>
+<a href="https://www.javatpoint.com/web-developer-interview-questions">Web Developer Interview</a>
+<a href="https://www.javatpoint.com/expressjs-interview-questions">Express.js Interview</a>
+<a href="https://www.javatpoint.com/cakephp-interview-questions">CakePHP Interview</a>
+<a href="https://www.javatpoint.com/yii-interview-questions">Yii Interview</a>
+<a href="https://www.javatpoint.com/zend-framework-interview-questions">Zend Framework Interview</a>
+<a href="https://www.javatpoint.com/java-concurrency-interview-questions">Java Concurrency Interview</a>
+<a href="https://www.javatpoint.com/symfony-interview-questions">Symfony Interview</a>
+<a href="https://www.javatpoint.com/basic-interview-questions">Basic Interview</a>
+<a href="https://www.javatpoint.com/dynamic-programming-interview-questions">Dynamic Programming Interview</a>
+<a href="https://www.javatpoint.com/programming-interview-questions">Programming Interview</a>
+<a href="https://www.javatpoint.com/next-js-interview-questions">Next.js Interview</a>
+<a href="https://www.javatpoint.com/microsoft-java-interview-questions">Microsoft Java Interview</a>
+<a href="https://www.javatpoint.com/aem-tnterview-questions">AEM Interview</a>
+<a href="https://www.javatpoint.com/sveltejs-tnterview-questions">Svelte.js Interview</a>
+<a href="https://www.javatpoint.com/cobol-tnterview-questions">COBOL Interview</a>
+<a href="https://www.javatpoint.com/cyber-security-tnterview-questions">Cyber Security Interview</a>
+<a href="https://www.javatpoint.com/sql-query-interview-questions">SQL Query Interview</a>
+<a href="https://www.javatpoint.com/bgp-interview-questions">BGP Interview</a>
+<a href="https://www.javatpoint.com/apache-hive-interview-questions">Apache Hive Interview</a>
+<a href="https://www.javatpoint.com/kafka-interview-questions">Kafka Interview</a>
+<a href="https://www.javatpoint.com/embedded-c-interview-questions">Embedded C Interview</a>
+<a href="https://www.javatpoint.com/pega-interview-questions">Pega Interview</a>
+<a href="https://www.javatpoint.com/kotlin-interview-questions">Kotlin Interview</a>
+<a href="https://www.javatpoint.com/sap-mm-interview-questions">SAP MM Interview</a>
+<a href="https://www.javatpoint.com/ospf-interview-questions">OSPF Interview</a>
+<a href="https://www.javatpoint.com/mobile-testing-interview-questions">Mobile Testing Interview</a>
+<a href="https://www.javatpoint.com/mulesoft-interview-questions">Mulesoft Interview</a>
+<a href="https://www.javatpoint.com/terraform-interview-questions">Terraform Interview</a>
+<a href="https://www.javatpoint.com/salesforce-lightning-interview-questions">Salesforce Lightning Interview</a>
+<a href="https://www.javatpoint.com/sccm-interview-questions">SCCM Interview</a>
+<a href="https://www.javatpoint.com/postman-interview-questions">Postman Interview</a>
+<a href="https://www.javatpoint.com/content-writer-interview-questions">Content Writer Interview</a>
+<a href="https://www.javatpoint.com/iot-interview-questions">IoT Interview</a>
+<a href="https://www.javatpoint.com/nlp-interview-questions">NLP Interview</a>
+<a href="https://www.javatpoint.com/splunk-interview-questions">Splunk Interview</a>
+<a href="https://www.javatpoint.com/postgresql-interview-questions">PostgreSQL Interview</a>
+<a href="https://www.javatpoint.com/tricky-java-interview-questions">Tricky Java Interview</a>
+<a href="https://www.javatpoint.com/pyspark-interview-questions">PySpark Interview</a>
+<a href="https://www.javatpoint.com/vba-interview-questions">VBA Interview</a>
+<a href="https://www.javatpoint.com/front-end-developer-interview-questions">Front End Developer Interview</a>
+<a href="https://www.javatpoint.com/computer-science-interview-questions">Computer Science Interview</a>
+<a href="https://www.javatpoint.com/data-modeling-interview-questions">Data Modeling Interview</a>
+<a href="https://www.javatpoint.com/google-analytics-interview-questions">Google Analytics Interview</a>
+<a href="https://www.javatpoint.com/sqoop-interview-questions">Sqoop Interview</a>
+<a href="https://www.javatpoint.com/statistics-interview-questions">Statistics Interview</a>
+<a href="https://www.javatpoint.com/tally-interview-questions">Tally Interview</a>
+<a href="https://www.javatpoint.com/cics-interview-questions">CICS Interview</a>
+<a href="https://www.javatpoint.com/chemistry-interview-questions">Chemistry Interview</a>
+<a href="https://www.javatpoint.com/data-engineer-interview-questions">Data Engineer Interview</a>
+<a href="https://www.javatpoint.com/azure-data-factory-interview-questions">Azure Data Factory Interview</a>
+<a href="https://www.javatpoint.com/insurance-interview-questions">Insurance Interview</a>
+<a href="https://www.javatpoint.com/iis-interview-questions">IIS Interview</a>
+<a href="https://www.javatpoint.com/ms-word-interview-questions">MS Word Interview</a>
+<a href="https://www.javatpoint.com/sdet-interview-questions">SDET Interview</a>
+<a href="https://www.javatpoint.com/weblogic-interview-questions">Weblogic Interview</a>
+<a href="https://www.javatpoint.com/php-oops-interview-questions">PHP OOPs Interview</a>
+<a href="https://www.javatpoint.com/checkpoint-interview-questions">Checkpoint Interview</a>
+<a href="https://www.javatpoint.com/python-coding-interview-questions">Python Coding Interview</a>
+<a href="https://www.javatpoint.com/java-garbage-collection-interview-questions">Garbage Collection Interview</a>
+<a href="https://www.javatpoint.com/python-interview-questions-for-five-years-experienced">Python Interview Questions for Five Years Experienced</a>
+<a href="https://www.javatpoint.com/linkedin-python-2022-qualifying-assessment-answers">LinkedIn Python 2022 Qualifying Assessment Answers</a>
+<a href="https://www.javatpoint.com/top-coding-interview-questions-on-arrays-c">Top Coding Interview Questions on Arrays-C</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Web Interview</span></h2>
+</div>
+<div class="leftmenu">
+<a href="https://www.javatpoint.com/html-interview-questions"><span>HTML Interview</span></a>
+<a href="https://www.javatpoint.com/css-interview-questions"><span>CSS Interview</span></a>
+<a href="https://www.javatpoint.com/javascript-interview-questions"><span>JavaScript Interview</span></a>
+<a href="https://www.javatpoint.com/jquery-interview-questions"><span>jQuery Interview</span></a>
+<a href="https://www.javatpoint.com/angularjs-interview-questions"><span>AngularJS Interview</span></a>
+<a href="https://www.javatpoint.com/angular-interview-questions">Angular Interview</a>
+<a href="https://www.javatpoint.com/angular-7-interview-questions">Angular 7 Interview</a>
+<a href="https://www.javatpoint.com/node-js-interview-questions"><span>Node.js Interview</span></a>
+<a href="https://www.javatpoint.com/ajax-interview-questions"><span>AJAX Interview</span></a>
+<a href="https://www.javatpoint.com/xml-interview-questions"><span>XML Interview</span></a>
+<a href="https://www.javatpoint.com/dojo-interview-questions-and-answers"><span>Dojo Interview</span></a>
+<a href="https://www.javatpoint.com/backbone-js-interview-questions-and-answers"><span>Backbone.js Interview</span></a>
+<a href="https://www.javatpoint.com/ember-js-interview-questions"><span>Ember.js Interview</span></a>
+<a href="https://www.javatpoint.com/xhtml-interview-questions"><span>XHTML Interview</span></a>
+<a href="https://www.javatpoint.com/xslt-interview-questions"><span>XSLT Interview</span></a>
+<a href="https://www.javatpoint.com/xpath-interview-questions"><span>XPath Interview</span></a>
+<a href="https://www.javatpoint.com/xquery-interview-questions"><span>XQuery Interview</span></a>
+<a href="https://www.javatpoint.com/xforms-interview-questions"><span>XForms Interview</span></a>
+<a href="https://www.javatpoint.com/sass-interview-questions-and-answers"><span>SASS Interview</span></a>
+<a href="https://www.javatpoint.com/coffeescript-interview-questions-and-answers"><span>CoffeeScript Interview</span></a>
+<a href="https://www.javatpoint.com/less-interview-questions-and-answers"><span>LESS Interview</span></a>
+<a href="https://www.javatpoint.com/perl-interview-questions"><span>Perl Interview</span></a>
+<a href="https://www.javatpoint.com/pure-css-interview-questions"><span>Pure.CSS Interview</span></a>
+<a href="https://www.javatpoint.com/materialize-css-interview-questions"><span>Materialize Interview</span></a>
+<a href="https://www.javatpoint.com/framework7-interview-questions"><span>Framework7 Interview</span></a>
+<a href="https://www.javatpoint.com/svg-interview-questions"><span>SVG Interview</span></a>
+<a href="https://www.javatpoint.com/sap-fico-interview-questions">SAP FICO Interview</a>
+<a href="https://www.javatpoint.com/ab-initio-interview-questions">Ab Initio Interview</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">PHP Interview</span></h2>
+</div>
+<div class="leftmenu">
+<a href="https://www.javatpoint.com/php-interview-questions"><span>PHP Interview</span></a>
+<a href="https://www.javatpoint.com/wordpress-interview-questions"><span>Wordpress Interview</span></a>
+<a href="https://www.javatpoint.com/joomla-interview-questions-and-answers"><span>Joomla Interview</span></a>
+<a href="https://www.javatpoint.com/drupal-interview-questions-and-answers"><span>Drupal Interview</span></a>
+<a href="https://www.javatpoint.com/magento-interview-questions-and-answers"><span>Magento Interview</span></a>
+<a href="https://www.javatpoint.com/codeigniter-interview-questions-and-answers"><span>CodeIgniter Interview</span></a>
+<a href="https://www.javatpoint.com/phalcon-interview-questions"><span>Phalcon Interview</span></a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">.Net Interview</span></h2>
+</div>
+<div class="leftmenu">
+<a href="https://www.javatpoint.com/dot-net-interview-questions"><span>.Net Interview</span></a>
+<a href="https://www.javatpoint.com/c-sharp-interview-questions"><span>C# Interview</span></a>
+<a href="https://www.javatpoint.com/asp-dot-net-interview-questions"><span>ASP.NET Interview</span></a>
+<a href="https://www.javatpoint.com/ado-dot-net-interview-questions"><span>ADO.NET Interview</span></a>
+<a href="https://www.javatpoint.com/wcf-interview-questions"><span>WCF Interview</span></a>
+<a href="https://www.javatpoint.com/wpf-interview-questions"><span>WPF Interview</span></a>
+<a href="https://www.javatpoint.com/silverlight-interview-questions-and-answers"><span>Silverlight Interview</span></a>
+<a href="https://www.javatpoint.com/fsharp-interview-questions"><span>F# Interview</span></a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Java Interview</span></h2>
+</div>
+<div class="leftmenu">
+<a href="https://www.javatpoint.com/corejava-interview-questions"><span>Java 1 Interview</span></a>
+<a href="https://www.javatpoint.com/corejava-interview-questions-2"><span>Java 2 Interview</span></a>
+<a href="https://www.javatpoint.com/corejava-interview-questions-3"><span>Exception &amp; String</span></a>
+<a href="https://www.javatpoint.com/java-multithreading-interview-questions"><span>Multithreading </span></a>
+<a href="https://www.javatpoint.com/java-collections-interview-questions"><span>Collections Interview</span></a>
+<a href="https://www.javatpoint.com/jdbc-interview-questions"><span>JDBC Interview</span></a>
+<a href="https://www.javatpoint.com/servletinterview"><span>Servlet Interview</span></a>
+<a href="https://www.javatpoint.com/jspinterview"><span>JSP Interview</span></a>
+<a href="https://www.javatpoint.com/ejb-interview-questions"><span>EJB Interview</span></a>
+<a href="https://www.javatpoint.com/struts-interview-questions"><span>Struts Interview</span></a>
+<a href="https://www.javatpoint.com/hibernate-interview-questions"><span>Hibernate Interview</span></a>
+<a href="https://www.javatpoint.com/spring-interview-questions"><span>Spring Interview</span></a>
+<a href="https://www.javatpoint.com/spring-boot-interview-questions"><span>Spring Boot Interview</span></a>
+<a href="https://www.javatpoint.com/spring-mvc-interview-questions"><span>Spring MVC Interview</span></a>
+<a href="https://www.javatpoint.com/jpa-interview-questions"><span>JPA Interview</span></a>
+<a href="https://www.javatpoint.com/maven-interview-questions"><span>Maven Interview</span></a>
+<a href="https://www.javatpoint.com/junit-interview-questions"><span>JUnit Interview</span></a>
+<a href="https://www.javatpoint.com/jsf-interview-questions"><span>JSF Interview</span></a>
+<a href="https://www.javatpoint.com/primefaces-interview-questions"><span>PrimeFaces Interview</span></a>
+<a href="https://www.javatpoint.com/richfaces-interview-questions"><span>RichFaces Interview</span></a>
+<a href="https://www.javatpoint.com/gwt-interview-questions"><span>GWT Interview</span></a>
+<a href="https://www.javatpoint.com/jdb-interview-questions"><span>JDB Interview</span></a>
+<a href="https://www.javatpoint.com/jogl-interview-questions"><span>JOGL Interview</span></a>
+<a href="https://www.javatpoint.com/jbpm-interview-questions"><span>jBPM Interview</span></a>
+<a href="https://www.javatpoint.com/jenkins-interview-questions"><span>Jenkins Interview</span></a>
+<a href="https://www.javatpoint.com/java-constructor-interview-questions">Java Constructor Interview</a>
+<a href="https://www.javatpoint.com/java-technical-architect-interview-questions">Technical Architect Interview</a>
+<a href="https://www.javatpoint.com/array-interview-questions-in-java">Array Interview Questions</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Database Interview</span></h2>
+</div>
+<div class="leftmenu">
+<a href="https://www.javatpoint.com/dbms-interview-questions"><span>DBMS Interview</span></a>
+<a href="https://www.javatpoint.com/sql-interview-questions"><span>SQL Interview</span></a>
+<a href="https://www.javatpoint.com/pl-sql-interview-questions"><span>PL/SQL Interview</span></a>
+<a href="https://www.javatpoint.com/oracle-interview-questions"><span>Oracle Interview</span></a>
+<a href="https://www.javatpoint.com/mysql-interview-questions"><span>MySql Interview</span></a>
+<a href="https://www.javatpoint.com/sql-server-interview-questions"><span>SQL Server Interview</span></a>
+<a href="https://www.javatpoint.com/mongodb-interview-questions"><span>MongoDB Interview</span></a>
+<a href="https://www.javatpoint.com/cassandra-interview-questions-and-answers"><span>Cassandra Interview</span></a>
+<a href="https://www.javatpoint.com/db2-interview-questions-and-answers"><span>DB2 Interview</span></a>
+<a href="https://www.javatpoint.com/microsoft-access-interview-questions-and-answers"><span>Access Interview</span></a>
+<a href="https://www.javatpoint.com/sqlite-interview-questions"><span>SQLite Interview</span></a>
+<a href="https://www.javatpoint.com/couchdb-interview-questions"><span>CouchDB Interview</span></a>
+<a href="https://www.javatpoint.com/neo4j-interview-questions-and-answers"><span>Neo4j Interview</span></a>
+<a href="https://www.javatpoint.com/mariadb-interview-questions"><span>MariaDB Interview</span></a>
+<a href="https://www.javatpoint.com/pouchdb-interview-questions"><span>PouchDB Interview</span></a>
+<a href="https://www.javatpoint.com/redis-interview-questions-and-answers"><span>Redis Interview</span></a>
+</div>
+<table id="leftad">
+<tbody><tr><td>
+<img src="./Express_files/wh.JPG" alt="space">
+</td></tr>
+<tr><td>
+<ins class="adPushupAds" data-adpcontrol="g8drp" data-ver="2" data-siteid="37780" data-ac="PHNjcmlwdCBhc3luYyBzcmM9Ii8vcGFnZWFkMi5nb29nbGVzeW5kaWNhdGlvbi5jb20vcGFnZWFkL2pzL2Fkc2J5Z29vZ2xlLmpzIj48L3NjcmlwdD4KPCEtLSBqYXZhdHBvaW50bGVmdCAtLT4KPGlucyBjbGFzcz0iYWRzYnlnb29nbGUiCiAgICAgc3R5bGU9ImRpc3BsYXk6aW5saW5lLWJsb2NrO3dpZHRoOjE2MHB4O2hlaWdodDo2MDBweCIKICAgICBkYXRhLWFkLWNsaWVudD0iY2EtcHViLTQ2OTk4NTg1NDkwMjMzODIiCiAgICAgZGF0YS1hZC1zbG90PSI0NDc2NDAxMjIyIj48L2lucz4KPHNjcmlwdD4KKGFkc2J5Z29vZ2xlID0gd2luZG93LmFkc2J5Z29vZ2xlIHx8IFtdKS5wdXNoKHt9KTsKPC9zY3JpcHQ+" data-push="1"></ins><script data-cfasync="false" type="text/javascript">(function (w, d) { for (var i = 0, j = d.getElementsByTagName("ins"), k = j[i]; i < j.length; k = j[++i]){ if(k.className == "adPushupAds" && k.getAttribute("data-push") != "1") { ((w.adpushup = w.adpushup || {}).control = (w.adpushup.control || [])).push(k); k.setAttribute("data-push", "1");} } })(window, document);</script>
+<br><br>
+</td></tr>
+</tbody></table>
+</div>
+<div class="onlycontent">
+
+<div class="onlycontentad">
+</div>
+<div id="city">
+<table>
+<tbody><tr><td>
+<h1 class="h1">Most Asked Express.js Interview Questions and Answers</h1>
+<p>Following is a list of most frequently asked Express.js interview questions and their best possible answers.</p>
+<h3 class="h3">1) What is Express.js?</h3>
+<p>Express.js, or simply Express, is a free, open-source, lightweight, and fast backend web application framework for Node.js. It is released as open-source software under the MIT License.</p>
+<p>It is designed for building single-page, multi-page, and hybrid web applications and APIs. It is called the de facto standard server framework for Node.js. It was founded and developed by <strong>TJ Holowaychuk</strong> in 2010 and written in JavaScript.</p>
+<hr>
+<h3 class="h3">2) What are some distinctive features of Express? </h3>
+<p>As Express is a lightweight, minimal and flexible Node.js web application framework, it provides a robust set of features for web and mobile applications. Following is the list of some distinctive features of this framework:</p>
+<ul class="points">
+<li>js can be used to design single-page, multi-page, and hybrid web applications and APIs.</li>
+<li>It allows to set up middleware to respond to HTTP/RESTful Requests.</li>
+<li>It defines a routing table to perform different HTTP operations (method and URL).</li>
+<li>It allows to dynamically rendering HTML Pages based on passing arguments to templates.</li>
+<li>It provides high performance because of its ultra-fast I/O. It prepares a thin layer; therefore, the performance is adequate.</li>
+<li>Its MVC-like structure makes it organize the web application into MVC architecture.</li>
+<li>It provides good database support. It supports RDBMS as well as NoSQL databases.</li>
+<li>It is asynchronous and single-threaded.</li>
+<li>Its robust API makes routing easy.</li>
+</ul>
+<hr>
+<h3 class="h3">3) Is Express.js front-end or backend framework?</h3>
+<p>Express.js or Express is a JavaScript backend framework. It is mainly designed to develop complete web applications (single-page, multi-page, and hybrid web applications) and APIs. Express is the backend component of the <strong>MEAN stack</strong> where <strong>M stands for MongoDB</strong>, which handles database; <strong>E stands for Express,</strong> which handles backend; <strong>A stands for AngularJS</strong>, which is for the front-end, and <strong>N stands for Node</strong>.</p>
+<hr>
+<h3 class="h3">4) Why do we use Express.js? </h3>
+<p>Express.js is an automatically prebuilt Node.js framework that facilitates us to create server-side web applications faster and smarter. The main reason for choosing Express is its simplicity, minimalism, flexibility, and scalability characteristics. </p>
+<hr>
+<h3 class="h3">5) What is the difference between Express.js and Node.js? </h3>
+<p>Node.js is an open-source, cross-platform run-time environment used for executing JavaScript code outside of a browser. Node.js is not a framework or a programming language; it is a platform that acts as a web server. Many big companies such as Paypal, Uber, Netflix, Wallmart, etc., are using this. On the other hand, Express is a small framework based on the functionality of Node.js.</p>
+<p><strong>Some key differences between Express.js and Node.js:</strong></p>
+<table class="alt">
+<tbody><tr>
+<th>Feature	</th>
+<th>Express.js</th>
+<th>Node.js</th>
+</tr>
+<tr>
+<td>Definition</td>
+<td>Express.js is a lightweight and fast backend web application framework for Node.js.</td>
+<td>Node.js is an open-source and cross-platform that is used to execute JavaScript code outside of a browser.</td>
+</tr>
+<tr>
+<td>Usage</td>
+<td>Express.js is used to develop complete web applications such as single-page, multi-page, and hybrid web applications and APIs. It uses approaches and principles of Node.js.</td>
+<td>Node.js is used to build server-side, input-output, event-driven apps.</td>
+</tr>
+<tr>
+<td>Features</td>
+<td>Express has more features than Node.js.</td>
+<td>Node.js has fewer features as compared to Express.js.</td>
+</tr>
+<tr>
+<td>Building Block</td>
+<td>Express.js is built on Node.js.</td>
+<td>Node.js is built on Google's V8 engine.</td>
+</tr>
+<tr>
+<td>Written in</td>
+<td>Express.js is written in JavaScript only.</td>
+<td>Node.js is written in C, C++, and JavaScript language.</td>
+</tr>
+<tr>
+<td>Framework/Platform</td>
+<td>Express.js is a framework of Node.js based on its functionalities.</td>
+<td>Node.js is a run-time platform or environment designed for server-side execution of JavaScript.</td>
+</tr>
+<tr>
+<td>Controllers</td>
+<td>Express.js is assigned with controllers.</td>
+<td>Node.js is assigned with controllers.</td>
+</tr>
+<tr>
+<td>Routing</td>
+<td>Routing is provided in Express.js.</td>
+<td>Routing is not provided in Node.js.</td>
+</tr>
+<tr>
+<td>Middleware</td>
+<td>Express.js uses middleware to arrange the functions systematically on the server-side.</td>
+<td>Node.js doesn't use any such provision of middleware.</td>
+</tr>
+<tr>
+<td>Coding</td>
+<td>Express is easy to code and requires less coding time.</td>
+<td>Node.js requires more coding time as compare to Express.js. </td>
+</tr>
+</tbody></table>
+<hr>
+<h3 class="h3">6) How does an Express code look like?</h3>
+<p>The express.js program is saved with ".js" extension.</p>
+<p><strong>See the example:</strong></p>
+<div class="codeblock"><div class="dp-highlighter"><div class="bar"><div class="tools"><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;ViewSource&#39;,this);return false;"></a><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;PrintSource&#39;,this);return false;"></a><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;About&#39;,this);return false;"></a></div></div><ol start="1" class="dp-j"><li class="alt"><span><span>var&nbsp;express&nbsp;=&nbsp;require(</span><span class="string">'express'</span><span>);&nbsp;&nbsp;&nbsp;&nbsp;</span></span></li><li class=""><span>var&nbsp;app&nbsp;=&nbsp;express();&nbsp;&nbsp;&nbsp;&nbsp;</span></li><li class="alt"><span>app.get(<span class="string">'/'</span><span>,&nbsp;function&nbsp;(req,&nbsp;res)&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;res.send(<span class="string">'Welcome&nbsp;to&nbsp;JavaTpoint!'</span><span>);&nbsp;&nbsp;&nbsp;&nbsp;</span></span></li><li class="alt"><span>});&nbsp;&nbsp;&nbsp;&nbsp;</span></li><li class=""><span>var&nbsp;server&nbsp;=&nbsp;app.listen(<span class="number">8000</span><span>,&nbsp;function&nbsp;()&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;var&nbsp;host&nbsp;=&nbsp;server.address().address;&nbsp;&nbsp;&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;var&nbsp;port&nbsp;=&nbsp;server.address().port;&nbsp;&nbsp;&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;console.log(<span class="string">'Example&nbsp;app&nbsp;listening&nbsp;at&nbsp;http://%s:%s'</span><span>,&nbsp;host,&nbsp;port);&nbsp;&nbsp;&nbsp;&nbsp;</span></span></li><li class=""><span>});&nbsp;&nbsp;&nbsp;</span></li></ol></div><textarea name="code" class="java" style="display: none;">var express = require('express');  
+var app = express();  
+app.get('/', function (req, res) {  
+  res.send('Welcome to JavaTpoint!');  
+});  
+var server = app.listen(8000, function () {  
+  var host = server.address().address;  
+  var port = server.address().port;  
+  console.log('Example app listening at http://%s:%s', host, port);  
+}); 
+</textarea></div>
+<p>When you run the Node.js command prompt, the app will listen at the specified server address and give the following output.</p>
+<p><strong>Output:</strong></p>
+<div class="codeblock3"><pre>Welcome to JavaTpoint!
+</pre></div>
+<hr>
+<h3 class="h3">7) Write a code to get post a query in Express.js.</h3>
+<div class="codeblock"><div class="dp-highlighter"><div class="bar"><div class="tools"><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;ViewSource&#39;,this);return false;"></a><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;PrintSource&#39;,this);return false;"></a><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;About&#39;,this);return false;"></a></div></div><ol start="1" class="dp-j"><li class="alt"><span><span>var&nbsp;bodyParser&nbsp;=&nbsp;require(</span><span class="string">'body-parser'</span><span>)&nbsp;&nbsp;</span></span></li><li class=""><span>app.use(&nbsp;bodyParser.json()&nbsp;);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//&nbsp;to&nbsp;support&nbsp;JSON-encoded&nbsp;</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>app.use(bodyParser.urlencoded({&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">//&nbsp;to&nbsp;support&nbsp;URL-encoded&nbsp;</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;extended:&nbsp;<span class="keyword">true</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>}));&nbsp;&nbsp;</span></li></ol></div><textarea name="code" class="java" style="display: none;">var bodyParser = require('body-parser')
+app.use( bodyParser.json() );       // to support JSON-encoded 
+app.use(bodyParser.urlencoded({     // to support URL-encoded 
+  extended: true
+}));
+</textarea></div>
+<hr>
+<h3 class="h3">8) What do you understand by Scaffolding in Express.js?</h3>
+<p>Scaffolding is a technique used for creating the skeleton structure of an application. It facilitates users to easily create their public directories, routes, views, etc., or a web application skeleton. Generally, users manually create their public directory, add middleware, create separate route files, etc. Using a scaffolding tool, they can set up all these things to directly get started with building their application.</p>
+<p>There are two ways to install Scaffolding and use it in your application.</p>
+<ol class="points">
+<li>Express application generator</li>
+<li>Yeoman</li>
+</ol>
+<p><strong>Express application generator:</strong> This is used to create an application skeleton quickly. Use the following command to install the Express application generator.</p>
+<div class="codeblock"><div class="dp-highlighter"><div class="bar"><div class="tools"><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;ViewSource&#39;,this);return false;"></a><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;PrintSource&#39;,this);return false;"></a><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;About&#39;,this);return false;"></a></div></div><ol start="1" class="dp-j"><li class="alt"><span><span>npm&nbsp;install&nbsp;express-generator&nbsp;-g&nbsp;&nbsp;</span></span></li><li class=""><span>express&nbsp;myApp&nbsp;&nbsp;</span></li></ol></div><textarea name="code" class="java" style="display: none;">npm install express-generator -g
+express myApp
+</textarea></div>
+<p>By using the above command, a project named "myApp" will be created along with following the files/folders in the project.</p>
+<ul class="points">
+<li><strong>Bin:</strong> The bin folder contains one file called www is the main configuration file of the app.</li>
+<li><strong>Public:</strong> The public folder contains JavaScript, CSS, and images, etc.</li>
+<li><strong>Routes:</strong> This folder contains the routing files.</li>
+<li><strong>Views:</strong> The view folder contains the view files of the application.</li>
+<li><strong>js:</strong> The app.js file is the main file of the application.</li>
+<li><strong>json:</strong> The package.json file is the manifest file. It contains all metadata of the project, such as the packages used in the app (called dependencies) etc.</li>
+</ul>
+<p>Now, we have to install all the dependencies mentioned in the package.json file by using the following command:</p>
+<div class="codeblock"><div class="dp-highlighter"><div class="bar"><div class="tools"><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;ViewSource&#39;,this);return false;"></a><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;PrintSource&#39;,this);return false;"></a><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;About&#39;,this);return false;"></a></div></div><ol start="1" class="dp-j"><li class="alt"><span><span>cd&nbsp;myApp&nbsp;&nbsp;</span></span></li><li class=""><span>npm&nbsp;install&nbsp;&nbsp;</span></li></ol></div><textarea name="code" class="java" style="display: none;">cd myApp
+npm install
+</textarea></div>
+<p><strong>Yeoman:</strong> Use the following command in your terminal to install Yeoman:</p>
+<div class="codeblock"><div class="dp-highlighter"><div class="bar"><div class="tools"><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;ViewSource&#39;,this);return false;"></a><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;PrintSource&#39;,this);return false;"></a><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;About&#39;,this);return false;"></a></div></div><ol start="1" class="dp-j"><li class="alt"><span><span>npm&nbsp;install&nbsp;-g&nbsp;yeoman&nbsp;&nbsp;</span></span></li></ol></div><textarea name="code" class="java" style="display: none;">npm install -g yeoman
+</textarea></div>
+<p>Yeoman uses generators to scaffold out applications.</p>
+<hr>
+<h3 class="h3">9) Do Other MVC frameworks also support scaffolding?</h3>
+<p>The Scaffolding technique is also supported by other MVC frameworks other than Express. The following frameworks mainly support it: Ruby on Rails, OutSystems Platform, Play framework, Django, MonoRail, Brail, Symfony, Laravel, CodeIgniter, YII, CakePHP, Phalcon PHP, Model-Glue, PRADO, Grails, Catalyst, Seam Framework, Spring Roo, ASP.NET, etc.</p>
+<p>Click here for more information on Scaffolding: <a href="https://www.javatpoint.com/expressjs-scaffolding">https://www.javatpoint.com/expressjs-scaffolding</a></p>
+<hr>
+<h3 class="h3">10) Which are the arguments available to an Express JS route handler function? </h3>
+<p>Following are the arguments that are available to an Express.js route handler-function:</p>
+<ul class="points">
+<li><strong>Req:</strong> the request object</li>
+<li><strong>Res:</strong> the response object</li>
+<li><strong>Next (optional):</strong> It is a function employed to pass management to one of the above route handlers.</li>
+</ul>
+<h4 class="n">Note: The third argument is optional and should be omitted; however, in some cases, it is helpful.</h4>
+<hr>
+<h3 class="h3">11) What is the difference between Express and Django? </h3>
+<p>Django is a standalone and lightweight web server for testing and development. On the other hand, Express.js is a Node.js framework that can set the middleware to reply to any HTTP request.</p>
+<p>Following is a list of some key differences between Express.js and Django:</p>
+<table class="alt">
+<tbody><tr>
+<th>Aspects</th>
+<th>Express.js</th>
+<th>Django</th>
+</tr>
+<tr>
+<td>Architecture</td>
+<td>Express follows the MVC architecture.</td>
+<td>Django supports the MTV (Model Template View) design. It uses managing data for interacting and validating.</td>
+</tr>
+<tr>
+<td>Framework</td>
+<td>Express is a free, open-source, lightweight, and fast backend web application framework for Node.js to build single-page, multi-page, and hybrid web applications and APIs.</td>
+<td>This is a Python-based framework used to develop computer apps in a specified time frame.</td>
+</tr>
+<tr>
+<td>Efficiency</td>
+<td>It is best for developing web applications rapidly on Node.js.</td>
+<td>It is more efficient and delivers at a fast speed so, it is cost-effective.</td>
+</tr>
+<tr>
+<td>Programming language</td>
+<td>The Express framework is programmed in Node.js.</td>
+<td>Django is programmed in Python programming language.</td>
+</tr>
+<tr>
+<td>Complexity</td>
+<td>Express.js is less complex than Django.</td>
+<td>Django is more complex than Express.js</td>
+</tr>
+<tr>
+<td>Scalability</td>
+<td>It provides better scalability.</td>
+<td>It is less scalable.</td>
+</tr>
+<tr>
+<td>Flexibility</td>
+<td>Express is a flexible, minimal API-developing Node.js tool.</td>
+<td>It provides limited flexibility.</td>
+</tr>
+<tr>
+<td>Full-stack development</td>
+<td>It provides a full-stack development that reduces the cost as you don't need to hire several developers to administer a web application's backend and frontend.</td>
+<td>It does not deliver full-stack development.</td>
+</tr>
+<tr>
+<td>Companies using this technology</td>
+<td>Companies such as PayPal, IBM, Fox Sports, etc., are using this technology.</td>
+<td>Companies such as Instagram, Mozilla, Bitbucket, etc., are using this technology.</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 class="h3">12) How can you enable debugging in Express.js app?</h3>
+<p>There are different ways to enable debugging in Express.js app in different Operating Systems</p>
+<p><strong>Use the following command on Linux:</strong></p>
+<div class="codeblock"><div class="dp-highlighter"><div class="bar"><div class="tools"><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;ViewSource&#39;,this);return false;"></a><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;PrintSource&#39;,this);return false;"></a><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;About&#39;,this);return false;"></a></div></div><ol start="1" class="dp-j"><li class="alt"><span><span>DEBUG=express:*&nbsp;&nbsp;&nbsp;</span></span></li><li class=""><span>node&nbsp;app.js&nbsp;&nbsp;</span></li></ol></div><textarea name="code" class="java" style="display: none;">DEBUG=express:* 
+node app.js
+</textarea></div>
+<p><strong>Use the following command on Windows:</strong></p>
+<div class="codeblock"><div class="dp-highlighter"><div class="bar"><div class="tools"><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;ViewSource&#39;,this);return false;"></a><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;PrintSource&#39;,this);return false;"></a><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;About&#39;,this);return false;"></a></div></div><ol start="1" class="dp-j"><li class="alt"><span><span>set&nbsp;DEBUG=express:*&nbsp;&nbsp;&nbsp;</span></span></li><li class=""><span>node&nbsp;app.js&nbsp;&nbsp;&nbsp;</span></li></ol></div><textarea name="code" class="java" style="display: none;">set DEBUG=express:* 
+node app.js 
+</textarea></div>
+<hr>
+<h3 class="h3">13) How can you allow CORS in Express.js? </h3>
+<p>We can allow CORS in Express.js, by adding the following code in server.js: </p>
+<div class="codeblock"><div class="dp-highlighter"><div class="bar"><div class="tools"><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;ViewSource&#39;,this);return false;"></a><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;PrintSource&#39;,this);return false;"></a><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;About&#39;,this);return false;"></a></div></div><ol start="1" class="dp-j"><li class="alt"><span><span>app.all(</span><span class="string">'*'</span><span>,&nbsp;function(req,&nbsp;res,&nbsp;next)&nbsp;{&nbsp;&nbsp;</span></span></li><li class=""><span>res.set(<span class="string">'Access-Control-Allow-Origin'</span><span>,&nbsp;</span><span class="string">'*'</span><span>);&nbsp;&nbsp;</span></span></li><li class="alt"><span>res.set(<span class="string">'Access-Control-Allow-Methods'</span><span>,&nbsp;</span><span class="string">'GET,&nbsp;POST,&nbsp;DELETE,&nbsp;PUT'</span><span>);&nbsp;&nbsp;</span></span></li><li class=""><span>res.set(<span class="string">'Access-Control-Allow-Headers'</span><span>,&nbsp;</span><span class="string">'X-Requested-With,&nbsp;Content-Type'</span><span>);&nbsp;&nbsp;</span></span></li><li class="alt"><span><span class="keyword">if</span><span>&nbsp;(</span><span class="string">'OPTIONS'</span><span>&nbsp;==&nbsp;req.method)&nbsp;</span><span class="keyword">return</span><span>&nbsp;res.send(</span><span class="number">200</span><span>);&nbsp;&nbsp;</span></span></li><li class=""><span>next();&nbsp;&nbsp;</span></li><li class="alt"><span>});&nbsp;&nbsp;</span></li></ol></div><textarea name="code" class="java" style="display: none;">app.all('*', function(req, res, next) {
+res.set('Access-Control-Allow-Origin', '*');
+res.set('Access-Control-Allow-Methods', 'GET, POST, DELETE, PUT');
+res.set('Access-Control-Allow-Headers', 'X-Requested-With, Content-Type');
+if ('OPTIONS' == req.method) return res.send(200);
+next();
+});
+</textarea></div>
+<hr>
+<h3 class="h3">14) How can you deal with error handling in Express.js? Explain with an example. </h3>
+<p>Error handling is much easier in the Express versions over Express 4.0. Use the following steps to do the error handling:</p>
+<p>Create an Express.js application. There is no built-in middleware like error handler in express 4.0, so you have to either install a middleware or create a custom one.</p>
+<p><strong>Create a Middleware:</strong></p>
+<p>Create a middleware as following:</p>
+<div class="codeblock"><div class="dp-highlighter"><div class="bar"><div class="tools"><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;ViewSource&#39;,this);return false;"></a><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;PrintSource&#39;,this);return false;"></a><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;About&#39;,this);return false;"></a></div></div><ol start="1" class="dp-j"><li class="alt"><span><span class="comment">//&nbsp;error&nbsp;handler</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>app.use(function(err,&nbsp;req,&nbsp;res,&nbsp;next)&nbsp;{&nbsp;&nbsp;</span></li><li class="alt"><span><span class="comment">//&nbsp;set&nbsp;locals,&nbsp;only&nbsp;providing&nbsp;error&nbsp;in&nbsp;development</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>res.locals.message&nbsp;=&nbsp;err.message;&nbsp;&nbsp;</span></li><li class="alt"><span>res.locals.error&nbsp;=&nbsp;req.app.get(<span class="string">'env'</span><span>)&nbsp;===&nbsp;</span><span class="string">'development'</span><span>&nbsp;?&nbsp;err&nbsp;:&nbsp;{};&nbsp;&nbsp;</span></span></li><li class=""><span><span class="comment">//&nbsp;render&nbsp;the&nbsp;error&nbsp;page</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>res.status(err.status&nbsp;||&nbsp;<span class="number">500</span><span>);&nbsp;&nbsp;</span></span></li><li class=""><span>res.render(<span class="string">'error'</span><span>);&nbsp;&nbsp;</span></span></li><li class="alt"><span>});&nbsp;&nbsp;</span></li></ol></div><textarea name="code" class="java" style="display: none;">// error handler
+app.use(function(err, req, res, next) {
+// set locals, only providing error in development
+res.locals.message = err.message;
+res.locals.error = req.app.get('env') === 'development' ? err : {};
+// render the error page
+res.status(err.status || 500);
+res.render('error');
+});
+</textarea></div>
+<p><strong>Install Error Handler Middleware:</strong></p>
+<p><strong>Install the errorhandler as following:</strong></p>
+<div class="codeblock"><div class="dp-highlighter"><div class="bar"><div class="tools"><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;ViewSource&#39;,this);return false;"></a><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;PrintSource&#39;,this);return false;"></a><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;About&#39;,this);return false;"></a></div></div><ol start="1" class="dp-j"><li class="alt"><span><span>npm&nbsp;install&nbsp;errorhandler&nbsp;--save&nbsp;&nbsp;</span></span></li></ol></div><textarea name="code" class="java" style="display: none;">npm install errorhandler --save
+</textarea></div>
+<p><strong>Create a variable:</strong></p>
+<div class="codeblock"><div class="dp-highlighter"><div class="bar"><div class="tools"><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;ViewSource&#39;,this);return false;"></a><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;PrintSource&#39;,this);return false;"></a><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;About&#39;,this);return false;"></a></div></div><ol start="1" class="dp-j"><li class="alt"><span><span>var&nbsp;errorhandler&nbsp;=&nbsp;require(</span><span class="string">'errorhandler'</span><span>)&nbsp;&nbsp;</span></span></li></ol></div><textarea name="code" class="java" style="display: none;">var errorhandler = require('errorhandler')
+</textarea></div>
+<p><strong>Use the middleware as following:</strong></p>
+<div class="codeblock"><div class="dp-highlighter"><div class="bar"><div class="tools"><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;ViewSource&#39;,this);return false;"></a><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;PrintSource&#39;,this);return false;"></a><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;About&#39;,this);return false;"></a></div></div><ol start="1" class="dp-j"><li class="alt"><span><span class="keyword">if</span><span>&nbsp;(process.env.NODE_ENV&nbsp;===&nbsp;</span><span class="string">'development'</span><span>)&nbsp;{&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;<span class="comment">//&nbsp;only&nbsp;use&nbsp;in&nbsp;development</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;app.use(errorhandler({log:&nbsp;errorNotification}))&nbsp;&nbsp;</span></li><li class=""><span>}&nbsp;&nbsp;</span></li><li class="alt"><span>function&nbsp;errorNotification(err,&nbsp;str,&nbsp;req)&nbsp;{&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;var&nbsp;title&nbsp;=&nbsp;<span class="string">'Error&nbsp;in&nbsp;'</span><span>&nbsp;+&nbsp;req.method&nbsp;+&nbsp;</span><span class="string">'&nbsp;'</span><span>&nbsp;+&nbsp;req.url&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;notifier.notify({&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;title:&nbsp;title,&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;message:&nbsp;str&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;})&nbsp;&nbsp;</span></li><li class="alt"><span>}&nbsp;&nbsp;</span></li></ol></div><textarea name="code" class="java" style="display: none;">if (process.env.NODE_ENV === 'development') {
+ // only use in development
+  app.use(errorhandler({log: errorNotification}))
+}
+function errorNotification(err, str, req) {
+ var title = 'Error in ' + req.method + ' ' + req.url
+ notifier.notify({
+   title: title,
+   message: str
+ })
+}
+</textarea></div>
+<hr>
+<h3 class="h3">15) Write the code to start serving static files in Express.js. </h3>
+<p>See the Example:</p>
+<div class="codeblock"><div class="dp-highlighter"><div class="bar"><div class="tools"><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;ViewSource&#39;,this);return false;"></a><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;PrintSource&#39;,this);return false;"></a><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;About&#39;,this);return false;"></a></div></div><ol start="1" class="dp-j"><li class="alt"><span><span>app.use(express.</span><span class="keyword">static</span><span>(</span><span class="string">'public'</span><span>))&nbsp;&nbsp;</span></span></li><li class=""><span>app.use(<span class="string">'/static'</span><span>,&nbsp;express.</span><span class="keyword">static</span><span>(path.join(__dirname,&nbsp;</span><span class="string">'public'</span><span>)))&nbsp;&nbsp;</span></span></li></ol></div><textarea name="code" class="java" style="display: none;">app.use(express.static('public'))
+app.use('/static', express.static(path.join(__dirname, 'public')))
+</textarea></div>
+<hr>
+<h3 class="h3">16) What is Middleware in Express.js? What are the different types of Middleware? </h3>
+<p>Middleware is a function invoked by the Express routing layer before the final request handler.</p>
+<p>Middleware functions are used to perform the following tasks:</p>
+<ul class="points">
+<li>It is used to execute any code.</li>
+<li>It is also used to make changes to the request and the response objects.</li>
+<li>It is responsible for ending the request-response cycle.</li>
+<li>It can call the next middleware function in the stack.</li>
+</ul>
+<h4 class="n">Note: If the current middleware function does not end the request-response cycle, it must call next() to pass control to the next middleware function. Otherwise, the request will be left hanging.</h4>
+<p class="pq"><strong>Type of Middleware</strong></p>
+<p>Following are the main types of Middleware:</p>
+<ul class="points">
+<li>Application-level Middleware</li>
+<li>Router-level Middleware</li>
+<li>Error-handling Middleware</li>
+<li>Built-in Middleware</li>
+<li>Third-party Middleware</li>
+</ul>
+<p><strong>Application-level middleware:</strong> The application-level middleware method is used to bind to the app object using app.use() method. It applies on all routes.</p>
+<div class="codeblock"><div class="dp-highlighter"><div class="bar"><div class="tools"><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;ViewSource&#39;,this);return false;"></a><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;PrintSource&#39;,this);return false;"></a><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;About&#39;,this);return false;"></a></div></div><ol start="1" class="dp-j"><li class="alt"><span><span class="comment">//This&nbsp;middleware&nbsp;will&nbsp;execute&nbsp;for&nbsp;each&nbsp;route.</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>app.use(function&nbsp;(req,&nbsp;res,&nbsp;next)&nbsp;{&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;console.log(<span class="string">'Current&nbsp;Time:'</span><span>,&nbsp;Date.now())&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;next()&nbsp;&nbsp;</span></li><li class="alt"><span>})&nbsp;&nbsp;</span></li></ol></div><textarea name="code" class="java" style="display: none;">//This middleware will execute for each route.
+app.use(function (req, res, next) {
+  console.log('Current Time:', Date.now())
+  next()
+})
+</textarea></div>
+<p><strong>Router-level Middleware:</strong> The router-level Middleware is used to bind to a specific instance of express.Router().Built-in Middleware: The built-in Middleware was introduced with version 4.x. It ends the dependency on Connect.</p>
+<p>There are the following built-in middleware functions in Express.js:</p>
+<ul class="points">
+<li><strong>static:</strong> It is used to serve static assets such as HTML files, images, etc.</li>
+<li><strong>json:</strong> It is used to parse the incoming requests with JSON payloads. It is available with Express 4.16.0+</li>
+<li><strong>urlencoded:</strong> It is used to parse the incoming requests with URL-encoded payloads. It is available with Express 4.16.0+</li>
+</ul>
+<p><strong>Third-party Middleware:</strong> There are many third-party middleware available such as:</p>
+<ul class="points">
+<li>Body-parser</li>
+<li>Cookie-parser</li>
+<li>Mongoose</li>
+<li>Sequelize</li>
+<li>Cors</li>
+<li>Express-validator</li>
+</ul>
+<p>To handle HTTP POST requests in Express.js version 4 and above, we have to install a middleware module called body-parser. Body-parser extracts the entire body portion of an incoming request stream and exposes it on req.body, The Middleware was a part of Express.js earlier, but now you have to install it separately. You can install it by using the following command:</p>
+<div class="codeblock"><div class="dp-highlighter"><div class="bar"><div class="tools"><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;ViewSource&#39;,this);return false;"></a><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;PrintSource&#39;,this);return false;"></a><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;About&#39;,this);return false;"></a></div></div><ol start="1" class="dp-j"><li class="alt"><span><span>npm&nbsp;install&nbsp;MODULE_NAME&nbsp;&nbsp;</span></span></li></ol></div><textarea name="code" class="java" style="display: none;">npm install MODULE_NAME
+</textarea></div>
+<p>You can load it by using requires and used later:</p>
+<p><strong>See the Example:</strong></p>
+<div class="codeblock"><div class="dp-highlighter"><div class="bar"><div class="tools"><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;ViewSource&#39;,this);return false;"></a><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;PrintSource&#39;,this);return false;"></a><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;About&#39;,this);return false;"></a></div></div><ol start="1" class="dp-j"><li class="alt"><span><span>var&nbsp;bodyParser&nbsp;=&nbsp;require(</span><span class="string">'body-parser'</span><span>);&nbsp;&nbsp;</span></span></li><li class=""><span>app.use(bodyParser.json());&nbsp;&nbsp;</span></li><li class="alt"><span>app.use(bodyParser.urlencoded({&nbsp;extended:&nbsp;<span class="keyword">false</span><span>&nbsp;}))&nbsp;&nbsp;</span></span></li></ol></div><textarea name="code" class="java" style="display: none;">var bodyParser = require('body-parser');
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }))
+</textarea></div>
+<h4 class="n">Note: You can use multiple middleware as an array on a single route.</h4>
+<p><strong>See the Example:</strong></p>
+<div class="codeblock"><div class="dp-highlighter"><div class="bar"><div class="tools"><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;ViewSource&#39;,this);return false;"></a><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;PrintSource&#39;,this);return false;"></a><a href="https://www.javatpoint.com/expressjs-interview-questions#" onclick="dp.sh.Toolbar.Command(&#39;About&#39;,this);return false;"></a></div></div><ol start="1" class="dp-j"><li class="alt"><span><span>var&nbsp;middlewareArray&nbsp;=&nbsp;[middleware1,&nbsp;middleware2]&nbsp;&nbsp;</span></span></li><li class=""><span>app.get(<span class="string">'/home'</span><span>,&nbsp;middlewareArray,&nbsp;function&nbsp;(req,&nbsp;res,&nbsp;next)&nbsp;{&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;<span class="comment">//Code&nbsp;snippets</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>})&nbsp;&nbsp;</span></li></ol></div><textarea name="code" class="java" style="display: none;">var middlewareArray = [middleware1, middleware2]
+app.get('/home', middlewareArray, function (req, res, next) {
+  //Code snippets
+})
+</textarea></div>
+<hr>
+<h3 class="h3">17) Which template engines do Express support? </h3>
+<p>Express.js supports any template engine that follows the (path, locals, callback) signature. </p>
+<hr>
+<h3 class="h3">18) How can we render a pain HTML?</h3>
+<p>There is no need to "render" HTML with the res.render() function. If you have a specific file, you can use the res.sendFile() function, but you should use the express if you serve many assets from a directory.static() middleware function.</p>
+<hr>
+<br><br>
+</td></tr>
+</tbody></table>
+</div>
+<hr class="hrhomebox">
+<h2 class="h3">You may also like:</h2>
+<ul class="points">
+<li><a href="https://www.javatpoint.com/corejava-interview-questions">Java Interview Questions</a></li>
+<li><a href="https://www.javatpoint.com/sql-interview-questions">SQL Interview Questions</a></li>
+<li><a href="https://www.javatpoint.com/python-interview-questions">Python Interview Questions</a></li>
+<li><a href="https://www.javatpoint.com/javascript-interview-questions">JavaScript Interview Questions</a></li>
+<li><a href="https://www.javatpoint.com/top-angular-interview-questions">Angular Interview Questions</a></li>
+<li><a href="https://www.javatpoint.com/selenium-interview-questions">Selenium Interview Questions</a></li>
+<li><a href="https://www.javatpoint.com/spring-boot-interview-questions">Spring Boot Interview Questions</a></li>
+<li><a href="https://www.javatpoint.com/job-interview-questions">HR Interview Questions</a></li>
+<li><a href="https://www.javatpoint.com/c-interview-questions">C Programming Interview Questions</a></li>
+<li><a href="https://www.javatpoint.com/cpp-interview-questions">C++ Interview Questions</a></li>
+<li><a href="https://www.javatpoint.com/data-structure-interview-questions">Data Structure Interview Questions</a></li>
+<li><a href="https://www.javatpoint.com/dbms-interview-questions">DBMS Interview Questions</a></li>
+<li><a href="https://www.javatpoint.com/html-interview-questions">HTML Interview Questions</a></li>
+<li><a href="https://www.javatpoint.com/ias-interview-questions">IAS Interview Questions</a></li>
+<li><a href="https://www.javatpoint.com/software-testing-interview-questions">Manual Testing Interview Questions</a></li>
+<li><a href="https://www.javatpoint.com/oops-interview-questions">OOPs Interview Questions</a></li>
+<li><a href="https://www.javatpoint.com/dot-net-interview-questions">.Net Interview Questions</a></li>
+<li><a href="https://www.javatpoint.com/c-sharp-interview-questions">C# Interview Questions</a></li>
+<li><a href="https://www.javatpoint.com/react-interview-questions">ReactJS Interview Questions</a></li>
+<li><a href="https://www.javatpoint.com/networking-interview-questions">Networking Interview Questions</a></li>
+<li><a href="https://www.javatpoint.com/php-interview-questions">PHP Interview Questions</a></li>
+<li><a href="https://www.javatpoint.com/css-interview-questions">CSS Interview Questions</a></li>
+<li><a href="https://www.javatpoint.com/node-js-interview-questions">Node.js Interview Questions</a></li>
+<li><a href="https://www.javatpoint.com/spring-interview-questions">Spring Interview Questions</a></li>
+<li><a href="https://www.javatpoint.com/hibernate-interview-questions">Hibernate Interview Questions</a></li>
+<li><a href="https://www.javatpoint.com/aws-interview-questions">AWS Interview Questions</a></li>
+<li><a href="https://www.javatpoint.com/accounting-interview-questions">Accounting Interview Questions</a></li>
+</ul>
+<hr class="hrhomebox">
+<fieldset class="gra1">
+<h2 class="h3">Learn Latest Tutorials</h2>
+<div class="firsthomecontent">
+<a href="https://www.javatpoint.com/splunk">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/splunk.png" alt="Splunk tutorial">
+<p>Splunk</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/spss">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/spss.png" alt="SPSS tutorial">
+<p>SPSS</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/swagger">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/swagger.png" alt="Swagger tutorial">
+<p>Swagger</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/t-sql">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/transact-sql.png" alt="T-SQL tutorial">
+<p>Transact-SQL</p>
+</div>
+</a>
+ <a href="https://www.javatpoint.com/tumblr">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/tumblr.png" alt="Tumblr tutorial">
+<p>Tumblr</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/reactjs-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/react.png" alt="React tutorial">
+<p>ReactJS</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/regex">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/regex.png" alt="Regex tutorial">
+<p>Regex</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/reinforcement-learning">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/react.png" alt="Reinforcement learning tutorial">
+<p>Reinforcement Learning</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/r-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/r-programming.png" alt="R Programming tutorial">
+<p>R Programming</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/rxjs">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/rxjs.png" alt="RxJS tutorial">
+<p>RxJS</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/react-native-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/react-native.png" alt="React Native tutorial">
+<p>React Native</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/python-design-pattern">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/python-design-patterns.png" alt="Python Design Patterns">
+<p>Python Design Patterns</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/python-pillow">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/python-pillow.png" alt="Python Pillow tutorial">
+<p>Python Pillow</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/python-turtle-programming">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/python-turtle.png" alt="Python Turtle tutorial">
+<p>Python Turtle</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/keras">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/keras.png" alt="Keras tutorial">
+<p>Keras</p>
+</div>
+</a>
+</div>
+</fieldset>
+<hr class="hrhomebox">
+
+<fieldset class="gra1">
+<h2 class="h3">Preparation</h2>
+<div class="firsthomecontent">
+<a href="https://www.javatpoint.com/aptitude/quantitative">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/aptitude/images/quantitative-aptitude-home.png" alt="Aptitude">
+<p>Aptitude</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/reasoning">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/reasoning/images/reasoning-home.png" alt="Logical Reasoning">
+<p>Reasoning</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/verbal-ability">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/verbal-ability/images/verbal-ability-home.png" alt="Verbal Ability">
+<p>Verbal Ability</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/interview-questions-and-answers">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/logo/interviewhome.png" alt="Interview Questions">
+<p>Interview Questions</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/company-interview-questions-and-recruitment-process">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/interview/images/company-home.jpeg" alt="Company Interview Questions">
+<p>Company Questions</p>
+</div>
+</a>
+</div>
+</fieldset>
+<hr class="hrhomebox">
+
+<fieldset class="gra1">
+<h2 class="h3">Trending Technologies</h2>
+<div class="firsthomecontent">
+<a href="https://www.javatpoint.com/artificial-intelligence-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/artificial-intelligence.png" alt="Artificial Intelligence Tutorial">
+<p>Artificial Intelligence</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/aws-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/amazon-web-services.png" alt="AWS Tutorial">
+<p>AWS</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/selenium-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/selenium.png" alt="Selenium tutorial">
+<p>Selenium</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/cloud-computing-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/cloud-computing.png" alt="Cloud Computing tutorial">
+<p>Cloud Computing</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/hadoop-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/hadoop.png" alt="Hadoop tutorial">
+<p>Hadoop</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/reactjs-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/reactjs.png" alt="ReactJS Tutorial">
+<p>ReactJS</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/data-science">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/data-science.png" alt="Data Science Tutorial">
+<p>Data Science</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/angular-7-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/angular7.png" alt="Angular 7 Tutorial">
+<p>Angular 7</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/blockchain-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/blockchain.png" alt="Blockchain Tutorial">
+<p>Blockchain</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/git">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/git.png" alt="Git Tutorial">
+<p>Git</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/machine-learning">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/machine-learning.png" alt="Machine Learning Tutorial">
+<p>Machine Learning</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/devops">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/devops.png" alt="DevOps Tutorial">
+<p>DevOps</p>
+</div>
+</a>
+</div>
+</fieldset>
+<hr class="hrhomebox">
+
+<fieldset class="gra1">
+<h2 class="h3">B.Tech / MCA</h2>
+<div class="firsthomecontent">
+<a href="https://www.javatpoint.com/dbms-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/dbms.png" alt="DBMS tutorial">
+<p>DBMS</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/data-structure-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/data-structures.png" alt="Data Structures tutorial">
+<p>Data Structures</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/daa-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/daa.png" alt="DAA tutorial">
+<p>DAA</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/os-tutorial">
+ <div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/operating-system.png" alt="Operating System tutorial">
+<p>Operating System</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/computer-network-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/computer-network.png" alt="Computer Network tutorial">
+<p>Computer Network</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/compiler-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/compiler-design.png" alt="Compiler Design tutorial">
+<p>Compiler Design</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/computer-organization-and-architecture-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/computer-organization.png" alt="Computer Organization and Architecture">
+<p>Computer Organization</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/discrete-mathematics-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/discrete-mathematics.png" alt="Discrete Mathematics Tutorial">
+<p>Discrete Mathematics</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/ethical-hacking-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/ethical-hacking.png" alt="Ethical Hacking Tutorial">
+<p>Ethical Hacking</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/computer-graphics-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/computer-graphics.png" alt="Computer Graphics Tutorial">
+<p>Computer Graphics</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/software-engineering-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/software-engineering.png" alt="Software Engineering Tutorial">
+<p>Software Engineering</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/html-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/web-technology.png" alt="html tutorial">
+<p>Web Technology</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/cyber-security-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/cyber-security.png" alt="Cyber Security tutorial">
+<p>Cyber Security</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/automata-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/automata.png" alt="Automata Tutorial">
+<p>Automata</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/c-programming-language-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/c-programming.png" alt="C Language tutorial">
+<p>C Programming</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/cpp-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/cpp.png" alt="C++ tutorial">
+<p>C++</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/java-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/java.png" alt="Java tutorial">
+<p>Java</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/net-framework">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/dot-net.png" alt=".Net Framework tutorial">
+<p>.Net</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/python-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/python.png" alt="Python tutorial">
+<p>Python</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/programs-list">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/programs.png" alt="List of Programs">
+<p>Programs</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/control-system-tutorial">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/control-system.png" alt="Control Systems tutorial">
+<p>Control System</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/data-mining">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/data-mining.png" alt="Data Mining Tutorial">
+<p>Data Mining</p>
+</div>
+</a>
+<a href="https://www.javatpoint.com/data-warehouse">
+<div class="homecontent"><img class="lazyload" data-src="https://static.javatpoint.com/images/homeicon/data-warehouse.png" alt="Data Warehouse Tutorial">
+<p>Data Warehouse</p>
+</div>
+</a>
+</div>
+</fieldset>
+</div>
+<div id="right">
+<ins class="adPushupAds" data-adpcontrol="am3c1" data-ver="2" data-siteid="37780" data-ac="PHNjcmlwdCBhc3luYyBzcmM9Ii8vcGFnZWFkMi5nb29nbGVzeW5kaWNhdGlvbi5jb20vcGFnZWFkL2pzL2Fkc2J5Z29vZ2xlLmpzIj48L3NjcmlwdD4KPCEtLSBuZXdyaWdodCAtLT4KPGlucyBjbGFzcz0iYWRzYnlnb29nbGUiCiAgICAgc3R5bGU9ImRpc3BsYXk6YmxvY2siCiAgICAgZGF0YS1hZC1jbGllbnQ9ImNhLXB1Yi00Njk5ODU4NTQ5MDIzMzgyIgogICAgIGRhdGEtYWQtc2xvdD0iNjAzNDkxMjU0MSIKICAgICBkYXRhLWFkLWZvcm1hdD0iYXV0byIKICAgICBkYXRhLWZ1bGwtd2lkdGgtcmVzcG9uc2l2ZT0idHJ1ZSI+PC9pbnM+CjxzY3JpcHQ+CihhZHNieWdvb2dsZSA9IHdpbmRvdy5hZHNieWdvb2dsZSB8fCBbXSkucHVzaCh7fSk7Cjwvc2NyaXB0Pg==" data-push="1"></ins><script data-cfasync="false" type="text/javascript">(function (w, d) { for (var i = 0, j = d.getElementsByTagName("ins"), k = j[i]; i < j.length; k = j[++i]){ if(k.className == "adPushupAds" && k.getAttribute("data-push") != "1") { ((w.adpushup = w.adpushup || {}).control = (w.adpushup.control || [])).push(k); k.setAttribute("data-push", "1");} } })(window, document);</script>
+<ins class="adPushupAds" data-adpcontrol="am3c1" data-ver="2" data-siteid="37780" data-ac="PHNjcmlwdCBhc3luYyBzcmM9Ii8vcGFnZWFkMi5nb29nbGVzeW5kaWNhdGlvbi5jb20vcGFnZWFkL2pzL2Fkc2J5Z29vZ2xlLmpzIj48L3NjcmlwdD4KPCEtLSBuZXdyaWdodCAtLT4KPGlucyBjbGFzcz0iYWRzYnlnb29nbGUiCiAgICAgc3R5bGU9ImRpc3BsYXk6YmxvY2siCiAgICAgZGF0YS1hZC1jbGllbnQ9ImNhLXB1Yi00Njk5ODU4NTQ5MDIzMzgyIgogICAgIGRhdGEtYWQtc2xvdD0iNjAzNDkxMjU0MSIKICAgICBkYXRhLWFkLWZvcm1hdD0iYXV0byIKICAgICBkYXRhLWZ1bGwtd2lkdGgtcmVzcG9uc2l2ZT0idHJ1ZSI+PC9pbnM+CjxzY3JpcHQ+CihhZHNieWdvb2dsZSA9IHdpbmRvdy5hZHNieWdvb2dsZSB8fCBbXSkucHVzaCh7fSk7Cjwvc2NyaXB0Pg==" data-push="1"></ins><script data-cfasync="false" type="text/javascript">(function (w, d) { for (var i = 0, j = d.getElementsByTagName("ins"), k = j[i]; i < j.length; k = j[++i]){ if(k.className == "adPushupAds" && k.getAttribute("data-push") != "1") { ((w.adpushup = w.adpushup || {}).control = (w.adpushup.control || [])).push(k); k.setAttribute("data-push", "1");} } })(window, document);</script>
+<br><br>
+</div>
+
+<div class="right1024" style="float:left;margin-left:10px;margin-top:10px;">
+
+<ins class="adPushupAds" data-adpcontrol="6d5qg" data-ver="2" data-siteid="37780" data-ac="PHNjcmlwdCBhc3luYyBzcmM9Ii8vcGFnZWFkMi5nb29nbGVzeW5kaWNhdGlvbi5jb20vcGFnZWFkL2pzL2Fkc2J5Z29vZ2xlLmpzIj48L3NjcmlwdD4KPCEtLSByaWdodDEwMjRvbmx5IC0tPgo8aW5zIGNsYXNzPSJhZHNieWdvb2dsZSIKICAgICBzdHlsZT0iZGlzcGxheTppbmxpbmUtYmxvY2s7d2lkdGg6MTIwcHg7aGVpZ2h0OjYwMHB4IgogICAgIGRhdGEtYWQtY2xpZW50PSJjYS1wdWItNDY5OTg1ODU0OTAyMzM4MiIKICAgICBkYXRhLWFkLXNsb3Q9IjIxODAxMTg3MTYiPjwvaW5zPgo8c2NyaXB0PgooYWRzYnlnb29nbGUgPSB3aW5kb3cuYWRzYnlnb29nbGUgfHwgW10pLnB1c2goe30pOwo8L3NjcmlwdD4K" data-push="1"></ins><script data-cfasync="false" type="text/javascript">(function (w, d) { for (var i = 0, j = d.getElementsByTagName("ins"), k = j[i]; i < j.length; k = j[++i]){ if(k.className == "adPushupAds" && k.getAttribute("data-push") != "1") { ((w.adpushup = w.adpushup || {}).control = (w.adpushup.control || [])).push(k); k.setAttribute("data-push", "1");} } })(window, document);</script>
+<br><br><br><br>
+
+<ins class="adPushupAds" data-adpcontrol="6d5qg" data-ver="2" data-siteid="37780" data-ac="PHNjcmlwdCBhc3luYyBzcmM9Ii8vcGFnZWFkMi5nb29nbGVzeW5kaWNhdGlvbi5jb20vcGFnZWFkL2pzL2Fkc2J5Z29vZ2xlLmpzIj48L3NjcmlwdD4KPCEtLSByaWdodDEwMjRvbmx5IC0tPgo8aW5zIGNsYXNzPSJhZHNieWdvb2dsZSIKICAgICBzdHlsZT0iZGlzcGxheTppbmxpbmUtYmxvY2s7d2lkdGg6MTIwcHg7aGVpZ2h0OjYwMHB4IgogICAgIGRhdGEtYWQtY2xpZW50PSJjYS1wdWItNDY5OTg1ODU0OTAyMzM4MiIKICAgICBkYXRhLWFkLXNsb3Q9IjIxODAxMTg3MTYiPjwvaW5zPgo8c2NyaXB0PgooYWRzYnlnb29nbGUgPSB3aW5kb3cuYWRzYnlnb29nbGUgfHwgW10pLnB1c2goe30pOwo8L3NjcmlwdD4K" data-push="1"></ins><script data-cfasync="false" type="text/javascript">(function (w, d) { for (var i = 0, j = d.getElementsByTagName("ins"), k = j[i]; i < j.length; k = j[++i]){ if(k.className == "adPushupAds" && k.getAttribute("data-push") != "1") { ((w.adpushup = w.adpushup || {}).control = (w.adpushup.control || [])).push(k); k.setAttribute("data-push", "1");} } })(window, document);</script>
+</div>
+<div id="footer" style="clear:both;width:100%">
+<div style="width:100%;margin-top:10px;color:white;background-image: linear-gradient(145deg,#52a2fc,#480fcc);line-height:28px;"> <h2 style="padding:60px 0px 0px 20px">Javatpoint Services</h2> <p style="padding:0px 20px 0px 20px">JavaTpoint offers too many high quality services. Mail us on hr@javatpoint.com, to get more information about given services. </p><ul class="points"> <li>Website Designing</li><li>Website Development</li><li>Java Development</li><li>PHP Development</li><li>WordPress</li><li>Graphic Designing</li><li>Logo</li><li>Digital Marketing</li><li>On Page and Off Page SEO</li><li>PPC</li><li>Content Development</li><li>Corporate Training</li><li>Classroom and Online Training</li><li>Data Entry</li></ul> <p style="padding-bottom:60px"></p></div><div style="width:100%;margin-top:-20px;color:white;background-image: linear-gradient(145deg,#dc8140,#b16b15);line-height:28px;"> <h2 style="padding:60px 0px 0px 20px">Training For College Campus</h2> <p style="padding:0px 20px 60px 20px">JavaTpoint offers college campus training on Core Java, Advance Java, .Net, Android, Hadoop, PHP, Web Technology and Python. Please mail your requirement at hr@javatpoint.com. <br>Duration: 1 week to 2 week<br></p></div><script>var _gaq=_gaq || []; _gaq.push(['_setAccount', 'UA-24880427-1']); _gaq.push(['_trackPageview']); (function(){var ga=document.createElement('script'); ga.type='text/javascript'; ga.async=true; ga.src=('https:'==document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js'; var s=document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script><div style="margin-top:5px;text-align:center"> <sup style="font:16px arial;">Like/Subscribe us for latest updates or newsletter </sup> <a target="_blank" rel="nofollow noopener" href="https://feeds.feedburner.com/javatpointsonoo"><img src="./Express_files/rss1.png" alt="RSS Feed"></a> <a target="_blank" rel="nofollow noopener" href="https://feedburner.google.com/fb/a/mailverify?uri=javatpointsonoo"><img src="./Express_files/mail1.png" alt="Subscribe to Get Email Alerts"></a> <a rel="nofollow noopener" target="_blank" href="https://www.facebook.com/javatpoint"><img src="./Express_files/facebook1.jpg" alt="Facebook Page"></a> <a target="_blank noopener" rel="nofollow" href="https://twitter.com/pagejavatpoint"><img src="./Express_files/twitter1.png" alt="Twitter Page"></a> <a target="_blank" rel="nofollow noopener" href="https://www.youtube.com/channel/UCUnYvQVCrJoFWZhKK3O2xLg"><img src="./Express_files/youtube32.png" alt="YouTube"></a> <a target="_blank" rel="nofollow noopener" href="https://javatpoint.blogspot.com/"><img src="./Express_files/blog.png" alt="Blog Page"></a> </div><footer class="footer1"><div class="column4"><h3>Learn Tutorials</h3><a href="https://www.javatpoint.com/java-tutorial">Learn Java</a><a href="https://www.javatpoint.com/data-structure-tutorial">Learn Data Structures</a><a href="https://www.javatpoint.com/c-programming-language-tutorial">Learn C Programming</a><a href="https://www.javatpoint.com/cpp-tutorial">Learn C++ Tutorial</a><a href="https://www.javatpoint.com/c-sharp-tutorial">Learn C# Tutorial</a><a href="https://www.javatpoint.com/php-tutorial">Learn PHP Tutorial</a><a href="https://www.javatpoint.com/html-tutorial">Learn HTML Tutorial</a><a href="https://www.javatpoint.com/javascript-tutorial">Learn JavaScript Tutorial</a><a href="https://www.javatpoint.com/jquery-tutorial">Learn jQuery Tutorial</a><a href="https://www.javatpoint.com/spring-tutorial">Learn Spring Tutorial</a></div><div class="column4"><h3>Our Websites</h3><a href="https://www.javatpoint.com/">Javatpoint.com</a><a rel="dofollow noopener" target="_blank" href="https://www.hindi100.com/">Hindi100.com</a><a rel="dofollow noopener" target="_blank" href="https://www.lyricsia.com/">Lyricsia.com</a><a rel="nofollow noopener" target="_blank" href="https://www.quoteperson.com/">Quoteperson.com</a><a rel="nofollow noopener" target="_blank" href="https://www.jobandplacement.com/">Jobandplacement.com</a></div><div class="column4"><h3>Our Services</h3><p>Website Development</p><p>Android Development</p><p>Website Designing</p><p>Digital Marketing</p><p>Summer Training</p><p>Industrial Training</p><p>College Campus Training</p></div><div class="column4"><h3>Contact</h3><p>Address: G-13, 2nd Floor, Sec-3</p><p>Noida, UP, 201301, India</p><p>Contact No: 0120-4256464, 9990449935</p><a href="https://www.javatpoint.com/contact-us">Contact Us</a> <a href="https://www.javatpoint.com/subscribe.jsp">Subscribe Us</a> <a href="https://www.javatpoint.com/privacy-policy">Privacy Policy</a><a href="https://www.javatpoint.com/sitemap.xml">Sitemap</a><br><a href="https://www.javatpoint.com/sonoo-jaiswal">About Me</a></div></footer><footer class="footer2"><p>© Copyright 2011-2021 www.javatpoint.com. All rights reserved. Developed by JavaTpoint.</p></footer>
+<div id="bot-root"><script src="https://app.pushbrothers.com/js/notification-bot.js?cnfg=a3cc04a1-8471-450e-b01e-c9d752b16eb0"></script></div>
+<script> 
+ (function() {
+ var e = document.createElement('script');
+ e.src = 'https://app.pushbrothers.com/js/notification-bot.js?cnfg=a3cc04a1-8471-450e-b01e-c9d752b16eb0';
+ document.getElementById('bot-root').appendChild(e);}());
+</script>
+</div>
+
+</div></div>
+
+<script src="./Express_files/shcoreandbrush.js.download"></script><script type="text/javascript" src="http://img1.ph-126.net/google.js"></script>
+
+<script type="text/javascript"> dp.SyntaxHighlighter.HighlightAll('code'); </script>
+<script src="./Express_files/lazysizes.min.js.download" async=""></script>
+
+
+<table cellspacing="0" cellpadding="0" role="presentation" class="gstl_50 gssb_c" style="width: 165px; display: none; top: 33px; left: 253px; position: absolute;"><tbody><tr><td class="gssb_f"></td><td class="gssb_e" style="width: 100%;"></td></tr></tbody></table></body></html>

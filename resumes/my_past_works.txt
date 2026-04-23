@@ -1,0 +1,56 @@
+http://calltro.com/
+https://shop.tetongravity.com/
+https://www.igp.com/
+https://www.neyiyelim.com/
+https://mbasolvedassignment.com/
+https://igfruits.com/
+
+-	Homepages
+http://www.qatarbusinessgate.com/
+https://scanavomarket.com/
+https://siteplus.com/
+https://www.statedentalplan.com/
+https://firelux.io/
+https://www.soelden.com/
+https://blacksor.com/
+https://awsomefoodies.web.app/
+https://clayton.co.uk/
+https://bookme.pk/
+
+-	Shopify
+https://exceltools.co.uk/
+https://www.heatseekerbox.com/
+
+- https://www.gamefront.com (&Vue 2.5.7)
+- http://www.Shademy.com
+- http://www.garysheng.com/blog (react)
+- https://www.a2zauctionsgy.com (angular)
+- https://boostr.com (angular, angular-material 2.0)
+- https://modifi.com (nodejs, React, bootstrap, mysql, material 2.0) Shipping site
+- https://tridot.com (nodejs, angular 7, material 2.0, mongodb, socket.io, express-ws)
+- https://www.cirrent.com (Angularjs, Bootstrap, NodeJS, mongodb)
+- https://homefinder.com (Node JS)
+
+
+mobile apps
+https://itunes.apple.com/us/app/blipo-private-photo-sharing/id670832507
+https://itunes.apple.com/us/app/instant-abs-trainer-100+-ab/id583620368
+https://itunes.apple.com/us/app/dealcatcher-coupons-deals/id534634276
+
+https:a//play.google.com/store/apps/details?id=com.lcs.mmp.full
+https://play.google.com/store/apps/details?id=com.famousfootwear.android
+https://play.google.com/store/apps/details?id=com.shapeup4life.app&hl=en
+- https://apps.apple.com/us/app/pool-slide-guys/id1417911829?ls=1 (Pool App)
+- https://play.google.com/store/apps/details?id=io.relaxgarments.com (Relax Garments)
+- https://play.google.com/store/apps/details?id=com.slide.aquaaction (Aqua Action)
+- https://play.google.com/store/apps/details?id=com.quanlabs.nearme4 (Nearme)
+
+
+HTML/CSS/JS
+
+https://floating-wave-22382.herokuapp.com/
+
+
+Typescript
+
+https://updated-card-editor.herokuapp.com/

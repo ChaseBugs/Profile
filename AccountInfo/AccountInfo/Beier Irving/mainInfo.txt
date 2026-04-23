@@ -1,0 +1,43 @@
+mail		irvingbeier9082@gmail.com
+		irvingbeier9082@outlook.com
+
+pass		uPKJ0.z1bg[K
+
+
+Identity
+FullName        Beier Irving
+Gender          male
+FirstName       Irving
+LastName        Beier
+Birthday        1990.08.02
+SSN		484-41-3338
+
+Address
+Address         1483 Ernser Drive, IA 45675
+StreetAddress   1483 Ernser Drive
+ZipCode         45674
+PostalCode      52240
+State           IA(Iowa)
+PhoneNumber     +1 800 779 6031(RealPhone)
+                +1 603 602 0445(Telegram)
+
+Payment
+CreditCardType  MasterCard
+CardNumber      5119356083845464
+ExpirationDate  04/23
+CVV             211
+
+
+
+Education
+Master's degree
+Computer Programming
+University of Iowa
+2012.5 ~ 2017.8
+
+
+Skype                live:.cid.ad315c63d0e8717f
+
+Telegram        https://t.me/irvingbeier9082
+
+GoogleDrvie        https://docs.google.com/document/d/1hfWncZmqL60VzaQgkU00wyxkmBYtfHPh/edit?usp=sharing&ouid=105768793204202810685&rtpof=true&sd=true

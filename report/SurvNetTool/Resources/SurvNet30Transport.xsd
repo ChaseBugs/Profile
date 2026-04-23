@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SurvNet30Transport.xsd
+  Minimal IDE schema for INV_Fragebogen_Erw_FULL_final.xml.
+  Namespace  : http://www3.rki.de/ns/SurvNet/2025/01/Transport
+  Schema     : SurvNet 3.0 FD2025  (Schema attribute = 11)
+  Authority  : IfSG_VG-Nr. 8f SchemaSurvNet_3.0_FD2025.xsd (official RKI XSD)
+
+  This file is a minimal VS-compatible subset of the official RKI schema.
+  It defines exactly the elements and attributes used in the Transport XML
+  so that Visual Studio can provide IntelliSense without errors.
+  Full validation is done by the official schema on survnet.rki.de.
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="http://www3.rki.de/ns/SurvNet/2025/01/Transport"
+           xmlns:n="http://www3.rki.de/ns/SurvNet/2025/01/Transport"
+           targetNamespace="http://www3.rki.de/ns/SurvNet/2025/01/Transport"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+
+  <!-- ── Simple types ───────────────────────────────────────────────────── -->
+
+  <xs:simpleType name="GuidDataType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\{[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}\}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- ── Field ──────────────────────────────────────────────────────────── -->
+
+  <xs:complexType name="FieldType">
+    <xs:attribute name="Name"  type="xs:string" use="required"/>
+    <xs:attribute name="Value" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <!-- ── Group ──────────────────────────────────────────────────────────── -->
+
+  <xs:complexType name="GroupType">
+    <xs:sequence>
+      <xs:element name="Field" type="FieldType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="Name" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <!-- ── Addressee ──────────────────────────────────────────────────────── -->
+
+  <xs:complexType name="AddresseeType">
+    <xs:attribute name="CodeSite" type="xs:string"  use="required"/>
+    <xs:attribute name="Implicit" type="xs:boolean" use="required"/>
+    <xs:attribute name="Explicit" type="xs:boolean" use="required"/>
+  </xs:complexType>
+
+  <!-- ── Track ──────────────────────────────────────────────────────────── -->
+
+  <xs:complexType name="TrackType">
+    <xs:attribute name="GuidTrack"     type="GuidDataType" use="required"/>
+    <xs:attribute name="Action"        type="xs:integer"   use="required"/>
+    <xs:attribute name="TrackedAt"     type="xs:string"    use="required"/>
+    <xs:attribute name="CodeSite"      type="xs:string"    use="required"/>
+    <xs:attribute name="VersionNoSite" type="xs:integer"   use="required"/>
+    <xs:attribute name="Software"      type="xs:string"    use="optional"/>
+  </xs:complexType>
+
+  <!-- ── INV disease record ─────────────────────────────────────────────── -->
+
+  <xs:complexType name="INVType">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="Group"    type="GroupType"/>
+      <xs:element name="Field"    type="FieldType"/>
+      <xs:element name="Addressee" type="AddresseeType"/>
+      <xs:element name="Track"    type="TrackType"/>
+    </xs:choice>
+    <!-- VersionAttributeGroup -->
+    <xs:attribute name="GuidRecord"          type="GuidDataType" use="required"/>
+    <xs:attribute name="VersionNo"           type="xs:integer"   use="required"/>
+    <xs:attribute name="Schema"              type="xs:integer"   use="required"/>
+    <xs:attribute name="CodeRecordOwner"     type="xs:string"    use="required"/>
+    <xs:attribute name="CodeVersionEditor"   type="xs:string"    use="required"/>
+    <xs:attribute name="Token"               type="xs:string"    use="optional"/>
+    <xs:attribute name="ToTransportManual"   type="xs:boolean"   use="required"/>
+    <xs:attribute name="ChangedAt"           type="xs:string"    use="required"/>
+    <xs:attribute name="TransportRequestType" type="xs:integer"  use="required"/>
+    <!-- Disease71AttributeGroup -->
+    <xs:attribute name="ReportingDate"       type="xs:string"    use="required"/>
+    <xs:attribute name="ReportingCounty"     type="xs:string"    use="required"/>
+    <xs:attribute name="CaseDefEpiManual"    type="xs:boolean"   use="required"/>
+    <xs:attribute name="CaseDefClinManual"   type="xs:boolean"   use="optional"/>
+    <xs:attribute name="CaseDefLabManual"    type="xs:boolean"   use="optional"/>
+  </xs:complexType>
+
+  <!-- ── AddPers person record ──────────────────────────────────────────── -->
+
+  <xs:complexType name="AddPersType">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="Group"     type="GroupType"/>
+      <xs:element name="Field"     type="FieldType"/>
+      <xs:element name="Addressee" type="AddresseeType"/>
+      <xs:element name="Track"     type="TrackType"/>
+    </xs:choice>
+    <!-- VersionAttributeGroup -->
+    <xs:attribute name="GuidRecord"          type="GuidDataType" use="required"/>
+    <xs:attribute name="VersionNo"           type="xs:integer"   use="required"/>
+    <xs:attribute name="Schema"              type="xs:integer"   use="required"/>
+    <xs:attribute name="CodeRecordOwner"     type="xs:string"    use="required"/>
+    <xs:attribute name="CodeVersionEditor"   type="xs:string"    use="required"/>
+    <xs:attribute name="Token"               type="xs:string"    use="optional"/>
+    <xs:attribute name="ToTransportManual"   type="xs:boolean"   use="required"/>
+    <xs:attribute name="ChangedAt"           type="xs:string"    use="required"/>
+    <xs:attribute name="TransportRequestType" type="xs:integer"  use="required"/>
+    <!-- AddressPersonAttributeGroup -->
+    <xs:attribute name="Salutation"          type="xs:integer"   use="required"/>
+    <xs:attribute name="Sex"                 type="xs:integer"   use="required"/>
+    <xs:attribute name="CountryofBirthMYT"   type="xs:integer"   use="required"/>
+    <xs:attribute name="Surname"             type="xs:string"    use="optional"/>
+    <xs:attribute name="Forename"            type="xs:string"    use="optional"/>
+    <xs:attribute name="Title"               type="xs:string"    use="optional"/>
+    <xs:attribute name="DateOfBirth"         type="xs:string"    use="optional"/>
+    <xs:attribute name="Street"              type="xs:string"    use="optional"/>
+    <xs:attribute name="ZipCode"             type="xs:string"    use="optional"/>
+    <xs:attribute name="Place"               type="xs:string"    use="optional"/>
+    <xs:attribute name="PhoneNumber1"        type="xs:string"    use="optional"/>
+    <xs:attribute name="PhoneNumber2"        type="xs:string"    use="optional"/>
+    <xs:attribute name="PhoneNumber3"        type="xs:string"    use="optional"/>
+    <xs:attribute name="FaxNumber"           type="xs:string"    use="optional"/>
+    <xs:attribute name="Email1"              type="xs:string"    use="optional"/>
+    <xs:attribute name="Email2"              type="xs:string"    use="optional"/>
+    <xs:attribute name="Birthname"           type="xs:string"    use="optional"/>
+    <xs:attribute name="CitizenshipMYT"      type="xs:integer"   use="optional"/>
+    <xs:attribute name="DeceasedDate"        type="xs:string"    use="optional"/>
+    <xs:attribute name="ResidentAtCo"        type="xs:string"    use="optional"/>
+    <xs:attribute name="NamesOfGuardians"    type="xs:string"    use="optional"/>
+  </xs:complexType>
+
+  <!-- ── Transport root element ─────────────────────────────────────────── -->
+
+  <xs:element name="Transport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="INV"    type="INVType"/>
+        <xs:element name="AddPers" type="AddPersType"/>
+      </xs:choice>
+      <xs:attribute name="GuidTransport"   type="GuidDataType" use="required"/>
+      <xs:attribute name="CodeSiteSender"  type="xs:string"    use="required"/>
+      <xs:attribute name="CodeSiteReceiver" type="xs:string"   use="required"/>
+      <xs:attribute name="TransportNumber" type="xs:integer"   use="required"/>
+      <xs:attribute name="CreatedAt"       type="xs:string"    use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

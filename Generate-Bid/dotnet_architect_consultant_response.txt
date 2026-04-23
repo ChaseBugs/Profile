@@ -1,0 +1,20 @@
+Hi Proactive Logic Team,
+
+Thank you for considering my application for the Senior Microsoft .NET Architect Consultant (AI-Forward) position. Please find the requested information below:
+
+https://www.linkedin.com/in/zachary-benson-85a04238a/
+
+My three strongest tech skills:
+
+1. Microsoft .NET Architecture & Enterprise Solutions
+2. AI/ML Integration with .NET (Azure AI Services, OpenAI API, ML.NET)
+3. Cloud Architecture & Microservices (Azure, AWS, Docker, Kubernetes)
+
+My hourly rate:
+
+[$40 - $60 per hour]
+
+Thank you!
+
+Zachary Benson
+

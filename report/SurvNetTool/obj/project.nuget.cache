@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "vdYmmIPPOg4=",
+  "success": true,
+  "projectFilePath": "E:\\Github\\Jude0629\\Profile\\report\\SurvNetTool\\SurvNetTool.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\arthu\\.nuget\\packages\\documentformat.openxml\\3.1.0\\documentformat.openxml.3.1.0.nupkg.sha512",
+    "C:\\Users\\arthu\\.nuget\\packages\\documentformat.openxml.framework\\3.1.0\\documentformat.openxml.framework.3.1.0.nupkg.sha512",
+    "C:\\Users\\arthu\\.nuget\\packages\\system.io.packaging\\8.0.0\\system.io.packaging.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

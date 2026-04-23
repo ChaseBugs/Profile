@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Transport xmlns="http://www3.rki.de/ns/SurvNet/2025/01/Transport"
+           GuidTransport="{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}"
+           CodeSiteSender="1.01."
+           CodeSiteReceiver="1."
+           TransportNumber="1"
+           CreatedAt="2026-03-24T09:00:00.000">
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       INV — Influenza disease record
+       Schema 11  |  IfSG VG-Nr. 8f SchemaSurvNet_3.0_FD2025
+       Field catalogue: IfSG VG-Nr. 8c SurvNet3MetaPublikation-3.47.0
+       ═══════════════════════════════════════════════════════════════ -->
+  <INV GuidRecord="{B2C3D4E5-F6A7-8901-BCDE-F12345678901}"
+       VersionNo="1"
+       Schema="11"
+       CodeRecordOwner="1.01."
+       CodeVersionEditor="1.01."
+       Token="ABC-DEF-123"
+       ToTransportManual="false"
+       ChangedAt="2026-03-24T09:00:00.000"
+       TransportRequestType="1"
+       ReportingDate="2026-03-24T09:00:00.000"
+       ReportingCounty="11001001"
+       CaseDefEpiManual="false">
+
+    <!-- IdField 1109 — Klinische Informationen verfügbar + Erkrankungsbeginn -->
+    <!-- ClinicalInfoAvailable catalogue (StatusClinInfoAvailable):          -->
+    <!--   20=Ja  21=Ja mit Symptomatik  15=Ja ohne Symptomatik  10=Nein     -->
+    <Group Name="ClinicalInfoAvailable">
+      <Field Name="ClinicalInfoAvailable" Value="20"/>
+      <Field Name="OnsetOfDisease"        Value="2026-03-20T00:00:00.000"/>
+    </Group>
+
+    <!-- IdField 137100 — Krankheitsform Influenza + Symptome (Schema11=1)   -->
+    <!-- FormINV catalogue:  1=Influenza saisonal  2=Zoonotische Influenza   -->
+    <!-- Boolean symptom fields: true / false                                -->
+    <!-- RisikoINV catalogue (IdField 137121, Schema11=1):                   -->
+    <!--   -nicht erhoben-  |  Asthma  |  Diabetes  |  Immunsuppression ...  -->
+    <Group Name="FormINV">
+      <Field Name="FormINV"     Value="1"/>                <!-- Influenza (saisonal oder pandemisch) -->
+      <Field Name="Symptom0225" Value="true"/>             <!-- Q09 Schnupfen      IdField 137134 -->
+      <Field Name="Symptom0130" Value="true"/>             <!-- Q10 Husten         IdField 137131 -->
+      <Field Name="Symptom0103" Value="true"/>             <!-- Q11 Halsschmerzen  IdField 137132 -->
+      <Field Name="Symptom0064" Value="true"/>             <!-- Q12 Dyspnoe        IdField 137133 -->
+      <Field Name="Symptom0145" Value="false"/>            <!-- Q13 Konjunktivitis IdField 137122 -->
+      <Field Name="Symptom0179" Value="false"/>            <!-- Q14 Myokarditis    IdField 137120 -->
+      <Field Name="Symptom0088" Value="true"/>             <!-- Q17 Fieber         IdField 137142 -->
+      <Field Name="Symptom0158" Value="-1"/>               <!-- Q21 Pneumonie      IdField 137115  -1=-nicht ermittelbar- -->
+      <Field Name="Symptom0393" Value="false"/>            <!-- Q22 Beatmung/ICU   IdField 137116 -->
+      <Field Name="RisikoINV"   Value="0"/>                <!-- Q?? Risikofaktoren IdField 137121  0=-nicht erhoben- -->
+    </Group>
+
+    <!-- IdField 1161 — Hospitalisierung                                     -->
+    <!-- Status4 catalogue: 20=Ja  10=Nein  0=-nicht erhoben-               -->
+    <Group Name="StatusHospitalization">
+      <Field Name="StatusHospitalization" Value="20"/>
+    </Group>
+
+    <!-- IdField 137081 — Impfstatus Influenza                               -->
+    <!-- Status4 catalogue: 20=Ja  10=Nein  0=-nicht erhoben-               -->
+    <Group Name="StatusVaccination">
+      <Field Name="StatusVaccination" Value="20"/>
+    </Group>
+
+    <!-- IdField 1151 — Expositionsort / Reise                               -->
+    <!-- Status4 catalogue: 20=Ja  10=Nein  0=-nicht erhoben-               -->
+    <Group Name="StatusPlaceOfInf">
+      <Field Name="StatusPlaceOfInf" Value="10"/>
+    </Group>
+
+    <!-- IdField 137530 — Tierexposition (RiskINV0001 Group)                 -->
+    <!-- Children active in Schema11:                                        -->
+    <!--   Exposition18 (137528) = Labor aviäre Influenza  Boolean           -->
+    <!--   Exposition20 (137531) = Direkter Tierkontakt    Boolean           -->
+    <Group Name="RiskINV0001">
+      <Field Name="Exposition18" Value="false"/>
+      <Field Name="Exposition20" Value="true"/>
+    </Group>
+
+    <Addressee CodeSite="1.01." Implicit="true" Explicit="false"/>
+
+    <Track GuidTrack="{C3D4E5F6-A7B8-9012-CDEF-123456789012}"
+           Action="1"
+           TrackedAt="2026-03-24T09:00:00.000"
+           CodeSite="1.01."
+           VersionNoSite="1"
+           Software="SurvNetTool 1.0.0"/>
+
+  </INV>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       AddPers — Personal data record (Q02–Q06)
+       Salutation: 0=-nicht erhoben-  1=Herr  2=Frau
+       Sex:        0=-nicht erhoben-  1=männlich  2=weiblich
+       CountryofBirthMYT: 0=-nicht erhoben-  (LookupDataType)
+       ═══════════════════════════════════════════════════════════════ -->
+  <AddPers GuidRecord="{D4E5F6A7-B8C9-0123-DEFA-234567890123}"
+           VersionNo="1"
+           Schema="11"
+           CodeRecordOwner="1.01."
+           CodeVersionEditor="1.01."
+           ToTransportManual="false"
+           ChangedAt="2026-03-24T09:00:00.000"
+           TransportRequestType="1"
+           Salutation="1"
+           Surname="Mustermann"
+           Forename="Max"
+           DateOfBirth="1999-01-10T00:00:00.000"
+           Sex="1"
+           Street="Musterstr. 123"
+           ZipCode="65183"
+           Place="Wiesbaden"
+           PhoneNumber1="+49 611 8899765"
+           CountryofBirthMYT="0">
+
+    <Addressee CodeSite="1.01." Implicit="true" Explicit="false"/>
+
+    <Track GuidTrack="{E5F6A7B8-C9D0-1234-EFAB-345678901234}"
+           Action="1"
+           TrackedAt="2026-03-24T09:00:00.000"
+           CodeSite="1.01."
+           VersionNoSite="1"
+           Software="SurvNetTool 1.0.0"/>
+
+  </AddPers>
+
+</Transport>

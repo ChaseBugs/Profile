@@ -1,0 +1,6 @@
+Online Test System
+
+This is an online student test system
+* Admin Portal: Make questions, Create tests, Student management, Instructor management, List and Print test results
+* Instructor Portal
+* Student Portal: Profile management, Available Tests list, Test

@@ -1,0 +1,42 @@
+
+Python / React.js Developer — Professional Experience
+Computer Vision & Image Processing Pipelines
+
+Developed Python-based image processing workflows using OpenCV and Pillow to extract and validate visual information from mobile-captured images, optimizing detection accuracy across variable lighting, rotation, and blur conditions.
+Implemented preprocessing techniques (grayscale normalization, thresholding, noise reduction, and edge detection) to significantly improve downstream data recognition accuracy.
+Applied bounding boxes, contour detection, and adaptive threshold filtering to identify and segment objects such as license plates, meters, and barcodes.
+Model Training & Optimization for On-Device Performance
+
+Trained lightweight deep-learning models using TensorFlow and PyTorch, focusing on efficient inference suitable for mobile devices and edge environments.
+Leveraged transfer learning to reduce training time and improve generalization across diverse data sets.
+Optimized inference latency by applying model pruning, quantization, and conversion to TensorFlow Lite, improving on-device inference speeds by up to 40%.
+Real-Time Visual Data Capture APIs (Django REST Framework)
+
+Built secure REST APIs to process image data, return recognition results, and integrate with enterprise systems.
+Designed scalable endpoints handling high-frequency mobile requests with caching, compression, and database indexing to maintain low-latency responses.
+Asynchronous Processing & High-Throughput Workloads
+
+Utilized Celery workers orchestrated with RabbitMQ/Redis to asynchronously process large batches of image data without blocking UI flows.
+Implemented multiprocessing and queue-based task dispatching to increase throughput and reduce average processing time.
+Frontend Development with React.js for Data Capture Interfaces
+
+Designed responsive UI workflows enabling users to upload, preview, and validate scanned imagery.
+Integrated real-time visual feedback, improving object scanning accuracy and user confidence during capture.
+Data Engineering & Analytics for Recognition Quality Metrics
+
+Leveraged Pandas to track model accuracy, false-positive behavior, and user usage patterns.
+Generated visual business insights using Matplotlib to guide model retraining cycles and improve recognition performance.
+3rd-Party API Integrations & Secure Transactions
+
+Integrated Stripe payment flows for subscription-based access to scanning features, implementing industry-grade encryption and tokenization.
+Containerization & Scalable Deployment
+
+Packaged microservices using Docker, enabling consistent environments from testing to production.
+Deployed workloads via Kubernetes, configuring auto-scaling for peak scanning traffic.
+Agile Delivery & Continuous Integration
+
+Implemented GitHub Actions pipelines with automated unit tests, security scanning, and deployment gates.
+Worked in SCRUM-based environments with JIRA, delivering incremental improvements aligned with customer feedback loops.
+Version Control Leadership
+
+Maintained 100% repository ownership, enforcing code reviews, branching strategy, semantic versioning, and documentation for streamlined team collaboration.

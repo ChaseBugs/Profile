@@ -1,0 +1,77 @@
+Web Full-stack developer
+
+Hello
+
+Thanks for giving me a chance to apply on this job.
+As a senior software developer, I am very interested in this job.
+
+I have rich experience with Python while working for AI, Image processing, Automation engine development and Node.js, Django/Flask for backend development for 6+ years.
+
+I have developed plenty of Backend APIs and integrate several Restful services and 3rd party APIs into backend.
+And also developed engines using Python or Javascript myself to improve the backend speed and security and integrated into backend.
+
+And also I have rich experience with React.js and Vue.js for frontend especially using Redux (Thunk or Saga) or VueX with Hooks + Typescript for 5+ years.
+
+I am very familiar with AWS, GraphQL, PostgreSQL, MongoDB, Firebase, Unit test tools and DevOps tools including Github, Trello, Azure, GCP, etc.
+
+User experience & clean frontend design and Clean architecture based Project development is my major skills.
+
+These are my latest projects based on above tech-skills.
+
+- Hosting and Consultancy Service Platform (Jun 2018 - May 2020) - Cloud engineer, Full stack developer
+
+SAP service (HANA, Basis and NetWeaver ABAP and java, Solution Manager, HCM, Development) Platform
+
+Web: https://saphuset.com/
+
+Github: https://github.com/prodevghost/Saphuset_Flask_React_Laravel
+
+Tech-stack: Laravel / React(Embedded) + Flask + MySQL
+
+What I do:
+
+    As a cloud engineer and full stack developer, I developed Hosting Cloud engine and SAP NetWeaver with team members.
+   And developed the dashboard for SAP service platform from scratch using Laravel + React(Embedded mode) and Flask for backend framework.
+
+- Communication Platform (Jun 2020 - Mar 2021) - Lead developer
+
+Marketplace and a telecommunications Platform that offers paid video chat and voice calls with experts in any field
+
+Web: https://telmie.com
+
+Tech-stack: Web (React.js / Next.js + Node.js / Express.js + WebRTC + Zapier + MongoDB)
+
+What I do:
+
+   As a full stack developer, I have upgraded the video call speed and quality by integrating new WebRTC library and implement blockchain tech based chat function for safety and private chat.
+
+   And I make Zapier app to integrate telmie platform chat and booking system with gmail and google calendar automatically.
+   And upgraded the metronic theme based frontend into React.js/Next.js based frontend and speed up, optimize website.
+
+- Tracking Website (Oct 2015 - Aug 2016) - Full stack developer
+
+Shopify Tracking Website that offers Instant Sync, Fully Auto-Pilot
+
+Web: https://trackshore.com
+
+Tech-stack: Node.js / Express.js + Vue.js + Python / Pytorch + MongoDB
+
+What I do:
+
+    As a full-stack developer, I developed ML based tracking engine using Python PyTorch library and integrate into Node.js/Express.js backend.
+   And Integrate Restful APIs for tracking into backend and make full test-case driven FE using Vue.js + Cypress.
+
+This is my profile website.
+https://seniorengineer.wixsite.com/profile
+
+I have a with B.Sc. Computer Science and Artificial Intelligence.
+
+Work with a startup company which has creative idea as a remote worker and contribute to archive success with my all effort have been being my happiness until now.
+I think communication and co-operative work with perfect team spirit is key for project success.
+I can work in your time zone as a full time and I am just ready to start work now.
+
+I hope you consider my profile website and last experiences carefully and give me a chance to take part in your great idea implementation.
+
+Could you contact me via chat and discuss in detail about this job?
+
+Regards.

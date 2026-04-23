@@ -1,0 +1,1175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:n="http://www3.rki.de/ns/SurvNet/2009/01/TransportReceipt" xmlns="http://www3.rki.de/ns/SurvNet/2009/01/TransportReceipt" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www3.rki.de/ns/SurvNet/2009/01/TransportReceipt" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="String.Latin">
+    <xs:annotation>
+      <xs:appinfo>
+        <title xmlns="http://www3.rki.de/ns/SurvNet/2009/01/TransportReceipt">Datentyp für lateinische Zeichen in Unicode</title>
+      </xs:appinfo>
+      <xs:documentation>Einschränkung auf lateinischen Zeichen.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="(([ -   -~¡-¬®-ćĊ-ěĞ-ģĦ-ıĴ-śŞ-ūŮ-žƏƠ-ơƯ-ưƷǍ-ǔǞ-ǟǤ-ǰǴ-ǵǺ-ǿȘ-țȞ-ȟȪ-ȫȮ-ȳəʒḂ-ḃḊ-ḋḐ-ḑḞ-ḡḤ-ḧḰ-ḱṀ-ṁṄ-ṅṖ-ṗṠ-ṣṪ-ṫẀ-ẅẌ-ẓẞẠ-ầẪ-ẬẮ-ềỄ-ồỖ-ờỤ-ỹ€])|(M̂|N̂|m̂|n̂|D̂|d̂|J̌|L̂|l̂)|([„“]))*" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="TransportReceipt" type="TransportReceiptComplexType">
+    <xs:annotation>
+      <xs:documentation>
+				Das Element Transport beschreibt das Root-Element einer
+				Transportdatei.
+			</xs:documentation>
+    </xs:annotation>
+    <xs:key name="UniqueKeyForRecords">
+      <xs:annotation>
+        <xs:documentation>Unique-Key fuer alle Records.</xs:documentation>
+      </xs:annotation>
+      <xs:selector xpath="n:Record">
+        <xs:annotation>
+          <xs:documentation>
+						Der Selektor wählt alle Knoten aus, über die der Unique-Key gültig
+						ist.
+					</xs:documentation>
+        </xs:annotation>
+      </xs:selector>
+      <xs:field xpath="@GuidRecord">
+        <xs:annotation>
+          <xs:documentation>
+						Das Attribute das den eindeutigen Schlüssel des Knoten
+						beschreibt.
+					</xs:documentation>
+        </xs:annotation>
+      </xs:field>
+    </xs:key>
+  </xs:element>
+  <xs:simpleType name="BooleanDataType">
+    <xs:annotation>
+      <xs:documentation>Der BooleanDataType beschreibt einen einfachen Boolean-Wert der true oder false annehmen kann.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:boolean" />
+  </xs:simpleType>
+  <xs:simpleType name="DateTimeDataType">
+    <xs:annotation>
+      <xs:documentation>Der DateTimeDataType beschreibt einen einfachen Datums-Wert.(Format:)</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:dateTime">
+      <xs:pattern value="\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\.\d\d\d" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="GuidDataType">
+    <xs:annotation>
+      <xs:documentation>
+				Der GuidDataType beschreibt eine GUID (Globally Unique
+				Identifier).
+			</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\{[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}\}" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="String255DataType">
+    <xs:annotation>
+      <xs:documentation>Der String255DataType beschreibt eine einfache Zeichekette mit 0-255 Zeichen.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="String.Latin">
+      <xs:minLength value="0" />
+      <xs:maxLength value="255" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="LookupDataType">
+    <xs:annotation>
+      <xs:documentation>
+				Der LookupDataType stellt den Basis-Typ für Attribute mit Auflistungen
+				dar.
+			</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:integer" />
+  </xs:simpleType>
+  <xs:simpleType name="StringSiteBaseDataType">
+    <xs:annotation>
+      <xs:documentation>
+				Der StringSiteBaseDataType stellt den Basis-Typ für StringSiteDataType
+				dar.
+			</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="String.Latin">
+      <xs:minLength value="1" />
+      <xs:maxLength value="50" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="StringSiteDataType">
+    <xs:annotation>
+      <xs:documentation>
+				Der StringSiteDataType stellt den Basis-Typ für Attribute der
+				Übermittungsstellen dar.
+			</xs:documentation>
+    </xs:annotation>
+    <xs:restriction id="TransmittingSideRestriction" base="StringSiteBaseDataType">
+      <xs:enumeration value="0." />
+      <xs:enumeration value="1." />
+      <xs:enumeration value="1.01." />
+      <xs:enumeration value="1.01.0.01." />
+      <xs:enumeration value="1.01.0.02." />
+      <xs:enumeration value="1.01.0.03." />
+      <xs:enumeration value="1.01.0.04." />
+      <xs:enumeration value="1.01.0.51." />
+      <xs:enumeration value="1.01.0.53." />
+      <xs:enumeration value="1.01.0.54." />
+      <xs:enumeration value="1.01.0.55." />
+      <xs:enumeration value="1.01.0.56." />
+      <xs:enumeration value="1.01.0.56.03." />
+      <xs:enumeration value="1.01.0.57." />
+      <xs:enumeration value="1.01.0.58." />
+      <xs:enumeration value="1.01.0.59." />
+      <xs:enumeration value="1.01.0.60." />
+      <xs:enumeration value="1.01.0.61." />
+      <xs:enumeration value="1.01.0.62." />
+      <xs:enumeration value="1.02." />
+      <xs:enumeration value="1.02.0.01." />
+      <xs:enumeration value="1.02.0.02." />
+      <xs:enumeration value="1.02.0.03." />
+      <xs:enumeration value="1.02.0.04." />
+      <xs:enumeration value="1.02.0.04.09." />
+      <xs:enumeration value="1.02.0.05." />
+      <xs:enumeration value="1.02.0.06." />
+      <xs:enumeration value="1.02.0.07." />
+      <xs:enumeration value="1.02.0.08." />
+      <xs:enumeration value="1.03." />
+      <xs:enumeration value="1.03.1.01." />
+      <xs:enumeration value="1.03.1.02." />
+      <xs:enumeration value="1.03.1.03." />
+      <xs:enumeration value="1.03.1.51." />
+      <xs:enumeration value="1.03.1.52.01." />
+      <xs:enumeration value="1.03.1.52.02." />
+      <xs:enumeration value="1.03.1.52.03." />
+      <xs:enumeration value="1.03.1.53." />
+      <xs:enumeration value="1.03.1.54." />
+      <xs:enumeration value="1.03.1.55.03." />
+      <xs:enumeration value="1.03.1.56." />
+      <xs:enumeration value="1.03.1.57." />
+      <xs:enumeration value="1.03.1.58." />
+      <xs:enumeration value="1.03.1.59." />
+      <xs:enumeration value="1.03.2.01.01." />
+      <xs:enumeration value="1.03.2.41." />
+      <xs:enumeration value="1.03.2.51." />
+      <xs:enumeration value="1.03.2.51.01." />
+      <xs:enumeration value="1.03.2.51.02." />
+      <xs:enumeration value="1.03.2.52." />
+      <xs:enumeration value="1.03.2.53." />
+      <xs:enumeration value="1.03.2.53.01." />
+      <xs:enumeration value="1.03.2.53.02." />
+      <xs:enumeration value="1.03.2.53.03." />
+      <xs:enumeration value="1.03.2.53.04." />
+      <xs:enumeration value="1.03.2.53.05." />
+      <xs:enumeration value="1.03.2.53.06." />
+      <xs:enumeration value="1.03.2.54." />
+      <xs:enumeration value="1.03.2.55." />
+      <xs:enumeration value="1.03.2.56." />
+      <xs:enumeration value="1.03.2.57.01." />
+      <xs:enumeration value="1.03.2.57.02." />
+      <xs:enumeration value="1.03.2.57.03." />
+      <xs:enumeration value="1.03.3.51." />
+      <xs:enumeration value="1.03.3.52." />
+      <xs:enumeration value="1.03.3.52.01." />
+      <xs:enumeration value="1.03.3.52.02." />
+      <xs:enumeration value="1.03.3.53." />
+      <xs:enumeration value="1.03.3.54." />
+      <xs:enumeration value="1.03.3.55." />
+      <xs:enumeration value="1.03.3.56." />
+      <xs:enumeration value="1.03.3.57." />
+      <xs:enumeration value="1.03.3.57.01." />
+      <xs:enumeration value="1.03.3.57.02." />
+      <xs:enumeration value="1.03.3.58." />
+      <xs:enumeration value="1.03.3.58.01." />
+      <xs:enumeration value="1.03.3.58.02." />
+      <xs:enumeration value="1.03.3.59." />
+      <xs:enumeration value="1.03.3.60." />
+      <xs:enumeration value="1.03.3.61." />
+      <xs:enumeration value="1.03.3.61.02." />
+      <xs:enumeration value="1.03.4.01." />
+      <xs:enumeration value="1.03.4.02." />
+      <xs:enumeration value="1.03.4.03." />
+      <xs:enumeration value="1.03.4.04." />
+      <xs:enumeration value="1.03.4.05." />
+      <xs:enumeration value="1.03.4.51." />
+      <xs:enumeration value="1.03.4.52." />
+      <xs:enumeration value="1.03.4.52.01." />
+      <xs:enumeration value="1.03.4.52.02." />
+      <xs:enumeration value="1.03.4.53." />
+      <xs:enumeration value="1.03.4.54." />
+      <xs:enumeration value="1.03.4.55." />
+      <xs:enumeration value="1.03.4.56." />
+      <xs:enumeration value="1.03.4.57." />
+      <xs:enumeration value="1.03.4.58." />
+      <xs:enumeration value="1.03.4.59." />
+      <xs:enumeration value="1.03.4.59.02." />
+      <xs:enumeration value="1.03.4.60." />
+      <xs:enumeration value="1.03.4.61." />
+      <xs:enumeration value="1.03.4.62." />
+      <xs:enumeration value="1.04." />
+      <xs:enumeration value="1.04.0.11." />
+      <xs:enumeration value="1.04.0.12." />
+      <xs:enumeration value="1.05." />
+      <xs:enumeration value="1.05.1.11." />
+      <xs:enumeration value="1.05.1.12." />
+      <xs:enumeration value="1.05.1.12.01." />
+      <xs:enumeration value="1.05.1.13." />
+      <xs:enumeration value="1.05.1.13.01." />
+      <xs:enumeration value="1.05.1.14." />
+      <xs:enumeration value="1.05.1.16." />
+      <xs:enumeration value="1.05.1.17." />
+      <xs:enumeration value="1.05.1.19." />
+      <xs:enumeration value="1.05.1.20." />
+      <xs:enumeration value="1.05.1.22." />
+      <xs:enumeration value="1.05.1.24." />
+      <xs:enumeration value="1.05.1.54." />
+      <xs:enumeration value="1.05.1.58." />
+      <xs:enumeration value="1.05.1.62." />
+      <xs:enumeration value="1.05.1.66." />
+      <xs:enumeration value="1.05.1.70." />
+      <xs:enumeration value="1.05.1.70.1." />
+      <xs:enumeration value="1.05.3.13." />
+      <xs:enumeration value="1.05.3.14." />
+      <xs:enumeration value="1.05.3.15." />
+      <xs:enumeration value="1.05.3.15.01." />
+      <xs:enumeration value="1.05.3.15.02." />
+      <xs:enumeration value="1.05.3.15.09." />
+      <xs:enumeration value="1.05.3.16." />
+      <xs:enumeration value="1.05.3.34." />
+      <xs:enumeration value="1.05.3.54." />
+      <xs:enumeration value="1.05.3.58." />
+      <xs:enumeration value="1.05.3.62." />
+      <xs:enumeration value="1.05.3.66." />
+      <xs:enumeration value="1.05.3.70." />
+      <xs:enumeration value="1.05.3.74." />
+      <xs:enumeration value="1.05.3.78." />
+      <xs:enumeration value="1.05.3.82." />
+      <xs:enumeration value="1.05.3.82.1." />
+      <xs:enumeration value="1.05.5.12." />
+      <xs:enumeration value="1.05.5.13." />
+      <xs:enumeration value="1.05.5.15." />
+      <xs:enumeration value="1.05.5.54." />
+      <xs:enumeration value="1.05.5.58." />
+      <xs:enumeration value="1.05.5.62." />
+      <xs:enumeration value="1.05.5.66." />
+      <xs:enumeration value="1.05.5.70." />
+      <xs:enumeration value="1.05.7.11." />
+      <xs:enumeration value="1.05.7.54." />
+      <xs:enumeration value="1.05.7.58." />
+      <xs:enumeration value="1.05.7.62." />
+      <xs:enumeration value="1.05.7.66." />
+      <xs:enumeration value="1.05.7.70." />
+      <xs:enumeration value="1.05.7.74." />
+      <xs:enumeration value="1.05.9.11." />
+      <xs:enumeration value="1.05.9.13." />
+      <xs:enumeration value="1.05.9.14." />
+      <xs:enumeration value="1.05.9.15." />
+      <xs:enumeration value="1.05.9.16." />
+      <xs:enumeration value="1.05.9.54." />
+      <xs:enumeration value="1.05.9.54.01." />
+      <xs:enumeration value="1.05.9.58." />
+      <xs:enumeration value="1.05.9.62." />
+      <xs:enumeration value="1.05.9.66." />
+      <xs:enumeration value="1.05.9.70." />
+      <xs:enumeration value="1.05.9.74." />
+      <xs:enumeration value="1.05.9.78." />
+      <xs:enumeration value="1.05.9.78.01." />
+      <xs:enumeration value="1.06." />
+      <xs:enumeration value="1.06.4.12." />
+      <xs:enumeration value="1.06.4.12.01." />
+      <xs:enumeration value="1.06.4.12.09." />
+      <xs:enumeration value="1.06.4.13." />
+      <xs:enumeration value="1.06.4.14." />
+      <xs:enumeration value="1.06.4.31." />
+      <xs:enumeration value="1.06.4.32." />
+      <xs:enumeration value="1.06.4.32.01." />
+      <xs:enumeration value="1.06.4.33." />
+      <xs:enumeration value="1.06.4.34." />
+      <xs:enumeration value="1.06.4.35." />
+      <xs:enumeration value="1.06.4.36." />
+      <xs:enumeration value="1.06.4.37." />
+      <xs:enumeration value="1.06.4.38." />
+      <xs:enumeration value="1.06.4.39." />
+      <xs:enumeration value="1.06.4.40." />
+      <xs:enumeration value="1.06.5.31." />
+      <xs:enumeration value="1.06.5.32." />
+      <xs:enumeration value="1.06.5.32.01." />
+      <xs:enumeration value="1.06.5.33." />
+      <xs:enumeration value="1.06.5.33.01." />
+      <xs:enumeration value="1.06.5.34." />
+      <xs:enumeration value="1.06.5.35." />
+      <xs:enumeration value="1.06.6.11." />
+      <xs:enumeration value="1.06.6.31." />
+      <xs:enumeration value="1.06.6.32." />
+      <xs:enumeration value="1.06.6.33." />
+      <xs:enumeration value="1.06.6.34." />
+      <xs:enumeration value="1.06.6.35." />
+      <xs:enumeration value="1.06.6.35.1." />
+      <xs:enumeration value="1.06.6.35.2." />
+      <xs:enumeration value="1.06.6.35.3." />
+      <xs:enumeration value="1.06.6.35.4." />
+      <xs:enumeration value="1.06.6.36." />
+      <xs:enumeration value="1.07." />
+      <xs:enumeration value="1.07.0.51." />
+      <xs:enumeration value="1.07.0.52." />
+      <xs:enumeration value="1.07.0.53." />
+      <xs:enumeration value="1.07.0.54." />
+      <xs:enumeration value="1.07.0.55." />
+      <xs:enumeration value="1.07.0.56." />
+      <xs:enumeration value="1.07.0.57." />
+      <xs:enumeration value="1.07.0.58." />
+      <xs:enumeration value="1.07.0.59." />
+      <xs:enumeration value="1.07.0.60." />
+      <xs:enumeration value="1.07.0.61." />
+      <xs:enumeration value="1.07.0.62." />
+      <xs:enumeration value="1.07.0.63." />
+      <xs:enumeration value="1.07.0.64." />
+      <xs:enumeration value="1.07.0.65." />
+      <xs:enumeration value="1.07.0.66." />
+      <xs:enumeration value="1.07.0.67." />
+      <xs:enumeration value="1.07.0.68." />
+      <xs:enumeration value="1.07.0.69." />
+      <xs:enumeration value="1.07.0.70." />
+      <xs:enumeration value="1.07.0.71." />
+      <xs:enumeration value="1.07.0.72." />
+      <xs:enumeration value="1.07.0.73." />
+      <xs:enumeration value="1.07.0.74." />
+      <xs:enumeration value="1.07.0.75." />
+      <xs:enumeration value="1.07.0.76." />
+      <xs:enumeration value="1.07.0.77." />
+      <xs:enumeration value="1.07.0.78." />
+      <xs:enumeration value="1.07.0.79." />
+      <xs:enumeration value="1.07.0.80." />
+      <xs:enumeration value="1.07.0.81." />
+      <xs:enumeration value="1.07.0.82." />
+      <xs:enumeration value="1.07.0.83." />
+      <xs:enumeration value="1.07.0.84." />
+      <xs:enumeration value="1.07.1.32." />
+      <xs:enumeration value="1.08." />
+      <xs:enumeration value="1.08.1.11." />
+      <xs:enumeration value="1.08.1.15." />
+      <xs:enumeration value="1.08.1.15.01." />
+      <xs:enumeration value="1.08.1.16." />
+      <xs:enumeration value="1.08.1.17." />
+      <xs:enumeration value="1.08.1.18." />
+      <xs:enumeration value="1.08.1.19." />
+      <xs:enumeration value="1.08.1.19.01." />
+      <xs:enumeration value="1.08.1.21." />
+      <xs:enumeration value="1.08.1.25." />
+      <xs:enumeration value="1.08.1.26." />
+      <xs:enumeration value="1.08.1.27." />
+      <xs:enumeration value="1.08.1.27.01." />
+      <xs:enumeration value="1.08.1.28." />
+      <xs:enumeration value="1.08.1.35." />
+      <xs:enumeration value="1.08.1.36." />
+      <xs:enumeration value="1.08.1.36.01." />
+      <xs:enumeration value="1.08.2.15." />
+      <xs:enumeration value="1.08.2.16." />
+      <xs:enumeration value="1.08.2.22." />
+      <xs:enumeration value="1.08.2.25." />
+      <xs:enumeration value="1.08.2.26." />
+      <xs:enumeration value="1.08.2.35." />
+      <xs:enumeration value="1.08.2.36." />
+      <xs:enumeration value="1.08.2.37." />
+      <xs:enumeration value="1.08.3.15." />
+      <xs:enumeration value="1.08.3.16." />
+      <xs:enumeration value="1.08.3.17." />
+      <xs:enumeration value="1.08.3.25." />
+      <xs:enumeration value="1.08.3.26." />
+      <xs:enumeration value="1.08.3.27." />
+      <xs:enumeration value="1.08.3.35." />
+      <xs:enumeration value="1.08.3.36." />
+      <xs:enumeration value="1.08.3.37." />
+      <xs:enumeration value="1.08.4.15." />
+      <xs:enumeration value="1.08.4.16." />
+      <xs:enumeration value="1.08.4.17." />
+      <xs:enumeration value="1.08.4.25." />
+      <xs:enumeration value="1.08.4.26." />
+      <xs:enumeration value="1.08.4.35." />
+      <xs:enumeration value="1.08.4.36." />
+      <xs:enumeration value="1.08.4.37." />
+      <xs:enumeration value="1.09." />
+      <xs:enumeration value="1.09.1.61." />
+      <xs:enumeration value="1.09.1.62." />
+      <xs:enumeration value="1.09.1.71." />
+      <xs:enumeration value="1.09.1.72." />
+      <xs:enumeration value="1.09.1.72.01." />
+      <xs:enumeration value="1.09.1.73.02." />
+      <xs:enumeration value="1.09.1.74." />
+      <xs:enumeration value="1.09.1.75." />
+      <xs:enumeration value="1.09.1.76." />
+      <xs:enumeration value="1.09.1.77." />
+      <xs:enumeration value="1.09.1.78." />
+      <xs:enumeration value="1.09.1.79." />
+      <xs:enumeration value="1.09.1.80." />
+      <xs:enumeration value="1.09.1.81." />
+      <xs:enumeration value="1.09.1.82." />
+      <xs:enumeration value="1.09.1.83." />
+      <xs:enumeration value="1.09.1.84." />
+      <xs:enumeration value="1.09.1.85.01." />
+      <xs:enumeration value="1.09.1.86." />
+      <xs:enumeration value="1.09.1.87." />
+      <xs:enumeration value="1.09.1.88." />
+      <xs:enumeration value="1.09.1.89." />
+      <xs:enumeration value="1.09.1.90." />
+      <xs:enumeration value="1.09.2.71." />
+      <xs:enumeration value="1.09.2.72." />
+      <xs:enumeration value="1.09.2.73." />
+      <xs:enumeration value="1.09.2.74." />
+      <xs:enumeration value="1.09.2.75." />
+      <xs:enumeration value="1.09.2.76." />
+      <xs:enumeration value="1.09.2.77." />
+      <xs:enumeration value="1.09.2.78." />
+      <xs:enumeration value="1.09.2.79." />
+      <xs:enumeration value="1.09.3.61.01." />
+      <xs:enumeration value="1.09.3.63." />
+      <xs:enumeration value="1.09.3.71." />
+      <xs:enumeration value="1.09.3.72." />
+      <xs:enumeration value="1.09.3.73." />
+      <xs:enumeration value="1.09.3.74." />
+      <xs:enumeration value="1.09.3.75." />
+      <xs:enumeration value="1.09.3.76.01." />
+      <xs:enumeration value="1.09.3.77." />
+      <xs:enumeration value="1.09.3.77.01." />
+      <xs:enumeration value="1.09.4.62." />
+      <xs:enumeration value="1.09.4.71." />
+      <xs:enumeration value="1.09.4.72." />
+      <xs:enumeration value="1.09.4.73." />
+      <xs:enumeration value="1.09.4.74." />
+      <xs:enumeration value="1.09.4.75." />
+      <xs:enumeration value="1.09.4.76." />
+      <xs:enumeration value="1.09.4.77." />
+      <xs:enumeration value="1.09.4.78." />
+      <xs:enumeration value="1.09.4.79." />
+      <xs:enumeration value="1.09.5.61." />
+      <xs:enumeration value="1.09.5.64." />
+      <xs:enumeration value="1.09.5.65." />
+      <xs:enumeration value="1.09.5.71.01." />
+      <xs:enumeration value="1.09.5.71.02." />
+      <xs:enumeration value="1.09.5.72.01." />
+      <xs:enumeration value="1.09.5.73." />
+      <xs:enumeration value="1.09.5.74." />
+      <xs:enumeration value="1.09.5.75." />
+      <xs:enumeration value="1.09.5.76." />
+      <xs:enumeration value="1.09.5.77." />
+      <xs:enumeration value="1.09.6.71." />
+      <xs:enumeration value="1.09.6.72." />
+      <xs:enumeration value="1.09.6.73." />
+      <xs:enumeration value="1.09.6.74." />
+      <xs:enumeration value="1.09.6.75." />
+      <xs:enumeration value="1.09.6.76." />
+      <xs:enumeration value="1.09.6.77." />
+      <xs:enumeration value="1.09.6.77.01." />
+      <xs:enumeration value="1.09.6.77.02." />
+      <xs:enumeration value="1.09.6.78." />
+      <xs:enumeration value="1.09.6.79." />
+      <xs:enumeration value="1.09.7.61." />
+      <xs:enumeration value="1.09.7.62." />
+      <xs:enumeration value="1.09.7.64." />
+      <xs:enumeration value="1.09.7.71." />
+      <xs:enumeration value="1.09.7.72." />
+      <xs:enumeration value="1.09.7.73." />
+      <xs:enumeration value="1.09.7.74." />
+      <xs:enumeration value="1.09.7.75." />
+      <xs:enumeration value="1.09.7.76." />
+      <xs:enumeration value="1.09.7.77." />
+      <xs:enumeration value="1.09.7.78." />
+      <xs:enumeration value="1.09.7.79.01." />
+      <xs:enumeration value="1.09.7.80." />
+      <xs:enumeration value="1.10." />
+      <xs:enumeration value="1.10.0.41." />
+      <xs:enumeration value="1.10.0.42." />
+      <xs:enumeration value="1.10.0.43." />
+      <xs:enumeration value="1.10.0.44." />
+      <xs:enumeration value="1.10.0.45." />
+      <xs:enumeration value="1.10.0.46." />
+      <xs:enumeration value="1.11." />
+      <xs:enumeration value="1.11.0.01.01." />
+      <xs:enumeration value="1.11.0.01.09." />
+      <xs:enumeration value="1.11.0.02.01." />
+      <xs:enumeration value="1.11.0.03.01." />
+      <xs:enumeration value="1.11.0.04.01." />
+      <xs:enumeration value="1.11.0.04.09." />
+      <xs:enumeration value="1.11.0.05.01." />
+      <xs:enumeration value="1.11.0.06.01." />
+      <xs:enumeration value="1.11.0.06.02." />
+      <xs:enumeration value="1.11.0.07.01." />
+      <xs:enumeration value="1.11.0.07.09." />
+      <xs:enumeration value="1.11.0.08.01." />
+      <xs:enumeration value="1.11.0.09.01." />
+      <xs:enumeration value="1.11.0.09.02." />
+      <xs:enumeration value="1.11.0.10.01." />
+      <xs:enumeration value="1.11.0.11.01." />
+      <xs:enumeration value="1.11.0.11.09." />
+      <xs:enumeration value="1.11.0.12.01." />
+      <xs:enumeration value="1.12." />
+      <xs:enumeration value="1.12.0.51." />
+      <xs:enumeration value="1.12.0.52." />
+      <xs:enumeration value="1.12.0.53." />
+      <xs:enumeration value="1.12.0.54." />
+      <xs:enumeration value="1.12.0.60." />
+      <xs:enumeration value="1.12.0.61." />
+      <xs:enumeration value="1.12.0.61.01." />
+      <xs:enumeration value="1.12.0.62." />
+      <xs:enumeration value="1.12.0.63." />
+      <xs:enumeration value="1.12.0.64." />
+      <xs:enumeration value="1.12.0.65." />
+      <xs:enumeration value="1.12.0.66." />
+      <xs:enumeration value="1.12.0.67." />
+      <xs:enumeration value="1.12.0.68." />
+      <xs:enumeration value="1.12.0.69." />
+      <xs:enumeration value="1.12.0.70." />
+      <xs:enumeration value="1.12.0.71." />
+      <xs:enumeration value="1.12.0.72." />
+      <xs:enumeration value="1.12.0.73." />
+      <xs:enumeration value="1.12.0.73.01." />
+      <xs:enumeration value="1.13." />
+      <xs:enumeration value="1.13.0.01." />
+      <xs:enumeration value="1.13.0.02." />
+      <xs:enumeration value="1.13.0.03." />
+      <xs:enumeration value="1.13.0.04." />
+      <xs:enumeration value="1.13.0.05." />
+      <xs:enumeration value="1.13.0.06." />
+      <xs:enumeration value="1.13.0.51." />
+      <xs:enumeration value="1.13.0.52." />
+      <xs:enumeration value="1.13.0.53." />
+      <xs:enumeration value="1.13.0.54." />
+      <xs:enumeration value="1.13.0.55." />
+      <xs:enumeration value="1.13.0.56." />
+      <xs:enumeration value="1.13.0.57." />
+      <xs:enumeration value="1.13.0.58." />
+      <xs:enumeration value="1.13.0.59." />
+      <xs:enumeration value="1.13.0.60." />
+      <xs:enumeration value="1.13.0.61." />
+      <xs:enumeration value="1.13.0.62." />
+      <xs:enumeration value="1.13.0.71." />
+      <xs:enumeration value="1.13.0.71.01." />
+      <xs:enumeration value="1.13.0.71.02." />
+      <xs:enumeration value="1.13.0.71.03." />
+      <xs:enumeration value="1.13.0.72." />
+      <xs:enumeration value="1.13.0.72.01." />
+      <xs:enumeration value="1.13.0.73." />
+      <xs:enumeration value="1.13.0.73.01." />
+      <xs:enumeration value="1.13.0.73.02." />
+      <xs:enumeration value="1.13.0.74." />
+      <xs:enumeration value="1.13.0.75." />
+      <xs:enumeration value="1.13.0.75.01." />
+      <xs:enumeration value="1.13.0.75.02." />
+      <xs:enumeration value="1.13.0.76." />
+      <xs:enumeration value="1.13.0.76.01." />
+      <xs:enumeration value="1.14." />
+      <xs:enumeration value="1.14.1." />
+      <xs:enumeration value="1.14.1.61." />
+      <xs:enumeration value="1.14.1.66." />
+      <xs:enumeration value="1.14.1.67." />
+      <xs:enumeration value="1.14.1.71." />
+      <xs:enumeration value="1.14.1.73." />
+      <xs:enumeration value="1.14.1.77." />
+      <xs:enumeration value="1.14.1.78." />
+      <xs:enumeration value="1.14.1.81." />
+      <xs:enumeration value="1.14.1.82." />
+      <xs:enumeration value="1.14.1.88." />
+      <xs:enumeration value="1.14.1.91." />
+      <xs:enumeration value="1.14.1.93." />
+      <xs:enumeration value="1.14.2." />
+      <xs:enumeration value="1.14.2.62.01." />
+      <xs:enumeration value="1.14.2.62.02." />
+      <xs:enumeration value="1.14.2.63." />
+      <xs:enumeration value="1.14.2.64." />
+      <xs:enumeration value="1.14.2.72." />
+      <xs:enumeration value="1.14.2.80." />
+      <xs:enumeration value="1.14.2.84." />
+      <xs:enumeration value="1.14.2.85." />
+      <xs:enumeration value="1.14.2.86.01." />
+      <xs:enumeration value="1.14.2.86.02." />
+      <xs:enumeration value="1.14.2.87." />
+      <xs:enumeration value="1.14.2.90." />
+      <xs:enumeration value="1.14.2.92." />
+      <xs:enumeration value="1.14.3." />
+      <xs:enumeration value="1.14.3.65." />
+      <xs:enumeration value="1.14.3.74." />
+      <xs:enumeration value="1.14.3.75." />
+      <xs:enumeration value="1.14.3.79." />
+      <xs:enumeration value="1.14.3.83." />
+      <xs:enumeration value="1.14.3.89." />
+      <xs:enumeration value="1.14.5.11." />
+      <xs:enumeration value="1.14.5.21.01." />
+      <xs:enumeration value="1.14.5.21.02." />
+      <xs:enumeration value="1.14.5.21.03." />
+      <xs:enumeration value="1.14.5.21.04." />
+      <xs:enumeration value="1.14.5.22.01." />
+      <xs:enumeration value="1.14.5.22.02." />
+      <xs:enumeration value="1.14.5.22.03." />
+      <xs:enumeration value="1.14.5.23.01." />
+      <xs:enumeration value="1.14.5.23.02." />
+      <xs:enumeration value="1.14.5.24.01." />
+      <xs:enumeration value="1.14.5.24.02." />
+      <xs:enumeration value="1.14.5.24.03." />
+      <xs:enumeration value="1.14.6.12." />
+      <xs:enumeration value="1.14.6.25.01." />
+      <xs:enumeration value="1.14.6.25.02." />
+      <xs:enumeration value="1.14.6.25.03." />
+      <xs:enumeration value="1.14.6.26.01." />
+      <xs:enumeration value="1.14.6.26.02." />
+      <xs:enumeration value="1.14.6.26.03." />
+      <xs:enumeration value="1.14.6.27.01." />
+      <xs:enumeration value="1.14.6.27.02." />
+      <xs:enumeration value="1.14.6.28.01." />
+      <xs:enumeration value="1.14.6.28.02." />
+      <xs:enumeration value="1.14.7.13." />
+      <xs:enumeration value="1.14.7.29.01." />
+      <xs:enumeration value="1.14.7.29.02." />
+      <xs:enumeration value="1.14.7.30.01." />
+      <xs:enumeration value="1.14.7.30.02." />
+      <xs:enumeration value="1.15." />
+      <xs:enumeration value="1.15.0.01." />
+      <xs:enumeration value="1.15.0.02." />
+      <xs:enumeration value="1.15.0.03." />
+      <xs:enumeration value="1.15.0.81." />
+      <xs:enumeration value="1.15.0.82.01." />
+      <xs:enumeration value="1.15.0.82.02." />
+      <xs:enumeration value="1.15.0.82.03." />
+      <xs:enumeration value="1.15.0.83.01." />
+      <xs:enumeration value="1.15.0.83.02." />
+      <xs:enumeration value="1.15.0.84.01." />
+      <xs:enumeration value="1.15.0.84.02." />
+      <xs:enumeration value="1.15.0.85.01." />
+      <xs:enumeration value="1.15.0.85.02." />
+      <xs:enumeration value="1.15.0.85.03." />
+      <xs:enumeration value="1.15.0.86." />
+      <xs:enumeration value="1.15.0.87.01." />
+      <xs:enumeration value="1.15.0.87.02." />
+      <xs:enumeration value="1.15.0.88.01." />
+      <xs:enumeration value="1.15.0.88.02." />
+      <xs:enumeration value="1.15.0.89.01." />
+      <xs:enumeration value="1.15.0.89.02." />
+      <xs:enumeration value="1.15.0.89.03." />
+      <xs:enumeration value="1.15.0.90." />
+      <xs:enumeration value="1.15.0.91." />
+      <xs:enumeration value="1.15.1.01." />
+      <xs:enumeration value="1.15.1.51." />
+      <xs:enumeration value="1.15.1.53." />
+      <xs:enumeration value="1.15.1.54." />
+      <xs:enumeration value="1.15.1.59." />
+      <xs:enumeration value="1.15.1.71." />
+      <xs:enumeration value="1.15.2.02." />
+      <xs:enumeration value="1.15.2.56." />
+      <xs:enumeration value="1.15.2.60." />
+      <xs:enumeration value="1.15.2.61." />
+      <xs:enumeration value="1.15.2.65." />
+      <xs:enumeration value="1.15.2.66." />
+      <xs:enumeration value="1.15.2.68.01." />
+      <xs:enumeration value="1.15.2.68.02." />
+      <xs:enumeration value="1.15.3.03." />
+      <xs:enumeration value="1.15.3.52." />
+      <xs:enumeration value="1.15.3.55.01." />
+      <xs:enumeration value="1.15.3.55.02." />
+      <xs:enumeration value="1.15.3.57." />
+      <xs:enumeration value="1.15.3.58." />
+      <xs:enumeration value="1.15.3.62." />
+      <xs:enumeration value="1.15.3.63.01." />
+      <xs:enumeration value="1.15.3.63.02." />
+      <xs:enumeration value="1.15.3.63.03." />
+      <xs:enumeration value="1.15.3.64." />
+      <xs:enumeration value="1.15.3.67." />
+      <xs:enumeration value="1.15.3.69." />
+      <xs:enumeration value="1.15.3.70." />
+      <xs:enumeration value="1.16." />
+      <xs:enumeration value="1.16.0.51." />
+      <xs:enumeration value="1.16.0.52." />
+      <xs:enumeration value="1.16.0.53." />
+      <xs:enumeration value="1.16.0.54." />
+      <xs:enumeration value="1.16.0.55." />
+      <xs:enumeration value="1.16.0.61." />
+      <xs:enumeration value="1.16.0.62." />
+      <xs:enumeration value="1.16.0.63." />
+      <xs:enumeration value="1.16.0.64.01." />
+      <xs:enumeration value="1.16.0.65.01." />
+      <xs:enumeration value="1.16.0.65.02." />
+      <xs:enumeration value="1.16.0.66." />
+      <xs:enumeration value="1.16.0.67." />
+      <xs:enumeration value="1.16.0.68." />
+      <xs:enumeration value="1.16.0.69." />
+      <xs:enumeration value="1.16.0.70.01." />
+      <xs:enumeration value="1.16.0.70.02." />
+      <xs:enumeration value="1.16.0.71." />
+      <xs:enumeration value="1.16.0.72." />
+      <xs:enumeration value="1.16.0.73.01." />
+      <xs:enumeration value="1.16.0.73.02." />
+      <xs:enumeration value="1.16.0.74." />
+      <xs:enumeration value="1.16.0.75.02." />
+      <xs:enumeration value="1.16.0.75.03." />
+      <xs:enumeration value="1.16.0.76." />
+      <xs:enumeration value="1.16.0.77." />
+      <xs:enumeration value="1.17." />
+      <xs:enumeration value="1.17.0.01." />
+      <xs:enumeration value="1.17.0.02." />
+      <xs:enumeration value="1.17.0.03." />
+      <xs:enumeration value="1.17.0.04." />
+      <xs:enumeration value="2.01.0.01." />
+      <xs:enumeration value="2.01.0.02." />
+      <xs:enumeration value="2.01.0.03." />
+      <xs:enumeration value="2.01.0.04." />
+      <xs:enumeration value="2.01.0.51." />
+      <xs:enumeration value="2.01.0.53." />
+      <xs:enumeration value="2.01.0.54." />
+      <xs:enumeration value="2.01.0.55." />
+      <xs:enumeration value="2.01.0.56." />
+      <xs:enumeration value="2.01.0.57." />
+      <xs:enumeration value="2.01.0.58." />
+      <xs:enumeration value="2.01.0.59." />
+      <xs:enumeration value="2.01.0.60." />
+      <xs:enumeration value="2.01.0.61." />
+      <xs:enumeration value="2.01.0.62." />
+      <xs:enumeration value="2.02.0.01." />
+      <xs:enumeration value="2.02.0.02." />
+      <xs:enumeration value="2.02.0.03." />
+      <xs:enumeration value="2.02.0.04." />
+      <xs:enumeration value="2.02.0.05." />
+      <xs:enumeration value="2.02.0.06." />
+      <xs:enumeration value="2.02.0.07." />
+      <xs:enumeration value="2.02.0.08." />
+      <xs:enumeration value="2.03.1.01." />
+      <xs:enumeration value="2.03.1.02." />
+      <xs:enumeration value="2.03.1.03." />
+      <xs:enumeration value="2.03.1.51." />
+      <xs:enumeration value="2.03.1.53." />
+      <xs:enumeration value="2.03.1.54." />
+      <xs:enumeration value="2.03.1.55.03." />
+      <xs:enumeration value="2.03.1.57." />
+      <xs:enumeration value="2.03.1.58." />
+      <xs:enumeration value="2.03.1.59." />
+      <xs:enumeration value="2.03.2.41." />
+      <xs:enumeration value="2.03.2.51." />
+      <xs:enumeration value="2.03.2.52." />
+      <xs:enumeration value="2.03.2.54." />
+      <xs:enumeration value="2.03.2.55." />
+      <xs:enumeration value="2.03.2.56." />
+      <xs:enumeration value="2.03.2.57.01." />
+      <xs:enumeration value="2.03.3.51." />
+      <xs:enumeration value="2.03.3.52." />
+      <xs:enumeration value="2.03.3.53." />
+      <xs:enumeration value="2.03.3.54." />
+      <xs:enumeration value="2.03.3.55." />
+      <xs:enumeration value="2.03.3.56." />
+      <xs:enumeration value="2.03.3.57." />
+      <xs:enumeration value="2.03.3.58." />
+      <xs:enumeration value="2.03.3.59." />
+      <xs:enumeration value="2.03.3.60." />
+      <xs:enumeration value="2.03.3.61.02." />
+      <xs:enumeration value="2.03.4.01." />
+      <xs:enumeration value="2.03.4.02." />
+      <xs:enumeration value="2.03.4.03." />
+      <xs:enumeration value="2.03.4.05." />
+      <xs:enumeration value="2.03.4.51." />
+      <xs:enumeration value="2.03.4.52." />
+      <xs:enumeration value="2.03.4.53." />
+      <xs:enumeration value="2.03.4.54." />
+      <xs:enumeration value="2.03.4.55." />
+      <xs:enumeration value="2.03.4.56." />
+      <xs:enumeration value="2.03.4.57." />
+      <xs:enumeration value="2.03.4.58." />
+      <xs:enumeration value="2.03.4.59." />
+      <xs:enumeration value="2.03.4.60." />
+      <xs:enumeration value="2.03.4.61." />
+      <xs:enumeration value="2.03.4.62." />
+      <xs:enumeration value="2.04.0.11." />
+      <xs:enumeration value="2.04.0.12." />
+      <xs:enumeration value="2.05.1.11." />
+      <xs:enumeration value="2.05.1.12." />
+      <xs:enumeration value="2.05.1.13." />
+      <xs:enumeration value="2.05.1.14." />
+      <xs:enumeration value="2.05.1.16." />
+      <xs:enumeration value="2.05.1.17." />
+      <xs:enumeration value="2.05.1.19." />
+      <xs:enumeration value="2.05.1.20." />
+      <xs:enumeration value="2.05.1.22." />
+      <xs:enumeration value="2.05.1.24." />
+      <xs:enumeration value="2.05.1.54." />
+      <xs:enumeration value="2.05.1.58." />
+      <xs:enumeration value="2.05.1.62." />
+      <xs:enumeration value="2.05.1.66." />
+      <xs:enumeration value="2.05.1.70." />
+      <xs:enumeration value="2.05.3.14." />
+      <xs:enumeration value="2.05.3.15." />
+      <xs:enumeration value="2.05.3.16." />
+      <xs:enumeration value="2.05.3.34." />
+      <xs:enumeration value="2.05.3.58." />
+      <xs:enumeration value="2.05.3.62." />
+      <xs:enumeration value="2.05.3.66." />
+      <xs:enumeration value="2.05.3.70." />
+      <xs:enumeration value="2.05.3.74." />
+      <xs:enumeration value="2.05.3.78." />
+      <xs:enumeration value="2.05.3.82." />
+      <xs:enumeration value="2.05.5.12." />
+      <xs:enumeration value="2.05.5.13." />
+      <xs:enumeration value="2.05.5.15." />
+      <xs:enumeration value="2.05.5.54." />
+      <xs:enumeration value="2.05.5.58." />
+      <xs:enumeration value="2.05.5.62." />
+      <xs:enumeration value="2.05.5.66." />
+      <xs:enumeration value="2.05.5.70." />
+      <xs:enumeration value="2.05.7.11." />
+      <xs:enumeration value="2.05.7.54." />
+      <xs:enumeration value="2.05.7.58." />
+      <xs:enumeration value="2.05.7.62." />
+      <xs:enumeration value="2.05.7.66." />
+      <xs:enumeration value="2.05.7.70." />
+      <xs:enumeration value="2.05.7.74." />
+      <xs:enumeration value="2.05.9.11." />
+      <xs:enumeration value="2.05.9.13." />
+      <xs:enumeration value="2.05.9.14." />
+      <xs:enumeration value="2.05.9.15." />
+      <xs:enumeration value="2.05.9.16." />
+      <xs:enumeration value="2.05.9.54." />
+      <xs:enumeration value="2.05.9.58." />
+      <xs:enumeration value="2.05.9.62." />
+      <xs:enumeration value="2.05.9.66." />
+      <xs:enumeration value="2.05.9.70." />
+      <xs:enumeration value="2.05.9.74." />
+      <xs:enumeration value="2.05.9.78." />
+      <xs:enumeration value="2.06.4.12." />
+      <xs:enumeration value="2.06.4.13." />
+      <xs:enumeration value="2.06.4.14." />
+      <xs:enumeration value="2.06.4.31." />
+      <xs:enumeration value="2.06.4.32." />
+      <xs:enumeration value="2.06.4.33." />
+      <xs:enumeration value="2.06.4.34." />
+      <xs:enumeration value="2.06.4.35." />
+      <xs:enumeration value="2.06.4.36." />
+      <xs:enumeration value="2.06.4.37." />
+      <xs:enumeration value="2.06.4.38." />
+      <xs:enumeration value="2.06.4.39." />
+      <xs:enumeration value="2.06.4.40." />
+      <xs:enumeration value="2.06.5.31." />
+      <xs:enumeration value="2.06.5.32." />
+      <xs:enumeration value="2.06.5.33." />
+      <xs:enumeration value="2.06.5.34." />
+      <xs:enumeration value="2.06.5.35." />
+      <xs:enumeration value="2.06.6.11." />
+      <xs:enumeration value="2.06.6.31." />
+      <xs:enumeration value="2.06.6.32." />
+      <xs:enumeration value="2.06.6.34." />
+      <xs:enumeration value="2.06.6.35." />
+      <xs:enumeration value="2.06.6.36." />
+      <xs:enumeration value="2.07.0.53." />
+      <xs:enumeration value="2.07.0.54." />
+      <xs:enumeration value="2.07.0.56." />
+      <xs:enumeration value="2.07.0.58." />
+      <xs:enumeration value="2.07.0.59." />
+      <xs:enumeration value="2.07.0.60." />
+      <xs:enumeration value="2.07.0.63." />
+      <xs:enumeration value="2.07.0.64." />
+      <xs:enumeration value="2.07.0.65." />
+      <xs:enumeration value="2.07.0.66." />
+      <xs:enumeration value="2.07.0.67." />
+      <xs:enumeration value="2.07.0.68." />
+      <xs:enumeration value="2.07.0.69." />
+      <xs:enumeration value="2.07.0.70." />
+      <xs:enumeration value="2.07.0.71." />
+      <xs:enumeration value="2.07.0.73." />
+      <xs:enumeration value="2.07.0.74." />
+      <xs:enumeration value="2.07.0.75." />
+      <xs:enumeration value="2.07.0.76." />
+      <xs:enumeration value="2.07.0.80." />
+      <xs:enumeration value="2.07.0.82." />
+      <xs:enumeration value="2.07.0.83." />
+      <xs:enumeration value="2.07.0.84." />
+      <xs:enumeration value="2.07.1.32." />
+      <xs:enumeration value="2.08.1.11." />
+      <xs:enumeration value="2.08.1.15." />
+      <xs:enumeration value="2.08.1.16." />
+      <xs:enumeration value="2.08.1.17." />
+      <xs:enumeration value="2.08.1.18." />
+      <xs:enumeration value="2.08.1.19." />
+      <xs:enumeration value="2.08.1.21." />
+      <xs:enumeration value="2.08.1.25." />
+      <xs:enumeration value="2.08.1.26." />
+      <xs:enumeration value="2.08.1.27." />
+      <xs:enumeration value="2.08.1.28." />
+      <xs:enumeration value="2.08.1.35." />
+      <xs:enumeration value="2.08.1.36." />
+      <xs:enumeration value="2.08.2.15." />
+      <xs:enumeration value="2.08.2.16." />
+      <xs:enumeration value="2.08.2.22." />
+      <xs:enumeration value="2.08.2.25." />
+      <xs:enumeration value="2.08.2.26." />
+      <xs:enumeration value="2.08.2.35." />
+      <xs:enumeration value="2.08.2.36." />
+      <xs:enumeration value="2.08.2.37." />
+      <xs:enumeration value="2.08.3.15." />
+      <xs:enumeration value="2.08.3.16." />
+      <xs:enumeration value="2.08.3.17." />
+      <xs:enumeration value="2.08.3.25." />
+      <xs:enumeration value="2.08.3.26." />
+      <xs:enumeration value="2.08.3.27." />
+      <xs:enumeration value="2.08.3.35." />
+      <xs:enumeration value="2.08.3.36." />
+      <xs:enumeration value="2.08.3.37." />
+      <xs:enumeration value="2.08.4.15." />
+      <xs:enumeration value="2.08.4.16." />
+      <xs:enumeration value="2.08.4.17." />
+      <xs:enumeration value="2.08.4.25." />
+      <xs:enumeration value="2.08.4.26." />
+      <xs:enumeration value="2.08.4.35." />
+      <xs:enumeration value="2.08.4.36." />
+      <xs:enumeration value="2.08.4.37." />
+      <xs:enumeration value="2.09.1.61." />
+      <xs:enumeration value="2.09.1.62." />
+      <xs:enumeration value="2.09.1.71." />
+      <xs:enumeration value="2.09.1.72." />
+      <xs:enumeration value="2.09.1.73.02." />
+      <xs:enumeration value="2.09.1.74." />
+      <xs:enumeration value="2.09.1.75." />
+      <xs:enumeration value="2.09.1.76." />
+      <xs:enumeration value="2.09.1.77." />
+      <xs:enumeration value="2.09.1.78." />
+      <xs:enumeration value="2.09.1.79." />
+      <xs:enumeration value="2.09.1.80." />
+      <xs:enumeration value="2.09.1.81." />
+      <xs:enumeration value="2.09.1.82." />
+      <xs:enumeration value="2.09.1.83." />
+      <xs:enumeration value="2.09.1.84." />
+      <xs:enumeration value="2.09.1.85.01." />
+      <xs:enumeration value="2.09.1.86." />
+      <xs:enumeration value="2.09.1.87." />
+      <xs:enumeration value="2.09.1.88." />
+      <xs:enumeration value="2.09.1.89." />
+      <xs:enumeration value="2.09.1.90." />
+      <xs:enumeration value="2.09.2.71." />
+      <xs:enumeration value="2.09.2.72." />
+      <xs:enumeration value="2.09.2.73." />
+      <xs:enumeration value="2.09.2.74." />
+      <xs:enumeration value="2.09.2.75." />
+      <xs:enumeration value="2.09.2.76." />
+      <xs:enumeration value="2.09.2.77." />
+      <xs:enumeration value="2.09.2.78." />
+      <xs:enumeration value="2.09.2.79." />
+      <xs:enumeration value="2.09.3.61.01." />
+      <xs:enumeration value="2.09.3.72." />
+      <xs:enumeration value="2.09.3.73." />
+      <xs:enumeration value="2.09.3.74." />
+      <xs:enumeration value="2.09.3.75." />
+      <xs:enumeration value="2.09.3.76.01." />
+      <xs:enumeration value="2.09.3.77." />
+      <xs:enumeration value="2.09.4.71." />
+      <xs:enumeration value="2.09.4.72." />
+      <xs:enumeration value="2.09.4.73." />
+      <xs:enumeration value="2.09.4.74." />
+      <xs:enumeration value="2.09.4.75." />
+      <xs:enumeration value="2.09.4.76." />
+      <xs:enumeration value="2.09.4.77." />
+      <xs:enumeration value="2.09.4.78." />
+      <xs:enumeration value="2.09.4.79." />
+      <xs:enumeration value="2.09.5.61." />
+      <xs:enumeration value="2.09.5.64." />
+      <xs:enumeration value="2.09.5.72.01." />
+      <xs:enumeration value="2.09.5.73." />
+      <xs:enumeration value="2.09.5.74." />
+      <xs:enumeration value="2.09.5.75." />
+      <xs:enumeration value="2.09.5.76." />
+      <xs:enumeration value="2.09.5.77." />
+      <xs:enumeration value="2.09.6.71." />
+      <xs:enumeration value="2.09.6.72." />
+      <xs:enumeration value="2.09.6.73." />
+      <xs:enumeration value="2.09.6.74." />
+      <xs:enumeration value="2.09.6.75." />
+      <xs:enumeration value="2.09.6.76." />
+      <xs:enumeration value="2.09.6.77." />
+      <xs:enumeration value="2.09.6.78." />
+      <xs:enumeration value="2.09.6.79." />
+      <xs:enumeration value="2.09.7.61." />
+      <xs:enumeration value="2.09.7.64." />
+      <xs:enumeration value="2.09.7.71." />
+      <xs:enumeration value="2.09.7.72." />
+      <xs:enumeration value="2.09.7.73." />
+      <xs:enumeration value="2.09.7.74." />
+      <xs:enumeration value="2.09.7.75." />
+      <xs:enumeration value="2.09.7.76." />
+      <xs:enumeration value="2.09.7.77." />
+      <xs:enumeration value="2.09.7.78." />
+      <xs:enumeration value="2.09.7.79.01." />
+      <xs:enumeration value="2.09.7.80." />
+      <xs:enumeration value="2.10.0.41." />
+      <xs:enumeration value="2.10.0.42." />
+      <xs:enumeration value="2.10.0.43." />
+      <xs:enumeration value="2.10.0.44." />
+      <xs:enumeration value="2.10.0.45." />
+      <xs:enumeration value="2.10.0.46." />
+      <xs:enumeration value="2.11.0.01.01." />
+      <xs:enumeration value="2.11.0.02.01." />
+      <xs:enumeration value="2.11.0.03.01." />
+      <xs:enumeration value="2.11.0.04.01." />
+      <xs:enumeration value="2.11.0.05.01." />
+      <xs:enumeration value="2.11.0.06.01." />
+      <xs:enumeration value="2.11.0.07.01." />
+      <xs:enumeration value="2.11.0.08.01." />
+      <xs:enumeration value="2.11.0.09.01." />
+      <xs:enumeration value="2.11.0.10.01." />
+      <xs:enumeration value="2.11.0.11.01." />
+      <xs:enumeration value="2.11.0.12.01." />
+      <xs:enumeration value="2.12.0.51." />
+      <xs:enumeration value="2.12.0.52." />
+      <xs:enumeration value="2.12.0.53." />
+      <xs:enumeration value="2.12.0.54." />
+      <xs:enumeration value="2.12.0.60." />
+      <xs:enumeration value="2.12.0.61." />
+      <xs:enumeration value="2.12.0.62." />
+      <xs:enumeration value="2.12.0.63." />
+      <xs:enumeration value="2.12.0.64." />
+      <xs:enumeration value="2.12.0.65." />
+      <xs:enumeration value="2.12.0.66." />
+      <xs:enumeration value="2.12.0.67." />
+      <xs:enumeration value="2.12.0.68." />
+      <xs:enumeration value="2.12.0.69." />
+      <xs:enumeration value="2.12.0.70." />
+      <xs:enumeration value="2.12.0.71." />
+      <xs:enumeration value="2.12.0.72." />
+      <xs:enumeration value="2.12.0.73." />
+      <xs:enumeration value="2.13.0.03." />
+      <xs:enumeration value="2.13.0.04." />
+      <xs:enumeration value="2.13.0.71." />
+      <xs:enumeration value="2.13.0.72." />
+      <xs:enumeration value="2.13.0.73." />
+      <xs:enumeration value="2.13.0.74." />
+      <xs:enumeration value="2.13.0.75." />
+      <xs:enumeration value="2.13.0.76." />
+      <xs:enumeration value="2.14.5.11." />
+      <xs:enumeration value="2.14.5.21.02." />
+      <xs:enumeration value="2.14.5.22.01." />
+      <xs:enumeration value="2.14.5.23.02." />
+      <xs:enumeration value="2.14.5.24.01." />
+      <xs:enumeration value="2.14.6.12." />
+      <xs:enumeration value="2.14.6.25.03." />
+      <xs:enumeration value="2.14.6.26.01." />
+      <xs:enumeration value="2.14.6.27.01." />
+      <xs:enumeration value="2.14.6.28.01." />
+      <xs:enumeration value="2.14.7.13." />
+      <xs:enumeration value="2.14.7.29.01." />
+      <xs:enumeration value="2.14.7.30.01." />
+      <xs:enumeration value="2.15.0.01." />
+      <xs:enumeration value="2.15.0.02." />
+      <xs:enumeration value="2.15.0.03." />
+      <xs:enumeration value="2.15.0.81." />
+      <xs:enumeration value="2.15.0.82.02." />
+      <xs:enumeration value="2.15.0.83.01." />
+      <xs:enumeration value="2.15.0.84.02." />
+      <xs:enumeration value="2.15.0.85.03." />
+      <xs:enumeration value="2.15.0.86." />
+      <xs:enumeration value="2.15.0.87.02." />
+      <xs:enumeration value="2.15.0.88.02." />
+      <xs:enumeration value="2.15.0.89.01." />
+      <xs:enumeration value="2.15.0.90." />
+      <xs:enumeration value="2.15.0.91." />
+      <xs:enumeration value="2.16.0.51." />
+      <xs:enumeration value="2.16.0.52." />
+      <xs:enumeration value="2.16.0.53." />
+      <xs:enumeration value="2.16.0.54." />
+      <xs:enumeration value="2.16.0.55." />
+      <xs:enumeration value="2.16.0.61." />
+      <xs:enumeration value="2.16.0.62." />
+      <xs:enumeration value="2.16.0.63." />
+      <xs:enumeration value="2.16.0.64.01." />
+      <xs:enumeration value="2.16.0.65.01." />
+      <xs:enumeration value="2.16.0.66." />
+      <xs:enumeration value="2.16.0.67." />
+      <xs:enumeration value="2.16.0.68." />
+      <xs:enumeration value="2.16.0.69." />
+      <xs:enumeration value="2.16.0.70.02." />
+      <xs:enumeration value="2.16.0.71." />
+      <xs:enumeration value="2.16.0.72." />
+      <xs:enumeration value="2.16.0.73.02." />
+      <xs:enumeration value="2.16.0.74." />
+      <xs:enumeration value="2.16.0.75.03." />
+      <xs:enumeration value="2.16.0.76." />
+      <xs:enumeration value="2.16.0.77." />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="MessageTypeDataType">
+    <xs:restriction id="MessageTypeRestriction" base="LookupDataType" />
+  </xs:simpleType>
+  <xs:complexType name="TransportReceiptComplexType">
+    <xs:annotation>
+      <xs:documentation>
+				Das Element TransportReceipt beschreibt das Root-Element einer
+				Quittungsdatei.
+			</xs:documentation>
+    </xs:annotation>
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:annotation>
+        <xs:documentation>Eine Quittung kann mindestens ein Element Record enthalten.</xs:documentation>
+      </xs:annotation>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Record" type="RecordComplexType">
+        <xs:annotation>
+          <xs:documentation>Ein Record bestettigt den Import eines Datensatzes.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:choice>
+    <xs:attribute name="GuidTransport" type="GuidDataType" use="required">
+      <xs:annotation>
+        <xs:documentation>Guid des Transportes.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="CodeSiteSender" type="StringSiteDataType" use="required">
+      <xs:annotation>
+        <xs:documentation>Die CodeSite des Senders.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="CodeSiteReceiver" type="StringSiteDataType" use="required">
+      <xs:annotation>
+        <xs:documentation>Die CodeSite des Empfaengers.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="TransportNumber" type="xs:nonNegativeInteger" use="required">
+      <xs:annotation>
+        <xs:documentation>Die fortlaufende Nummer des Transportes.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="CreatedAt" type="DateTimeDataType" use="optional">
+      <xs:annotation>
+        <xs:documentation>Gibt an wann der Transport verarbeitet und die Quittung erstellt wurde.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType id="RecordComplexType" name="RecordComplexType">
+    <xs:annotation>
+      <xs:documentation>Ein Record beinhaltet eine zu transportierenden Datensatz.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence minOccurs="1" maxOccurs="1">
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Message" type="MessageComplexType">
+        <xs:annotation>
+          <xs:documentation>Eine Message über eventuelle Fehler beim Import..</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="GuidRecord" type="GuidDataType" use="required">
+      <xs:annotation>
+        <xs:documentation>Guid</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="Status" type="BooleanDataType" use="required">
+      <xs:annotation>
+        <xs:documentation>Der Status des importierten Datensatzes.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="MessageComplexType">
+    <xs:annotation>
+      <xs:documentation>Beschreibt eine Meldung eines Datensatzes zu einem Transportvorgang.</xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="Code" type="MessageTypeDataType" use="required">
+      <xs:annotation>
+        <xs:documentation>
+					Die Guid des Datensatzes, mit dem eine Aktion durchgeführt werden
+					soll.
+				</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="Text" type="String255DataType" use="optional">
+      <xs:annotation>
+        <xs:documentation>
+					Die Guid des Datensatzes, mit dem eine Aktion durchgeführt werden
+					soll.
+				</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+</xs:schema>
